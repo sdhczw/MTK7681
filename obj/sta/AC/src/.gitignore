@@ -1,0 +1,9 @@
+*.o
+*.d
+*.ko
+*.obj
+*.elf
+*.rar
+*.zip
+*.bak
+*.tmp

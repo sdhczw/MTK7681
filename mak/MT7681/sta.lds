@@ -102,8 +102,8 @@ SECTIONS
 		KEEP(*(.Xcpt))
 		KEEP(*(.ctxsw))
 		KEEP(*(.startup))
-		*(EXCLUDE_FILE (*obj/sta/ZC/src/tropicssl/*.o *obj/sta/ZC/src/zc/*.o  *obj/sta/ZC/src/aes/*.o obj/sta/ZC_Adpter/zc_mt7681_adapter.o obj/sta/tcpip/resolv.o).text)
-		*(EXCLUDE_FILE (*obj/sta/ZC/src/tropicssl/*.o *obj/sta/ZC/src/zc/*.o *obj/sta/ZC/src/aes/*.o obj/sta/ZC_Adpter/zc_mt7681_adapter.o obj/sta/tcpip/resolv.o).text.*)
+		*(EXCLUDE_FILE (*obj/sta/ZC/src/tropicssl/*.o *obj/sta/ZC/src/zc/*.o *obj/sta/ZC/src/aes/*.o *obj/sta/AC/src/*.o obj/sta/ZC_Adpter/zc_mt7681_adapter.o obj/sta/tcpip/resolv.o).text)
+		*(EXCLUDE_FILE (*obj/sta/ZC/src/tropicssl/*.o *obj/sta/ZC/src/zc/*.o *obj/sta/ZC/src/aes/*.o *obj/sta/AC/src/*.o obj/sta/ZC_Adpter/zc_mt7681_adapter.o obj/sta/tcpip/resolv.o).text.*)
 	} > SRAM = 0
 
 	
@@ -441,6 +441,8 @@ SECTIONS
 		obj/sta/wifi_task_pub.o(.xipsec0)
 		obj/sta/tcpip/resolv.o
 		obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+		obj/sta/AC/src/ac_api.o
+		obj/sta/AC/src/ac_hal.o
 	} > FLASH_XIP_STA     
 	
 	.xipsec2 : 

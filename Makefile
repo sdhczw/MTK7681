@@ -86,13 +86,15 @@ include	mak/$(PRODUCT_DEF)/tools.mk
 #*******************************************************************************
 SRC_PATH			+=	src \
                   ./cust/ZC/inc/tropicssl \
-                  ./cust/ZC/inc/zc
+                  ./cust/ZC/inc/zc \
+                  ./cust/AC/inc
 API_PATH			=	cust
 DAT_PATH			=	dat
 INCLUDE_PATH		+= src\
                    ./cust/ZC/inc/tropicssl \
                    ./cust/ZC/inc/aes \
-                   ./cust/ZC/inc/zc
+                   ./cust/ZC/inc/zc \
+                   ./cust/AC/inc
 
 ifeq ($(BUILD_TYPE),0)
 OPTION = recovery

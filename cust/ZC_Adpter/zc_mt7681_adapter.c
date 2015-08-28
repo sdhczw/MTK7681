@@ -16,6 +16,7 @@
 #include <zc_timer.h>
 #include <iot_api.h>
 #include <zc_module_interface.h>
+#include <ac_api.h>
 
 
 
@@ -36,6 +37,7 @@ u8 g_u8ClientSendLen = 0;
 
 struct timer g_struMtTimer[ZC_TIMER_MAX_NUM];
 u32 g_u32BcSleepCount = 0;
+u8 g_u8UseWifiDevFlag = 0;
 
 u16 g_u16TcpMss;
 extern IOT_ADAPTER   	IoTpAd;
@@ -198,9 +200,13 @@ u32 MT_SetTimer(u8 u8Type, u32 u32Interval, u8 *pu8TimeIndex)
 *************************************************/
 u32 MT_SendDataToMoudle(u8 *pu8Data, u16 u16DataLen)
 {
+#ifdef ZC_MODULE_DEV    
+    AC_RecvMessage((ZC_MessageHead *)pu8Data);
+#else  
     u8 u8MagicFlag[4] = {0x02,0x03,0x04,0x05};
     IoT_uart_output(u8MagicFlag, 4);
     IoT_uart_output(pu8Data, u16DataLen);
+#endif
     return ZC_RET_OK;
 }
 
