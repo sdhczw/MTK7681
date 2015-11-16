@@ -56,7 +56,7 @@ BFLAGS	+=	-DCFG_SUPPORT_MTK_SMNT=1
 #*******************************************************************************
 CFLAGS	 =
 #			Enable most warning messages
-CFLAGS  +=	-g
+#CFLAGS  +=	-g
 CFLAGS	+=	-Wall
 CFLAGS	+=	-Wextra
 CFLAGS	+=	-Wcast-align
@@ -130,7 +130,7 @@ ARFLAGS	 =
 #*******************************************************************************
 LFLAGS	 =
 LFLAGS	+=	-EL
-LFLAGS	+=	-g
+#LFLAGS	+=	-g
 LFLAGS	+=	-Bstatic
 LFLAGS	+=	--check-sections
 LFLAGS	+=	--gc-sections
@@ -214,7 +214,7 @@ DBGFLAGS	+=	-DDBG_MICTOR=0
 FUNCFLAGS	=	-D__MT7681
 FUNCFLAGS	+=	-DUART_SUPPORT=1
 FUNCFLAGS	+=	-DUART_INTERRUPT=1          #0,UART polling ;1,UART interrupt,we prefer to use UART interrupt 
-FUNCFLAGS	+=	-DMT7681_POWER_SAVING=1     #STA power saving mode as Specification said
+#FUNCFLAGS	+=	-DMT7681_POWER_SAVING=1     #STA power saving mode as Specification said
 
 # WIFI/BT FUNCTIONS 
 FUNCFLAGS	+=	-DBT_SUPPORT=0

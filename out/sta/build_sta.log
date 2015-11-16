@@ -1,0 +1,1001 @@
+Compiling cust/AC/src/ac_api.c ...
+cust/AC/src/ac_api.c: In function 'AC_BuildOption':
+cust/AC/src/ac_api.c:42: warning: cast increases required alignment of target type
+cust/AC/src/ac_api.c:52: warning: conversion to 'u8' from 'unsigned int' may alter its value
+cust/AC/src/ac_api.c:53: warning: cast increases required alignment of target type
+cust/AC/src/ac_api.c:59: warning: cast increases required alignment of target type
+cust/AC/src/ac_api.c:65: warning: conversion to 'u8' from 'unsigned int' may alter its value
+cust/AC/src/ac_api.c:66: warning: cast increases required alignment of target type
+cust/AC/src/ac_api.c: In function 'AC_BuildMessage':
+cust/AC/src/ac_api.c:93: warning: cast increases required alignment of target type
+cust/AC/src/ac_api.c:106: warning: conversion to 'unsigned int' from 'int' may change the sign of the result
+cust/AC/src/ac_api.c:107: warning: conversion to 'u8' from 'u16' may alter its value
+cust/AC/src/ac_api.c:108: warning: conversion to 'u8' from 'short unsigned int' may alter its value
+cust/AC/src/ac_api.c:111: warning: conversion to 'u16' from 'int' may alter its value
+cust/AC/src/ac_api.c: In function 'AC_ParseOption':
+cust/AC/src/ac_api.c:185: warning: cast increases required alignment of target type
+cust/AC/src/ac_api.c:196: warning: cast increases required alignment of target type
+cust/AC/src/ac_api.c:199: warning: conversion to 'u16' from 'unsigned int' may alter its value
+cust/AC/src/ac_api.c:200: warning: cast increases required alignment of target type
+Compiling cust/AC/src/ac_hal.c ...
+cust/AC/src/ac_hal.c:33: warning: integer constant is too large for 'long' type
+cust/AC/src/ac_hal.c:34: warning: integer constant is too large for 'long' type
+cust/AC/src/ac_hal.c: In function 'AC_DealNotifyMessage':
+cust/AC/src/ac_hal.c:97: warning: unused parameter 'pstruOptList'
+cust/AC/src/ac_hal.c:97: warning: unused parameter 'pu8Playload'
+cust/AC/src/ac_hal.c: In function 'AC_BlinkLed':
+cust/AC/src/ac_hal.c:170: warning: unused parameter 'blink'
+cust/AC/src/ac_hal.c: In function 'AC_SendLedStatus2Server':
+cust/AC/src/ac_hal.c:49: warning: 'struRsp' is used uninitialized in this function
+Compiling cust/ZC/src/tropicssl/bignum.c ...
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_grow':
+cust/ZC/src/tropicssl/bignum.c:119: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_copy':
+cust/ZC/src/tropicssl/bignum.c:145: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c:146: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_lset':
+cust/ZC/src/tropicssl/bignum.c:173: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c:175: warning: conversion to 't_int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_write_binary':
+cust/ZC/src/tropicssl/bignum.c:415: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_cmp_int':
+cust/ZC/src/tropicssl/bignum.c:587: warning: conversion to 't_int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_sub_hlp':
+cust/ZC/src/tropicssl/bignum.c:651: warning: conversion to 'int' from 't_int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_sub_abs':
+cust/ZC/src/tropicssl/bignum.c:694: warning: cast discards qualifiers from pointer target type
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_add_int':
+cust/ZC/src/tropicssl/bignum.c:764: warning: conversion to 't_int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_sub_int':
+cust/ZC/src/tropicssl/bignum.c:780: warning: conversion to 't_int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_mul_mpi':
+cust/ZC/src/tropicssl/bignum.c:858: warning: cast discards qualifiers from pointer target type
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_div_mpi':
+cust/ZC/src/tropicssl/bignum.c:937: warning: negative integer implicitly converted to unsigned type
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_div_int':
+cust/ZC/src/tropicssl/bignum.c:1054: warning: conversion to 't_int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_mod_int':
+cust/ZC/src/tropicssl/bignum.c:1112: warning: conversion to 'long unsigned int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c:1113: warning: conversion to 'long unsigned int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c:1117: warning: conversion to 'long unsigned int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c:1118: warning: conversion to 'long unsigned int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_montmul':
+cust/ZC/src/tropicssl/bignum.c:1155: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c:1168: warning: cast discards qualifiers from pointer target type
+cust/ZC/src/tropicssl/bignum.c:1169: warning: cast discards qualifiers from pointer target type
+cust/ZC/src/tropicssl/bignum.c:1175: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c:1178: warning: cast discards qualifiers from pointer target type
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_montred':
+cust/ZC/src/tropicssl/bignum.c:1192: warning: conversion to 'int' from 't_int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c: In function 'mpi_exp_mod':
+cust/ZC/src/tropicssl/bignum.c:1325: warning: conversion to 'long unsigned int' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/bignum.c:1325: warning: conversion to 'int' from 'long unsigned int' may change the sign of the result
+Compiling cust/ZC/src/tropicssl/rsa.c ...
+cust/ZC/src/tropicssl/rsa.c: In function 'rsa_pkcs1_encrypt':
+cust/ZC/src/tropicssl/rsa.c:252: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/ZC/src/tropicssl/rsa.c: In function 'rsa_pkcs1_decrypt':
+cust/ZC/src/tropicssl/rsa.c:315: warning: conversion to 'size_t' from 'int' may change the sign of the result
+Compiling cust/ZC/src/zc/zc_bc.c ...
+cust/ZC/src/zc/zc_bc.c: In function 'ZC_SendBc':
+cust/ZC/src/zc/zc_bc.c:36: warning: comparison between signed and unsigned integer expressions
+cust/ZC/src/zc/zc_bc.c:45: warning: conversion to 'u32' from 'int' may change the sign of the result
+cust/ZC/src/zc/zc_bc.c: In function 'ZC_SendClientQueryReq':
+cust/ZC/src/zc/zc_bc.c:81: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_bc.c:104: warning: conversion to 'u8' from 'u32' may alter its value
+cust/ZC/src/zc/zc_bc.c:110: warning: conversion to 'u32' from 'int' may change the sign of the result
+Compiling cust/ZC/src/zc/zc_client_manager.c ...
+cust/ZC/src/zc/zc_client_manager.c: In function 'ZC_SetClientBusy':
+cust/ZC/src/zc/zc_client_manager.c:123: warning: conversion to 'u8' from 'u32' may alter its value
+cust/ZC/src/zc/zc_client_manager.c: In function 'ZC_SetClientFree':
+cust/ZC/src/zc/zc_client_manager.c:133: warning: unused parameter 'u32Clientfd'
+cust/ZC/src/zc/zc_client_manager.c: In function 'ZC_RecvDataFromClient':
+cust/ZC/src/zc/zc_client_manager.c:218: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_client_manager.c:233: warning: conversion to 'u16' from 'u32' may alter its value
+cust/ZC/src/zc/zc_client_manager.c:245: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_client_manager.c:258: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_client_manager.c:270: warning: conversion to 'u8' from 'int' may alter its value
+cust/ZC/src/zc/zc_client_manager.c:279: warning: conversion to 'u16' from 'unsigned int' may alter its value
+cust/ZC/src/zc/zc_client_manager.c:282: warning: conversion to 'u16' from 'unsigned int' may alter its value
+cust/ZC/src/zc/zc_client_manager.c:287: warning: conversion to 'u16' from 'unsigned int' may alter its value
+cust/ZC/src/zc/zc_client_manager.c:291: warning: conversion to 'u16' from 'unsigned int' may alter its value
+cust/ZC/src/zc/zc_client_manager.c:294: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_client_manager.c:295: warning: conversion to 'u8' from 'u16' may alter its value
+cust/ZC/src/zc/zc_client_manager.c:296: warning: conversion to 'u8' from 'short unsigned int' may alter its value
+cust/ZC/src/zc/zc_client_manager.c:301: warning: conversion to 'u16' from 'u32' may alter its value
+Compiling cust/ZC/src/zc/zc_cloud_event.c ...
+cust/ZC/src/zc/zc_cloud_event.c: In function 'EVENT_BuildEmptyMsg':
+cust/ZC/src/zc/zc_cloud_event.c:25: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c:33: warning: conversion to 'u8' from 'u16' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c:34: warning: conversion to 'u8' from 'short unsigned int' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c: In function 'EVENT_BuildHeartMsg':
+cust/ZC/src/zc/zc_cloud_event.c:52: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c:59: warning: conversion to 'u8' from 'u16' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c:60: warning: conversion to 'u8' from 'short unsigned int' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c: In function 'EVENT_BuildMsg':
+cust/ZC/src/zc/zc_cloud_event.c:78: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c:85: warning: conversion to 'u8' from 'u16' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c:86: warning: conversion to 'u8' from 'short unsigned int' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c:89: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c: In function 'EVENT_BuildBcMsg':
+cust/ZC/src/zc/zc_cloud_event.c:107: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c:122: warning: conversion to 'u8' from 'u16' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c:123: warning: conversion to 'u8' from 'short unsigned int' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c: In function 'EVENT_ParseOption':
+cust/ZC/src/zc/zc_cloud_event.c:145: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c:156: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c:159: warning: conversion to 'u16' from 'unsigned int' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c:160: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c: In function 'EVENT_BuildOption':
+cust/ZC/src/zc/zc_cloud_event.c:187: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c:197: warning: conversion to 'u8' from 'unsigned int' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c:198: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c:204: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_cloud_event.c:210: warning: conversion to 'u8' from 'unsigned int' may alter its value
+cust/ZC/src/zc/zc_cloud_event.c:211: warning: cast increases required alignment of target type
+Compiling cust/ZC/src/zc/zc_common.c ...
+cust/ZC/src/zc/zc_common.c: In function 'ZC_Rand':
+cust/ZC/src/zc/zc_common.c:70: warning: conversion to 'u32' from 'int' may change the sign of the result
+cust/ZC/src/zc/zc_common.c:71: warning: conversion to 'u8' from 'int' may alter its value
+cust/ZC/src/zc/zc_common.c:72: warning: conversion to 'u8' from 'int' may alter its value
+cust/ZC/src/zc/zc_common.c:73: warning: conversion to 'u8' from 'int' may alter its value
+cust/ZC/src/zc/zc_common.c:74: warning: conversion to 'u8' from 'int' may alter its value
+cust/ZC/src/zc/zc_common.c: In function 'ZC_HexToString':
+cust/ZC/src/zc/zc_common.c:98: warning: conversion to 'u8' from 'int' may alter its value
+cust/ZC/src/zc/zc_common.c:100: warning: conversion to 'u8' from 'int' may alter its value
+Compiling cust/ZC/src/zc/zc_configuration.c ...
+cust/ZC/src/zc/zc_configuration.c: In function 'ZC_ConfigPara':
+cust/ZC/src/zc/zc_configuration.c:71: warning: cast increases required alignment of target type
+Compiling cust/ZC/src/zc/zc_message_queue.c ...
+cust/ZC/src/zc/zc_message_queue.c: In function 'MSG_RecvData':
+cust/ZC/src/zc/zc_message_queue.c:144: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_message_queue.c:175: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_message_queue.c:215: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_message_queue.c: In function 'MSG_RecvDataFromCloud':
+cust/ZC/src/zc/zc_message_queue.c:271: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_message_queue.c: In function 'MSG_SendDataToCloud':
+cust/ZC/src/zc/zc_message_queue.c:298: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_message_queue.c:303: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_message_queue.c:310: warning: conversion to 'u16' from 'u32' may alter its value
+Compiling cust/ZC/src/zc/zc_moudle_manager.c ...
+cust/ZC/src/zc/zc_moudle_manager.c: In function 'ZC_DealSessionOpt':
+cust/ZC/src/zc/zc_moudle_manager.c:68: warning: conversion to 'u16' from 'unsigned int' may alter its value
+cust/ZC/src/zc/zc_moudle_manager.c:76: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/ZC/src/zc/zc_moudle_manager.c:79: warning: conversion to 'u8' from 'u16' may alter its value
+cust/ZC/src/zc/zc_moudle_manager.c:80: warning: conversion to 'u8' from 'short unsigned int' may alter its value
+cust/ZC/src/zc/zc_moudle_manager.c:104: warning: conversion to 'u8' from 'u32' may alter its value
+cust/ZC/src/zc/zc_moudle_manager.c: In function 'ZC_RecvDataFromMoudle':
+cust/ZC/src/zc/zc_moudle_manager.c:186: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_moudle_manager.c: In function 'ZC_AssemblePkt':
+cust/ZC/src/zc/zc_moudle_manager.c:319: warning: implicit declaration of function 'memcmp'
+cust/ZC/src/zc/zc_moudle_manager.c:326: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_moudle_manager.c:358: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_moudle_manager.c:405: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_moudle_manager.c: In function 'ZC_Moudlefunc':
+cust/ZC/src/zc/zc_moudle_manager.c:471: warning: conversion to 'u16' from 'u32' may alter its value
+Compiling cust/ZC/src/zc/zc_protocol_controller.c ...
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_CheckCrc':
+cust/ZC/src/zc/zc_protocol_controller.c:35: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_SendMoudleTimeout':
+cust/ZC/src/zc/zc_protocol_controller.c:375: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:376: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:385: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:396: warning: conversion to 'u16' from 'u32' may alter its value
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_HandleMoudleEvent':
+cust/ZC/src/zc/zc_protocol_controller.c:415: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:421: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:426: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_RecvAccessMsg2':
+cust/ZC/src/zc/zc_protocol_controller.c:451: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:457: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:469: warning: implicit declaration of function 'memcmp'
+cust/ZC/src/zc/zc_protocol_controller.c:483: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_RecvAccessMsg4':
+cust/ZC/src/zc/zc_protocol_controller.c:517: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:523: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_HandleUnbindMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:572: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:578: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_SendUnbindMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:622: warning: conversion to 'u32' from 'int' may change the sign of the result
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_HandleOtaBeginMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:662: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:658: warning: unused parameter 'pstruContoller'
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_ModuleOtaFileBeginMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:681: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_ModuleOtaFileChunkMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:709: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:727: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_ModuleOtaFileEndMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:758: warning: unused parameter 'pu8Msg'
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_HandleOtaFileBeginMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:790: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:791: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_HandleOtaFileChunkMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:821: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:822: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_HandleOtaFileEndMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:867: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:862: warning: unused parameter 'pstruContoller'
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_HandleOtaEndMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:885: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_HandleMoudleMsg':
+cust/ZC/src/zc/zc_protocol_controller.c:911: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:930: warning: conversion to 'u16' from 'u32' may alter its value
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_SetTokenKey':
+cust/ZC/src/zc/zc_protocol_controller.c:955: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:950: warning: unused parameter 'pstruContoller'
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_ResetNetWork':
+cust/ZC/src/zc/zc_protocol_controller.c:978: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_HandleEvent':
+cust/ZC/src/zc/zc_protocol_controller.c:1012: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c:1018: warning: cast increases required alignment of target type
+cust/ZC/src/zc/zc_protocol_controller.c: In function 'PCT_SendMsgToCloud':
+cust/ZC/src/zc/zc_protocol_controller.c:1193: warning: conversion to 'u16' from 'unsigned int' may alter its value
+cust/ZC/src/zc/zc_protocol_controller.c:1204: warning: conversion to 'u16' from 'int' may alter its value
+Compiling cust/ZC/src/zc/zc_sec_engine.c ...
+cust/ZC/src/zc/zc_sec_engine.c: In function 'SEC_EncryptTextByRsa':
+cust/ZC/src/zc/zc_sec_engine.c:46: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_sec_engine.c:47: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_sec_engine.c:54: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_sec_engine.c:60: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_sec_engine.c: In function 'SEC_DecryptTextByRsa':
+cust/ZC/src/zc/zc_sec_engine.c:113: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_sec_engine.c:114: warning: conversion to 'u16' from 's32' may alter its value
+cust/ZC/src/zc/zc_sec_engine.c:121: warning: conversion to 'u16' from 's32' may alter its value
+cust/ZC/src/zc/zc_sec_engine.c: In function 'SEC_InitRsaContextWithPrivateKey':
+cust/ZC/src/zc/zc_sec_engine.c:192: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_sec_engine.c: In function 'SEC_PaddingCheck':
+cust/ZC/src/zc/zc_sec_engine.c:312: warning: conversion to 'u16' from 'int' may alter its value
+cust/ZC/src/zc/zc_sec_engine.c:321: warning: conversion to 'u16' from 'int' may alter its value
+Compiling cust/ZC/src/zc/zc_timer.c ...
+Compiling cust/ZC_Adpter/zc_mt7681_adapter.c ...
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'rand':
+cust/ZC_Adpter/zc_mt7681_adapter.c:63: warning: conversion to 'int' from 'UINT32' may change the sign of the result
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_ReadDataFromFlash':
+cust/ZC_Adpter/zc_mt7681_adapter.c:95: warning: cast increases required alignment of target type
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_TimerExpired':
+cust/ZC_Adpter/zc_mt7681_adapter.c:163: warning: implicit declaration of function 'uip_arp_out'
+cust/ZC_Adpter/zc_mt7681_adapter.c:164: warning: implicit declaration of function 'mt76xx_dev_send'
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_SetTimer':
+cust/ZC_Adpter/zc_mt7681_adapter.c:186: warning: conversion to 'clock_time_t' from 'u32' may change the sign of the result
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_SendDataToMoudle':
+cust/ZC_Adpter/zc_mt7681_adapter.c:204: warning: cast increases required alignment of target type
+cust/ZC_Adpter/zc_mt7681_adapter.c:201: warning: unused parameter 'u16DataLen'
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_FirmwareUpdateFinish':
+cust/ZC_Adpter/zc_mt7681_adapter.c:223: warning: implicit declaration of function 'spi_flash_CopyApToSta'
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_FirmwareUpdate':
+cust/ZC_Adpter/zc_mt7681_adapter.c:266: warning: conversion to 'uint16' from 'u32' may alter its value
+cust/ZC_Adpter/zc_mt7681_adapter.c:281: warning: conversion to 'uint16' from 'u32' may alter its value
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_Rest':
+cust/ZC_Adpter/zc_mt7681_adapter.c:304: warning: implicit declaration of function 'wifi_state_chg'
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_StopTimer':
+cust/ZC_Adpter/zc_mt7681_adapter.c:341: warning: unused parameter 'u8TimerIndex'
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_GetMac':
+cust/ZC_Adpter/zc_mt7681_adapter.c:356: warning: implicit declaration of function 'spi_flash_read'
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_ConnectToCloud':
+cust/ZC_Adpter/zc_mt7681_adapter.c:377: warning: assignment from incompatible pointer type
+cust/ZC_Adpter/zc_mt7681_adapter.c:390: warning: implicit declaration of function 'resolv_lookup'
+cust/ZC_Adpter/zc_mt7681_adapter.c:390: warning: assignment makes pointer from integer without a cast
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_Init':
+cust/ZC_Adpter/zc_mt7681_adapter.c:487: warning: assignment from incompatible pointer type
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_BroadcastAppCall':
+cust/ZC_Adpter/zc_mt7681_adapter.c:514: warning: pointer targets in passing argument 1 of 'ZC_SendClientQueryReq' differ in signedness
+cust/ZC/inc/zc/zc_bc.h:25: note: expected 'u8 *' but argument is of type 'char *'
+cust/ZC_Adpter/zc_mt7681_adapter.c:505: warning: unused variable 'u16Len'
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_CloudAppCall':
+cust/ZC_Adpter/zc_mt7681_adapter.c:529: warning: conversion to 'u32' from 'int' may change the sign of the result
+cust/ZC_Adpter/zc_mt7681_adapter.c:561: warning: pointer targets in passing argument 1 of 'MSG_RecvDataFromCloud' differ in signedness
+cust/ZC/inc/zc/zc_message_queue.h:58: note: expected 'u8 *' but argument is of type 'char *'
+cust/ZC_Adpter/zc_mt7681_adapter.c:574: warning: passing argument 1 of 'MSG_SendDataToCloud' from incompatible pointer type
+cust/ZC/inc/zc/zc_message_queue.h:59: note: expected 'u8 *' but argument is of type 'struct PTC_Connection *'
+cust/ZC_Adpter/zc_mt7681_adapter.c: In function 'MT_ClientAppCall':
+cust/ZC_Adpter/zc_mt7681_adapter.c:596: warning: pointer targets in passing argument 2 of 'ZC_RecvDataFromClient' differ in signedness
+cust/ZC/inc/zc/zc_client_manager.h:52: note: expected 'u8 *' but argument is of type 'char *'
+Compiling cust/iot_aes_pub.c ...
+Compiling cust/iot_at_cmd.c ...
+cust/iot_at_cmd.c: In function 'IoT_exec_AT_cmd_Flash_Set':
+cust/iot_at_cmd.c:590: warning: implicit declaration of function 'spi_flash_read'
+cust/iot_at_cmd.c:605: warning: implicit declaration of function 'spi_flash_write'
+cust/iot_at_cmd.c: In function 'IoT_exec_AT_Set_Smnt':
+cust/iot_at_cmd.c:926: warning: implicit declaration of function 'wifi_state_chg'
+cust/iot_at_cmd.c:922: warning: unused parameter 'pCmdBuf'
+cust/iot_at_cmd.c: In function 'IoT_exec_AT_cmd_TestSwitch':
+cust/iot_at_cmd.c:1037: warning: passing argument 1 of 'split_string_cmd' from incompatible pointer type
+src/include/api/iot_api.h:981: note: expected 'PCHAR' but argument is of type 'CHAR **'
+cust/iot_at_cmd.c:1037: warning: pointer targets in passing argument 3 of 'split_string_cmd' differ in signedness
+src/include/api/iot_api.h:981: note: expected 'INT16 *' but argument is of type 'UINT16 *'
+cust/iot_at_cmd.c:1039: warning: conversion to 'INT16' from 'UINT16' may change the sign of the result
+cust/iot_at_cmd.c:1046: warning: conversion to 'u32' from 'long int' may change the sign of the result
+cust/iot_at_cmd.c:1050: warning: conversion to 'u32' from 'long int' may change the sign of the result
+cust/iot_at_cmd.c:1054: warning: conversion to 'u32' from 'long int' may change the sign of the result
+cust/iot_at_cmd.c:1063: warning: conversion to 'INT16' from 'UINT16' may change the sign of the result
+cust/iot_at_cmd.c: In function 'IoT_parse_ATcommand':
+cust/iot_at_cmd.c:1093: warning: implicit declaration of function 'reset_cfg'
+cust/iot_at_cmd.c:1270: warning: implicit declaration of function 'IoT_Xmodem_Update_FW_Start'
+cust/iot_at_cmd.c:1272: warning: implicit declaration of function 'IoT_Xmodem_Update_FW_Stop'
+cust/iot_at_cmd.c:1287: warning: passing argument 1 of 'IoT_exec_AT_cmd_TestSwitch' from incompatible pointer type
+cust/iot_at_cmd.c:1024: note: expected 'CHAR **' but argument is of type 'PCHAR'
+cust/iot_at_cmd.c: In function 'IoT_parse_IWCmd':
+cust/iot_at_cmd.c:1293: warning: unused parameter 'cmd_buf'
+cust/iot_at_cmd.c:1293: warning: unused parameter 'at_cmd_len'
+Compiling cust/iot_at_cmd_utility.c ...
+cust/iot_at_cmd_utility.c: In function 'strchr':
+cust/iot_at_cmd_utility.c:44: warning: cast discards qualifiers from pointer target type
+cust/iot_at_cmd_utility.c: In function 'getopt':
+cust/iot_at_cmd_utility.c:137: warning: conversion to 'char' from 'int' may alter its value
+cust/iot_at_cmd_utility.c:158: warning: conversion to 'char' from 'int' may alter its value
+Compiling cust/iot_custom.c ...
+cust/iot_custom.c:164: warning: missing braces around initializer
+cust/iot_custom.c:164: warning: (near initialization for 'Usr_Cfg.ConfigInfor')
+cust/iot_custom.c: In function 'IoT_Cust_Sub_Task':
+cust/iot_custom.c:252: warning: implicit declaration of function 'MT_Run'
+cust/iot_custom.c: In function 'IoT_Cust_Init':
+cust/iot_custom.c:299: warning: implicit declaration of function 'MT_Init'
+cust/iot_custom.c: In function 'CustTimer0TimeoutAction':
+cust/iot_custom.c:305: warning: unused parameter 'param'
+cust/iot_custom.c:305: warning: unused parameter 'param2'
+cust/iot_custom.c: In function 'load_usr_cfg':
+cust/iot_custom.c:368: warning: implicit declaration of function 'spi_flash_read'
+cust/iot_custom.c:385: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/iot_custom.c:387: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/iot_custom.c:388: warning: conversion to 'u32' from 'int' may change the sign of the result
+cust/iot_custom.c:395: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/iot_custom.c:402: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/iot_custom.c: In function 'reset_usr_cfg':
+cust/iot_custom.c:446: warning: implicit declaration of function 'spi_flash_write'
+cust/iot_custom.c:452: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/iot_custom.c:456: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/iot_custom.c:457: warning: conversion to 'u32' from 'int' may change the sign of the result
+cust/iot_custom.c:466: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/iot_custom.c:474: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/iot_custom.c: In function 'reset_sta_cfg':
+cust/iot_custom.c:715: warning: implicit declaration of function 'spi_flash_erase_SE'
+cust/iot_custom.c: In function 'IoT_Cust_SMNT_Sta_Chg_Init':
+cust/iot_custom.c:757: warning: implicit declaration of function 'SMTCN_state_chg_init'
+cust/iot_custom.c: In function 'IoT_Cust_SM_Init':
+cust/iot_custom.c:783: warning: implicit declaration of function 'MT_Sleep'
+cust/iot_custom.c: In function 'IoT_Cust_SM_Smnt':
+cust/iot_custom.c:801: warning: implicit declaration of function 'SMTCN_process'
+cust/iot_custom.c: In function 'IoT_Cust_SM_Smnt2':
+cust/iot_custom.c:886: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+src/include/string.h:25: note: expected 'const char *' but argument is of type 'UCHAR *'
+cust/iot_custom.c:886: warning: conversion to 'UCHAR' from 'size_t' may alter its value
+cust/iot_custom.c:887: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+src/include/string.h:25: note: expected 'const char *' but argument is of type 'UCHAR *'
+cust/iot_custom.c:887: warning: conversion to 'UINT8' from 'size_t' may alter its value
+cust/iot_custom.c:897: warning: pointer targets in passing argument 1 of 'RtmpPasswordHash' differ in signedness
+src/include/api/iot_api.h:1142: note: expected 'PSTRING' but argument is of type 'UCHAR *'
+cust/iot_custom.c:905: warning: implicit declaration of function 'wifi_state_chg'
+cust/iot_custom.c: In function 'default_uart_cfg':
+cust/iot_custom.c:507: warning: control reaches end of non-void function
+cust/iot_custom.c: In function 'default_boot_cfg':
+cust/iot_custom.c:497: warning: control reaches end of non-void function
+Compiling cust/iot_custom_uart2wifi.c ...
+Compiling cust/iot_uart_rb.c ...
+cust/iot_uart_rb.c: In function 'UART_PutBytes':
+cust/iot_uart_rb.c:74: warning: initialization discards qualifiers from pointer target type
+cust/iot_uart_rb.c:86: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:86: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:97: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c: In function 'UART_Rx_Cb':
+cust/iot_uart_rb.c:212: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:212: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:293: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/iot_uart_rb.c:322: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:322: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:322: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:324: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:384: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:384: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:384: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:386: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:182: warning: unused variable 'i'
+cust/iot_uart_rb.c: In function 'UART_Rx_Packet_Dispatch':
+cust/iot_uart_rb.c:441: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c:460: warning: pointer targets in passing argument 1 of 'IoT_parse_ATcommand' differ in signedness
+src/include/api/iot_api.h:1178: note: expected 'PCHAR' but argument is of type 'UCHAR *'
+cust/iot_uart_rb.c:460: warning: conversion to 'INT16' from 'UINT16' may change the sign of the result
+cust/iot_uart_rb.c:463: warning: implicit declaration of function 'IoT_parse_IWCmd'
+cust/iot_uart_rb.c:466: warning: implicit declaration of function 'ZC_RecvDataFromMoudle'
+cust/iot_uart_rb.c: In function 'uart_rb_pop':
+cust/iot_uart_rb.c:515: warning: conversion to 'kal_uint16' from 'int' may alter its value
+cust/iot_uart_rb.c: In function 'uart_get_avail':
+cust/iot_uart_rb.c:536: warning: conversion to 'UINT16' from 'int' may alter its value
+cust/iot_uart_rb.c:536: warning: conversion to 'UINT16' from 'int' may alter its value
+Compiling cust/iot_uplink.c ...
+cust/iot_uplink.c: In function 'IoT_build_app_response_header':
+cust/iot_uplink.c:56: warning: conversion to 'unsigned char:4' from 'UINT_8' may alter its value
+cust/iot_uplink.c: In function 'IoT_check_sum':
+cust/iot_uplink.c:67: warning: cast increases required alignment of target type
+cust/iot_uplink.c:83: warning: conversion to 'short unsigned int' from 'long unsigned int' may alter its value
+cust/iot_uplink.c: In function 'IoT_Udppseudo_check_sum':
+cust/iot_uplink.c:102: warning: conversion to 'UINT16' from 'int' may alter its value
+cust/iot_uplink.c:104: warning: conversion to 'UINT16' from 'int' may alter its value
+cust/iot_uplink.c:109: warning: conversion to 'UCHAR' from 'int' may alter its value
+cust/iot_uplink.c:110: warning: conversion to 'UCHAR' from 'int' may alter its value
+cust/iot_uplink.c: In function 'IoT_build_send_udp_packet':
+cust/iot_uplink.c:210: warning: implicit declaration of function 'STA_Legacy_Frame_Tx'
+cust/iot_uplink.c: In function 'IoT_send_udp_directly':
+cust/iot_uplink.c:271: warning: conversion to 'UCHAR' from 'short unsigned int' may alter its value
+cust/iot_uplink.c:272: warning: conversion to 'UCHAR' from 'short unsigned int' may alter its value
+cust/iot_uplink.c:273: warning: conversion to 'UCHAR' from 'short unsigned int' may alter its value
+cust/iot_uplink.c:274: warning: conversion to 'UCHAR' from 'short unsigned int' may alter its value
+cust/iot_uplink.c:277: warning: conversion to 'UCHAR' from 'short unsigned int' may alter its value
+cust/iot_uplink.c:278: warning: conversion to 'UCHAR' from 'short unsigned int' may alter its value
+cust/iot_uplink.c:279: warning: conversion to 'UCHAR' from 'short unsigned int' may alter its value
+cust/iot_uplink.c:280: warning: conversion to 'UCHAR' from 'short unsigned int' may alter its value
+Compiling cust/iot_xmodem.c ...
+cust/iot_xmodem.c: In function 'crc16_ccitt':
+cust/iot_xmodem.c:77: warning: conversion to 'short unsigned int' from 'unsigned int' may alter its value
+cust/iot_xmodem.c: In function 'port_inbyte':
+cust/iot_xmodem.c:91: warning: conversion to 'int' from 'unsigned int' may change the sign of the result
+cust/iot_xmodem.c: In function 'check':
+cust/iot_xmodem.c:115: warning: conversion to 'unsigned int' from 'int' may change the sign of the result
+cust/iot_xmodem.c:116: warning: conversion to 'short unsigned int' from 'int' may alter its value
+cust/iot_xmodem.c:127: warning: conversion to 'unsigned char' from 'int' may alter its value
+cust/iot_xmodem.c: In function 'IoT_xmodemReceive':
+cust/iot_xmodem.c:243: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/iot_xmodem.c: In function 'IoT_xmodemTransmit':
+cust/iot_xmodem.c:327: warning: conversion to 'unsigned char' from 'int' may alter its value
+cust/iot_xmodem.c:329: warning: conversion to 'unsigned char' from 'int' may alter its value
+cust/iot_xmodem.c:330: warning: conversion to 'unsigned char' from 'int' may alter its value
+cust/iot_xmodem.c:332: warning: comparison is always true due to limited range of data type
+cust/iot_xmodem.c:335: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/iot_xmodem.c:349: warning: conversion to 'unsigned int' from 'int' may change the sign of the result
+cust/iot_xmodem.c:350: warning: conversion to 'unsigned char' from 'short unsigned int' may alter its value
+cust/iot_xmodem.c:351: warning: conversion to 'unsigned char' from 'short unsigned int' may alter its value
+cust/iot_xmodem.c:358: warning: conversion to 'unsigned char' from 'int' may alter its value
+cust/iot_xmodem.c: In function 'IoT_Xmodem_Update_FW':
+cust/iot_xmodem.c:568: warning: conversion to 'int' from 'unsigned int' may change the sign of the result
+cust/iot_xmodem.c:585: warning: conversion to 'uint32' from 'int' may change the sign of the result
+Compiling cust/main_pub.c ...
+cust/main_pub.c: In function 'main':
+cust/main_pub.c:59: warning: implicit declaration of function 'BSP_Init'
+cust/main_pub.c:69: warning: implicit declaration of function 'APP_Init'
+cust/main_pub.c:72: warning: implicit declaration of function 'sys_Init'
+cust/main_pub.c:83: warning: implicit declaration of function 'sysTASK_RegTask'
+cust/main_pub.c:90: warning: implicit declaration of function 'sysKernelStart'
+Compiling cust/misc_pub.c ...
+Compiling cust/mt7681_ChSw_pub.c ...
+cust/mt7681_ChSw_pub.c: In function 'AsicSetChannel':
+cust/mt7681_ChSw_pub.c:51: warning: implicit declaration of function 'rtmp_bbp_set_bw'
+cust/mt7681_ChSw_pub.c:59: warning: implicit declaration of function 'AsicSwitchChannel'
+Compiling cust/rtmp_data_pub.c ...
+cust/rtmp_data_pub.c: In function 'BeaconTimeoutAction':
+cust/rtmp_data_pub.c:77: warning: unused parameter 'param'
+cust/rtmp_data_pub.c:77: warning: unused parameter 'param2'
+cust/rtmp_data_pub.c: In function 'STAHandleRxDataFrame':
+cust/rtmp_data_pub.c:124: warning: implicit declaration of function 'SMTCNRXFrameHandle'
+cust/rtmp_data_pub.c:137: warning: implicit declaration of function 'RTMPRawDataSanity'
+cust/rtmp_data_pub.c:147: warning: implicit declaration of function 'WpaEAPOLKeyAction'
+cust/rtmp_data_pub.c:165: warning: implicit declaration of function 'memcpy'
+cust/rtmp_data_pub.c:166: warning: conversion to 'USHORT' from 'int' may alter its value
+cust/rtmp_data_pub.c:170: warning: conversion to 'USHORT' from 'int' may alter its value
+cust/rtmp_data_pub.c: In function 'STAHandleRxMgmtFrame':
+cust/rtmp_data_pub.c:237: warning: implicit declaration of function 'ScanProcessMgmt'
+cust/rtmp_data_pub.c:242: warning: implicit declaration of function 'MlmeAuthProcess'
+cust/rtmp_data_pub.c:247: warning: implicit declaration of function 'MlmeAssocProcess'
+cust/rtmp_data_pub.c:256: warning: implicit declaration of function 'wifi_state_chg'
+cust/rtmp_data_pub.c:275: warning: implicit declaration of function 'PeerDisassocAction'
+cust/rtmp_data_pub.c: In function 'STARxDoneInterruptHandle':
+cust/rtmp_data_pub.c:353: warning: implicit declaration of function 'StorePhyMode'
+cust/rtmp_data_pub.c:355: warning: implicit declaration of function 'RTMPCheckRxError'
+cust/rtmp_data_pub.c: In function 'RxFsIntFilterOut':
+cust/rtmp_data_pub.c:467: warning: unused variable 'RxBlk'
+Compiling cust/spi-flash_pub.c ...
+cust/spi-flash_pub.c: In function 'reflect':
+cust/spi-flash_pub.c:94: warning: conversion to 'UINT32' from 'int' may change the sign of the result
+cust/spi-flash_pub.c: In function 'crc32':
+cust/spi-flash_pub.c:109: warning: conversion to 'UINT32' from 'int' may change the sign of the result
+cust/spi-flash_pub.c:112: warning: negative integer implicitly converted to unsigned type
+cust/spi-flash_pub.c: In function 'spi_flash_page_write':
+cust/spi-flash_pub.c:265: warning: conversion to 'uint16' from 'int' may alter its value
+cust/spi-flash_pub.c: In function 'spi_flash_write_func':
+cust/spi-flash_pub.c:288: warning: conversion to 'uint16' from 'int' may alter its value
+cust/spi-flash_pub.c: In function 'spi_flash_update_fw':
+cust/spi-flash_pub.c:381: warning: conversion to 'uint32' from 'int' may change the sign of the result
+cust/spi-flash_pub.c:387: warning: implicit declaration of function 'spi_flash_read'
+cust/spi-flash_pub.c: In function 'spi_flash_write':
+cust/spi-flash_pub.c:468: warning: conversion to 'UINT16' from 'int' may alter its value
+cust/spi-flash_pub.c:473: warning: conversion to 'uint16' from 'int' may alter its value
+cust/spi-flash_pub.c: In function 'dump_spi_flash_fw':
+cust/spi-flash_pub.c:492: warning: unused parameter 'TYPE'
+cust/spi-flash_pub.c: In function 'spi_flash_CopyApToSta':
+cust/spi-flash_pub.c:562: warning: implicit declaration of function 'IoT_Xmodem_Update_FW_Start'
+cust/spi-flash_pub.c:588: warning: conversion to 'uint16' from 'uint32' may alter its value
+cust/spi-flash_pub.c:605: warning: passing argument 1 of 'IoT_uart_output' from incompatible pointer type
+src/include/api/iot_api.h:783: note: expected 'UCHAR *' but argument is of type 'struct ZC_MessageHead *'
+cust/spi-flash_pub.c:610: warning: implicit declaration of function 'IoT_Xmodem_Update_FW_Stop'
+Compiling cust/tcpip/clock-arch.c ...
+cust/tcpip/clock-arch.c: In function 'clock_time':
+cust/tcpip/clock-arch.c:50: warning: conversion to 'clock_time_t' from 'unsigned int' may change the sign of the result
+Compiling cust/tcpip/dhcpc.c ...
+cust/tcpip/dhcpc.c: In function 'create_msg':
+cust/tcpip/dhcpc.c:181: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/dhcpc.c:192: warning: conversion to 'size_t' from 'int' may change the sign of the result
+cust/tcpip/dhcpc.c:193: warning: conversion to 'unsigned int' from 'int' may change the sign of the result
+cust/tcpip/dhcpc.c: In function 'send_discover':
+cust/tcpip/dhcpc.c:215: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+src/include/string.h:25: note: expected 'const char *' but argument is of type 'UCHAR *'
+cust/tcpip/dhcpc.c:215: warning: pointer targets in passing argument 3 of 'add_other_options' differ in signedness
+cust/tcpip/dhcpc.c:152: note: expected 'PCHAR' but argument is of type 'UCHAR *'
+cust/tcpip/dhcpc.c:215: warning: conversion to 'u8_t' from 'size_t' may alter its value
+cust/tcpip/dhcpc.c:218: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/dhcpc.c: In function 'send_request':
+cust/tcpip/dhcpc.c:235: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+src/include/string.h:25: note: expected 'const char *' but argument is of type 'UCHAR *'
+cust/tcpip/dhcpc.c:235: warning: pointer targets in passing argument 3 of 'add_other_options' differ in signedness
+cust/tcpip/dhcpc.c:152: note: expected 'PCHAR' but argument is of type 'UCHAR *'
+cust/tcpip/dhcpc.c:235: warning: conversion to 'u8_t' from 'size_t' may alter its value
+cust/tcpip/dhcpc.c:238: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/dhcpc.c: In function 'parse_msg':
+cust/tcpip/dhcpc.c:289: warning: conversion to 'long unsigned int' from 'int' may change the sign of the result
+cust/tcpip/dhcpc.c: In function '_handle_dhcp':
+cust/tcpip/dhcpc.c:325: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/dhcpc.c:364: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/dhcpc.c: In function 'dhcpc_set_state':
+cust/tcpip/dhcpc.c:423: warning: conversion to 'char' from 'u8_t' may change the sign of the result
+cust/tcpip/dhcpc.c: In function 'ws_got_ip':
+cust/tcpip/dhcpc.c:452: warning: implicit declaration of function 'MT_WakeUp'
+cust/tcpip/dhcpc.c: In function 'ws_got_ip_fail':
+cust/tcpip/dhcpc.c:471: warning: implicit declaration of function 'setFlagVfyInit'
+Compiling cust/tcpip/dhcpd.c ...
+cust/tcpip/dhcpd.c:43: warning: negative integer implicitly converted to unsigned type
+cust/tcpip/dhcpd.c:44: warning: negative integer implicitly converted to unsigned type
+cust/tcpip/dhcpd.c: In function 'discover':
+cust/tcpip/dhcpd.c:161: warning: implicit declaration of function 'memcmp'
+cust/tcpip/dhcpd.c:251: warning: conversion to 'unsigned int' from 'int' may change the sign of the result
+cust/tcpip/dhcpd.c:251: warning: conversion to 'u16_t' from 'unsigned int' may alter its value
+cust/tcpip/dhcpd.c: In function 'request':
+cust/tcpip/dhcpd.c:384: warning: conversion to 'clock_time_t' from 'UINT32' may change the sign of the result
+cust/tcpip/dhcpd.c:394: warning: conversion to 'unsigned int' from 'int' may change the sign of the result
+cust/tcpip/dhcpd.c:394: warning: conversion to 'u16_t' from 'unsigned int' may alter its value
+cust/tcpip/dhcpd.c: In function 'dhcpd_init':
+cust/tcpip/dhcpd.c:451: warning: conversion to 'UINT32' from 'int' may change the sign of the result
+cust/tcpip/dhcpd.c:452: warning: conversion to 'UINT32' from 'int' may change the sign of the result
+cust/tcpip/dhcpd.c:461: warning: passing argument 1 of 'uip_udp_new' from incompatible pointer type
+src/tcpip/apps/app_api/../../uip/uip.h:795: note: expected 'u16_t (*)[2]' but argument is of type 'u16_t *'
+Compiling cust/tcpip/iot_tcp_app.c ...
+cust/tcpip/iot_tcp_app.c: In function 'iot_tcp_appcall':
+cust/tcpip/iot_tcp_app.c:52: warning: implicit declaration of function 'MT_GetLocalPortNum'
+cust/tcpip/iot_tcp_app.c:54: warning: implicit declaration of function 'MT_CloudAppCall'
+cust/tcpip/iot_tcp_app.c:57: warning: implicit declaration of function 'MT_GetLocalListenPortNum'
+cust/tcpip/iot_tcp_app.c:59: warning: implicit declaration of function 'MT_ClientAppCall'
+cust/tcpip/iot_tcp_app.c:49: warning: unused variable 's'
+Compiling cust/tcpip/iot_udp_app.c ...
+cust/tcpip/iot_udp_app.c: In function 'iot_udp_appcall':
+cust/tcpip/iot_udp_app.c:57: warning: implicit declaration of function 'handle_resolv'
+cust/tcpip/iot_udp_app.c:60: warning: implicit declaration of function 'MT_BroadcastAppCall'
+Compiling cust/tcpip/mt76xx_dev.c ...
+cust/tcpip/mt76xx_dev.c: In function 'mt76xx_dev_read':
+cust/tcpip/mt76xx_dev.c:35: warning: implicit declaration of function 'memcpy'
+cust/tcpip/mt76xx_dev.c: In function 'mt76xx_dev_send':
+cust/tcpip/mt76xx_dev.c:72: warning: implicit declaration of function 'STA_Legacy_Frame_Tx'
+Compiling cust/tcpip/resolv.c ...
+cust/tcpip/resolv.c: In function 'resolv_conf':
+cust/tcpip/resolv.c:426: warning: passing argument 1 of 'uip_udp_new' from incompatible pointer type
+src/tcpip/uip/uip.h:795: note: expected 'u16_t (*)[2]' but argument is of type 'u16_t *'
+Compiling cust/tcpip/sample_resolv_usage.c ...
+cust/tcpip/sample_resolv_usage.c: In function 'resolv_usage_init':
+cust/tcpip/sample_resolv_usage.c:36: warning: passing argument 1 of 'uip_udp_new' from incompatible pointer type
+src/tcpip/uip/uip.h:795: note: expected 'u16_t (*)[2]' but argument is of type 'u16_t *'
+cust/tcpip/sample_resolv_usage.c:36: warning: assignment from incompatible pointer type
+cust/tcpip/sample_resolv_usage.c: In function 'resolv_usage_sample':
+cust/tcpip/sample_resolv_usage.c:52: warning: 'return' with a value, in function returning void
+cust/tcpip/sample_resolv_usage.c: At top level:
+cust/tcpip/sample_resolv_usage.c:15: warning: 'dns_timer' defined but not used
+Compiling cust/tcpip/tcpip_main.c ...
+cust/tcpip/tcpip_main.c: In function '_tcpip_init':
+cust/tcpip/tcpip_main.c:136: warning: implicit declaration of function 'resolv_conf'
+cust/tcpip/tcpip_main.c:137: warning: implicit declaration of function 'resolv_query'
+cust/tcpip/tcpip_main.c: In function 'netif_rx':
+cust/tcpip/tcpip_main.c:167: warning: cast increases required alignment of target type
+cust/tcpip/tcpip_main.c:177: warning: cast increases required alignment of target type
+cust/tcpip/tcpip_main.c: In function 'tcpip_periodic_timer':
+cust/tcpip/tcpip_main.c:194: warning: implicit declaration of function 'MT_TimerExpired'
+cust/tcpip/tcpip_main.c: In function 'dhcpc_configured':
+cust/tcpip/tcpip_main.c:262: warning: cast discards qualifiers from pointer target type
+cust/tcpip/tcpip_main.c:262: warning: cast discards qualifiers from pointer target type
+cust/tcpip/tcpip_main.c:263: warning: cast discards qualifiers from pointer target type
+cust/tcpip/tcpip_main.c:263: warning: cast discards qualifiers from pointer target type
+cust/tcpip/tcpip_main.c:264: warning: cast discards qualifiers from pointer target type
+cust/tcpip/tcpip_main.c:264: warning: cast discards qualifiers from pointer target type
+cust/tcpip/tcpip_main.c: At top level:
+cust/tcpip/tcpip_main.c:56: warning: 'clk' defined but not used
+Compiling cust/tcpip/uip-neighbor.c ...
+cust/tcpip/uip-neighbor.c: In function 'uip_neighbor_add':
+cust/tcpip/uip-neighbor.c:102: warning: cast increases required alignment of target type
+cust/tcpip/uip-neighbor.c:102: warning: cast increases required alignment of target type
+Compiling cust/tcpip/uip-split.c ...
+cust/tcpip/uip-split.c: In function 'uip_split_output':
+cust/tcpip/uip-split.c:54: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:57: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip-split.c:67: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip-split.c:74: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:74: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip-split.c:75: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:75: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip-split.c:79: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:80: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:80: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip-split.c:84: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:85: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:85: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip-split.c:97: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip-split.c:104: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:104: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip-split.c:105: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:105: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip-split.c:111: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:112: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:113: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:114: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:115: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:118: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:119: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:119: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip-split.c:123: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:124: warning: cast increases required alignment of target type
+cust/tcpip/uip-split.c:124: warning: conversion to 'u16_t' from 'int' may alter its value
+Compiling cust/tcpip/uip.c ...
+cust/tcpip/uip.c: In function 'uip_add32':
+cust/tcpip/uip.c:251: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c:252: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c: In function 'chksum':
+cust/tcpip/uip.c:290: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:291: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:299: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:300: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c: In function 'uip_ipchksum':
+cust/tcpip/uip.c:324: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c: In function 'upper_layer_chksum':
+cust/tcpip/uip.c:337: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:337: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:337: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:343: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:345: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:351: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c: In function 'uip_init':
+cust/tcpip/uip.c:395: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c: In function '_uip_process':
+cust/tcpip/uip.c:770: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:775: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c:794: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:833: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:833: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:862: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:877: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:877: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:878: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:878: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:878: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:897: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:898: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:913: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:913: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:932: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:933: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:933: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:942: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:942: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:970: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:977: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:984: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1000: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1017: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1019: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1020: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1020: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1022: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1022: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1026: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1026: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1026: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1026: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1027: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1027: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1110: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1112: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1150: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1151: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1152: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:1152: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:1153: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:1153: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:1154: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1154: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1157: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1158: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1158: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1178: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:1178: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:1183: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1191: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1191: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip.c:1192: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1192: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip.c:1195: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1196: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1198: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1199: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1201: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1202: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1204: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1204: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1205: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1205: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1209: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:1209: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip.c:1215: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1215: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1216: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1217: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1244: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1245: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1246: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1246: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1255: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1259: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1271: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1277: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1279: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1282: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1283: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1283: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1284: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1286: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1287: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1287: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1288: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1290: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1291: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1291: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1292: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1294: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1295: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1295: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1296: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1301: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1302: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1303: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1304: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1310: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1311: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1311: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1312: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1315: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1315: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1315: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1315: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1316: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1316: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1360: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1361: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1362: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1362: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1372: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1373: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1374: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1375: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1379: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1380: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1392: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1394: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1406: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c:1414: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1417: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1425: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1426: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1427: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1428: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1430: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1441: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1450: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1450: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c:1454: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1460: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1461: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1462: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1463: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1464: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1465: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1474: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1477: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1478: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1479: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1480: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1491: warning: conversion to 'signed char' from 'int' may alter its value
+cust/tcpip/uip.c:1493: warning: conversion to 'signed char' from 'int' may alter its value
+cust/tcpip/uip.c:1494: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c:1496: warning: conversion to 'signed char' from 'int' may alter its value
+cust/tcpip/uip.c:1498: warning: conversion to 'signed char' from 'int' may alter its value
+cust/tcpip/uip.c:1499: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c:1500: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c:1545: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1548: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1549: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1561: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1563: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1575: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip.c:1580: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1581: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1582: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1583: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1612: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1616: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1626: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1632: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1646: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1646: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1647: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1647: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1647: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1673: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1673: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1673: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1704: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1713: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1757: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1759: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1767: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1789: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1815: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1843: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1847: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1853: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1854: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1855: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1856: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1858: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1859: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1860: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1861: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1863: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1865: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1866: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1868: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1868: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1869: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1869: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1874: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1874: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1876: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1877: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1881: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1888: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1888: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip.c:1889: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1889: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip.c:1892: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1892: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1895: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1896: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1896: warning: conversion to 'u16_t' from 'int' may alter its value
+cust/tcpip/uip.c:1905: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1906: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1907: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1907: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1909: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1909: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip.c:1910: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1910: warning: conversion to 'u8_t' from 'short unsigned int' may alter its value
+cust/tcpip/uip.c:1912: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1913: warning: cast increases required alignment of target type
+cust/tcpip/uip.c:1913: warning: conversion to 'u16_t' from 'int' may alter its value
+Compiling cust/tcpip/uip_arp.c ...
+cust/tcpip/uip_arp.c: In function 'uip_arp_update':
+cust/tcpip/uip_arp.c:207: warning: conversion to 'u8_t' from 'int' may alter its value
+cust/tcpip/uip_arp.c: In function 'uip_arp_arpin':
+cust/tcpip/uip_arp.c:289: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:293: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:293: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:298: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:298: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:301: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:303: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:303: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:304: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:305: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:306: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:306: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:308: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:308: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:309: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:309: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:310: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:311: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:313: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:320: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:320: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:321: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:321: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c: In function 'uip_arp_out':
+cust/tcpip/uip_arp.c:369: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:369: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip_arp.c:369: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:369: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip_arp.c:370: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:373: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:373: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:380: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:380: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:394: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:395: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:396: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:397: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:399: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:399: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:400: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:400: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:401: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:402: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:403: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:404: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:405: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:406: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:415: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:417: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:419: warning: cast increases required alignment of target type
+cust/tcpip/uip_arp.c:421: warning: conversion to 'u16_t' from 'unsigned int' may alter its value
+cust/tcpip/uip_arp.c: In function 'uip_get_DestMAC':
+cust/tcpip/uip_arp.c:431: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip_arp.c:431: warning: cast discards qualifiers from pointer target type
+cust/tcpip/uip_arp.c:432: warning: return discards qualifiers from pointer target type
+Compiling cust/tcpip/uip_timer.c ...
+Compiling cust/tcpip/uiplib.c ...
+cust/tcpip/uiplib.c: In function 'uiplib_ipaddrconv':
+cust/tcpip/uiplib.c:64: warning: conversion to 'unsigned char' from 'int' may alter its value
+Compiling cust/wifi_task_pub.c ...
+cust/wifi_task_pub.c: In function 'wifi_rx_proc':
+cust/wifi_task_pub.c:91: warning: implicit declaration of function 'GetQueueInfo'
+cust/wifi_task_pub.c:91: warning: assignment makes pointer from integer without a cast
+cust/wifi_task_pub.c:105: warning: implicit declaration of function 'STARxDoneInterruptHandle'
+cust/wifi_task_pub.c: In function 'wifiTASK_LowPrioTask':
+cust/wifi_task_pub.c:132: warning: implicit declaration of function 'sysTASK_DeassertSignal'
+cust/wifi_task_pub.c:145: warning: implicit declaration of function 'handle_FCE_interrupt'
+cust/wifi_task_pub.c:148: warning: implicit declaration of function 'CaliPeriodExec'
+cust/wifi_task_pub.c:203: warning: implicit declaration of function 'wifi_state_machine'
+cust/wifi_task_pub.c:212: warning: implicit declaration of function 'GetMsTimer'
+cust/wifi_task_pub.c:212: warning: conversion to 'UINT32' from 'int' may change the sign of the result
+cust/wifi_task_pub.c:229: warning: implicit declaration of function 'GetFceIntStat'
+cust/wifi_task_pub.c:230: warning: implicit declaration of function 'sysTASK_AssertSignal'
+cust/wifi_task_pub.c: At top level:
+cust/wifi_task_pub.c:283: warning: conflicting types for 'wifi_state_machine'
+cust/wifi_task_pub.c:203: note: previous implicit declaration of 'wifi_state_machine' was here
+cust/wifi_task_pub.c: In function 'wifi_state_machine':
+cust/wifi_task_pub.c:291: warning: implicit declaration of function 'ws_init'
+cust/wifi_task_pub.c:296: warning: implicit declaration of function 'ws_smt_conn'
+cust/wifi_task_pub.c:302: warning: implicit declaration of function 'ws_scan'
+cust/wifi_task_pub.c:307: warning: implicit declaration of function 'ws_auth'
+cust/wifi_task_pub.c:312: warning: implicit declaration of function 'ws_assoc'
+cust/wifi_task_pub.c:317: warning: implicit declaration of function 'ws_4way'
+cust/wifi_task_pub.c:322: warning: implicit declaration of function 'ws_connected'
+cust/wifi_task_pub.c: At top level:
+cust/wifi_task_pub.c:354: warning: conflicting types for 'ws_init'
+cust/wifi_task_pub.c:291: note: previous implicit declaration of 'ws_init' was here
+cust/wifi_task_pub.c: In function 'ws_init':
+cust/wifi_task_pub.c:360: warning: implicit declaration of function 'memset'
+cust/wifi_task_pub.c:414: warning: implicit declaration of function 'wifi_state_chg'
+cust/wifi_task_pub.c:418: warning: implicit declaration of function 'ws_goto_smnt'
+cust/wifi_task_pub.c: At top level:
+cust/wifi_task_pub.c:433: warning: conflicting types for 'ws_smt_conn'
+cust/wifi_task_pub.c:296: note: previous implicit declaration of 'ws_smt_conn' was here
+cust/wifi_task_pub.c: In function 'ws_smt_conn':
+cust/wifi_task_pub.c:440: warning: implicit declaration of function 'SMTCN_process'
+cust/wifi_task_pub.c: At top level:
+cust/wifi_task_pub.c:458: warning: conflicting types for 'ws_goto_smnt'
+cust/wifi_task_pub.c:418: note: previous implicit declaration of 'ws_goto_smnt' was here
+cust/wifi_task_pub.c:481: warning: conflicting types for 'ws_4way'
+cust/wifi_task_pub.c:317: note: previous implicit declaration of 'ws_4way' was here
+cust/wifi_task_pub.c:498: warning: conflicting types for 'ws_connected'
+cust/wifi_task_pub.c:322: note: previous implicit declaration of 'ws_connected' was here
+cust/wifi_task_pub.c: In function 'load_sta_cfg':
+cust/wifi_task_pub.c:517: warning: implicit declaration of function 'spi_flash_read'
+cust/wifi_task_pub.c:523: warning: implicit declaration of function 'memcpy'
+cust/wifi_task_pub.c: In function 'store_sta_cfg':
+cust/wifi_task_pub.c:603: warning: implicit declaration of function 'spi_flash_write'
+Linking out/sta/MT7681_sta.elf ...
+Making out/sta/MT7681_sta_old.bin ...
+Making out/sta/MT7681_sta_ram.bin ...
+Making out/sta/MT7681_sta_xip.bin ...
+Making out/sta/MT7681_sta_overlay.bin ...

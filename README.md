@@ -7,3 +7,9 @@
 1.1 AbleCloud MTK7681代码版本入库
 ##2.AC_MTK7681_v1.0.01_20150827
 使用wifi sdk开发和使用外部mcu开发工程合并
+##3.AC_MTK7681_v1.0.02_20151116
+1.移除makefile -g选项
+
+2.移除makefile MT7681_POWER_SAVING
+
+3.优化代码空间

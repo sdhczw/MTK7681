@@ -488,6 +488,7 @@ void MT_Init()
     g_struMt7681Adapter.pfunFree = free;
     g_u16TcpMss = UIP_TCP_MSS;
     PCT_Init(&g_struMt7681Adapter);
+    MT_ReadDataFromFlash();
     ZC_Printf("MT Init\n");
 }
 
