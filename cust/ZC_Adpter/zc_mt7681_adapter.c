@@ -24,7 +24,6 @@ extern PTC_ProtocolCon  g_struProtocolController;
 PTC_ModuleAdapter g_struMt7681Adapter;
 
 MSG_Buffer g_struRecvBuffer;
-MSG_Buffer g_struRetxBuffer;
 MSG_Buffer g_struClientBuffer;
 
 
@@ -75,7 +74,7 @@ int rand()
 void MT_WriteDataToFlash(u8 *pu8Data, u16 u16Len)
 {
    memcpy(&IoTpAd.UsrCfg,pu8Data,u16Len);
-   memcpy(&Usr_Cfg, &IoTpAd.UsrCfg, sizeof(IOT_USR_CFG));            
+   memcpy(&Usr_Cfg, &IoTpAd.UsrCfg, u16Len);            
    reset_usr_cfg(TRUE);
 }
 
@@ -87,19 +86,12 @@ void MT_WriteDataToFlash(u8 *pu8Data, u16 u16Len)
 * Parameter: 
 * History:
 *************************************************/
-void MT_ReadDataFromFlash()
+void MT_ReadDataFromFlash(u8 *pu8Data, u16 u16Len)
 {
 
 	load_usr_cfg();
-
-    if (ZC_MAGIC_FLAG == *((u32*)IoTpAd.UsrCfg.ConfigInfor))
-    {   
-        memcpy((char *)(&g_struZcConfigDb), &IoTpAd.UsrCfg, sizeof(ZC_ConfigDB));
-    }
-    else
-    {
-        ZC_Printf("no para, use default\n");
-    }
+  
+    memcpy((char *)(pu8Data), &IoTpAd.UsrCfg, u16Len);
 }
 
 /*************************************************
@@ -211,6 +203,19 @@ u32 MT_SendDataToMoudle(u8 *pu8Data, u16 u16DataLen)
 }
 
 /*************************************************
+* Function: MT_SendDataToMoudle
+* Description: 
+* Author: cxy 
+* Returns: 
+* Parameter: 
+* History:
+*************************************************/
+void AC_UartSend(u8* inBuf, u32 datalen)
+{
+    IoT_uart_output(inBuf, datalen);
+}
+
+/*************************************************
 * Function: MT_FirmwareUpdateFinish
 * Description: 
 * Author: cxy 
@@ -298,8 +303,6 @@ u32 MT_FirmwareUpdate(u8 *pu8FileData, u32 u32Offset, u32 u32DataLen)
 *************************************************/
 void MT_Rest()
 {
-    g_struZcConfigDb.struSwitchInfo.u32ServerAddrConfig = 0;            
-    MT_WriteDataToFlash((u8 *)&g_struZcConfigDb, sizeof(ZC_ConfigDB));
     pIoTMlme->ATSetSmnt = TRUE;
     wifi_state_chg(WIFI_STATE_INIT, 0);                 
 }
@@ -319,6 +322,7 @@ void MT_SendData(u32 u32Fd, u8 *pu8Data, u16 u16DataLen, ZC_SendParam *pstruPara
     }
     else
     {
+        memcpy(g_u8MsgBuildBuffer,pu8Data,u16DataLen);
         uip_poll_conn(&uip_conns[u32Fd]);
 
         if (uip_len > 0) 
@@ -480,6 +484,8 @@ void MT_Init()
     g_struMt7681Adapter.pfunSetTimer = MT_SetTimer;  
     g_struMt7681Adapter.pfunStopTimer = MT_StopTimer;
     g_struMt7681Adapter.pfunWriteFlash = MT_WriteDataToFlash;
+    g_struMt7681Adapter.pfunReadFlash = MT_ReadDataFromFlash;
+
     g_struMt7681Adapter.pfunGetMac = MT_GetMac;
 
     g_struMt7681Adapter.pfunReboot = Sys_reboot;
@@ -488,7 +494,6 @@ void MT_Init()
     g_struMt7681Adapter.pfunFree = free;
     g_u16TcpMss = UIP_TCP_MSS;
     PCT_Init(&g_struMt7681Adapter);
-    MT_ReadDataFromFlash();
     ZC_Printf("MT Init\n");
 }
 

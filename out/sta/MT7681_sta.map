@@ -64,7 +64,7 @@ Common symbol       size              file
 g_struClientBuffer  0x260             obj/sta/ZC_Adpter/zc_mt7681_adapter.o
 udp_app_state       0x10              obj/sta/tcpip/iot_udp_app.o
 g_struProtocolController
-                    0x8c              obj/sta/ZC/src/zc/zc_protocol_controller.o
+                    0x88              obj/sta/ZC/src/zc/zc_protocol_controller.o
 T2                  0x58              obj/sta/ZC/src/tropicssl/rsa.o
 g_struMtTimer       0x50              obj/sta/ZC_Adpter/zc_mt7681_adapter.o
 arp_timer           0x8               obj/sta/tcpip/tcpip_main.o
@@ -83,10 +83,10 @@ g_struRecvBuffer    0x260             obj/sta/ZC_Adpter/zc_mt7681_adapter.o
 T                   0x58              obj/sta/ZC/src/tropicssl/rsa.o
 Free_Timer_List     0x10              .\libandessta.a(timer.o)
 O_RR                0x58              obj/sta/ZC/src/tropicssl/bignum.o
-IoTpAd              0x255             obj/sta/iot_custom.o
+IoTpAd              0x291             obj/sta/iot_custom.o
 O_T                 0x58              obj/sta/ZC/src/tropicssl/bignum.o
 g_struMt7681Adapter
-                    0x40              obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                    0x44              obj/sta/ZC_Adpter/zc_mt7681_adapter.o
 g_u8MsgBuildBuffer  0x258             obj/sta/ZC_Adpter/zc_mt7681_adapter.o
 g_struSendQueue     0x28              obj/sta/ZC_Adpter/zc_mt7681_adapter.o
 AdvPSMode           0x14              .\libandessta.a(wifi_ps.o)
@@ -98,13 +98,12 @@ gFreeQueue1         0x10              .\libandessta.a(queue.o)
 rRootTimer          0x14              .\libandessta.a(cnm_timer.o)
 T1                  0x58              obj/sta/ZC/src/tropicssl/rsa.o
 UARTPort            0x118             obj/sta/iot_uart_rb.o
-g_struRetxBuffer    0x260             obj/sta/ZC_Adpter/zc_mt7681_adapter.o
 g_struSendBuffer    0x720             obj/sta/ZC_Adpter/zc_mt7681_adapter.o
 UARTTxBuf           0x40              obj/sta/iot_uart_rb.o
 O_T2                0x58              obj/sta/ZC/src/tropicssl/bignum.o
 pAd                 0x5f0             .\libandessta.a(app_nos_main.o)
 g_u8DevMsgBuildBuffer
-                    0x12c             obj/sta/AC/src/ac_api.o
+                    0x200             obj/sta/AC/src/ac_hal.o
 Z                   0x58              obj/sta/ZC/src/tropicssl/bignum.o
 uip_listenports     0x8               obj/sta/tcpip/uip.o
 buf                 0x40              obj/sta/ZC/src/tropicssl/rsa.o
@@ -113,7 +112,7 @@ uart_rb_addr        0xe4              obj/sta/iot_uart_rb.o
 g_struRegisterInfo  0x8c              obj/sta/ZC/src/zc/zc_configuration.o
 uip_netmask         0x4               obj/sta/tcpip/uip.o
 uip_hostaddr        0x4               obj/sta/tcpip/uip.o
-g_struZcConfigDb    0x130             obj/sta/ZC/src/zc/zc_configuration.o
+g_struZcConfigDb    0x134             obj/sta/ZC/src/zc/zc_configuration.o
 cli_timer           0x8               obj/sta/tcpip/tcpip_main.o
 uip_buf             0x25a             obj/sta/tcpip/uip.o
 uip_sourceAddr      0x6               obj/sta/tcpip/uip_arp.o
@@ -165,27 +164,50 @@ Discarded input sections
  .text          0x00000000        0x0 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
  .data          0x00000000        0x0 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
  .bss           0x00000000        0x0 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
- .text.MT_ReadDataFromFlash
-                0x00000000        0x0 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
  .bss.g_u8UseWifiDevFlag
                 0x00000000        0x0 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
  .text          0x00000000        0x0 obj/sta/AC/src/ac_api.o
  .data          0x00000000        0x0 obj/sta/AC/src/ac_api.o
  .bss           0x00000000        0x0 obj/sta/AC/src/ac_api.o
- .text.AC_SendRestMsg
-                0x00000000        0x0 obj/sta/AC/src/ac_api.o
  .text.AC_SendDeviceStart
                 0x00000000        0x0 obj/sta/AC/src/ac_api.o
  .text          0x00000000        0x0 obj/sta/AC/src/ac_hal.o
  .data          0x00000000        0x0 obj/sta/AC/src/ac_hal.o
  .bss           0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .text.AC_StoreStatus
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
  .text.AC_BlinkLed
                 0x00000000        0x0 obj/sta/AC/src/ac_hal.o
  .text.AC_GetStoreStatus
                 0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .text.AC_DealLed
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
  .text.AC_SendLedStatus2Server
                 0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .rodata.str1.4
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .text.AC_ConfigWifi
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .text.AC_Init  0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .text.AC_UartRecv
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .bss.g_u32CloudStatus
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .bss.g_u32WifiPowerStatus
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .bss.g_u8EqVersion
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .data.g_u8ModuleKey
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .data.g_u64Domain
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
  .data.g_u8DeviceId
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .bss.g_CurType
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .bss.g_u8RecvDataLen
+                0x00000000        0x0 obj/sta/AC/src/ac_hal.o
+ .bss.g_u8CurPktLen
                 0x00000000        0x0 obj/sta/AC/src/ac_hal.o
  .text          0x00000000        0x0 obj/sta/ZC/src/tropicssl/bignum.o
  .data          0x00000000        0x0 obj/sta/ZC/src/tropicssl/bignum.o
@@ -245,7 +267,7 @@ Discarded input sections
                 0x00000000        0x0 obj/sta/ZC/src/zc/zc_moudle_manager.o
  .text.ZC_Moudlefunc
                 0x00000000        0x0 obj/sta/ZC/src/zc/zc_moudle_manager.o
- .rodata.C.9.1969
+ .rodata.C.9.1973
                 0x00000000        0x0 obj/sta/ZC/src/zc/zc_moudle_manager.o
  .text          0x00000000        0x0 obj/sta/ZC/src/zc/zc_protocol_controller.o
  .data          0x00000000        0x0 obj/sta/ZC/src/zc/zc_protocol_controller.o
@@ -1051,7 +1073,7 @@ Linker script and memory map
                 0x00000040                . = ALIGN (0x10)
                 0x00000040                TEXT_SECT_VMA = .
 
-.TEXT           0x00000040     0x5e08
+.TEXT           0x00000040     0x5e48
  *(.Xcpt)
  .Xcpt          0x00000040        0x8 cust/ctxsw.o
                 0x00000040                sysXcpt
@@ -1131,1327 +1153,1312 @@ Linker script and memory map
                 0x00000634       0x3c obj/sta/iot_uart_rb.o
                 0x00000634                UART_GetByte
  .text.UART_Rx_Cb
-                0x00000670      0x2c4 obj/sta/iot_uart_rb.o
+                0x00000670      0x30c obj/sta/iot_uart_rb.o
                 0x00000670                UART_Rx_Cb
  .text.UART_PutBytes
-                0x00000934       0xe8 obj/sta/iot_uart_rb.o
-                0x00000934                UART_PutBytes
+                0x0000097c       0xe8 obj/sta/iot_uart_rb.o
+                0x0000097c                UART_PutBytes
  .text.setFlagVfyInit
-                0x00000a1c       0x10 obj/sta/wifi_task_pub.o
-                0x00000a1c                setFlagVfyInit
+                0x00000a64       0x10 obj/sta/wifi_task_pub.o
+                0x00000a64                setFlagVfyInit
  .text.ws_goto_smnt
-                0x00000a2c       0x34 obj/sta/wifi_task_pub.o
-                0x00000a2c                ws_goto_smnt
- .text.ws_init  0x00000a60       0x78 obj/sta/wifi_task_pub.o
-                0x00000a60                ws_init
+                0x00000a74       0x34 obj/sta/wifi_task_pub.o
+                0x00000a74                ws_goto_smnt
+ .text.ws_init  0x00000aa8       0x78 obj/sta/wifi_task_pub.o
+                0x00000aa8                ws_init
  .text.ws_smt_conn
-                0x00000ad8       0x2c obj/sta/wifi_task_pub.o
-                0x00000ad8                ws_smt_conn
+                0x00000b20       0x2c obj/sta/wifi_task_pub.o
+                0x00000b20                ws_smt_conn
  .text.wifi_state_machine
-                0x00000b04       0xa0 obj/sta/wifi_task_pub.o
-                0x00000b04                wifi_state_machine
+                0x00000b4c       0xa0 obj/sta/wifi_task_pub.o
+                0x00000b4c                wifi_state_machine
  .text.wifi_rx_proc
-                0x00000ba4       0x58 obj/sta/wifi_task_pub.o
-                0x00000ba4                wifi_rx_proc
+                0x00000bec       0x58 obj/sta/wifi_task_pub.o
+                0x00000bec                wifi_rx_proc
  .text.wifiTASK_LowPrioTask
-                0x00000bfc       0x9c obj/sta/wifi_task_pub.o
-                0x00000bfc                wifiTASK_LowPrioTask
+                0x00000c44       0x9c obj/sta/wifi_task_pub.o
+                0x00000c44                wifiTASK_LowPrioTask
  .text.AES_CBC_Decrypt
-                0x00000c98       0xd0 obj/sta/iot_aes_pub.o
-                0x00000c98                AES_CBC_Decrypt
+                0x00000ce0       0xd0 obj/sta/iot_aes_pub.o
+                0x00000ce0                AES_CBC_Decrypt
  .text.AES_CBC_Encrypt
-                0x00000d68      0x208 obj/sta/iot_aes_pub.o
-                0x00000d68                AES_CBC_Encrypt
- .text.strchr   0x00000f70       0x20 obj/sta/iot_at_cmd_utility.o
-                0x00000f70                strchr
+                0x00000db0      0x208 obj/sta/iot_aes_pub.o
+                0x00000db0                AES_CBC_Encrypt
+ .text.strchr   0x00000fb8       0x20 obj/sta/iot_at_cmd_utility.o
+                0x00000fb8                strchr
  .text.split_string_cmd
-                0x00000f90       0x60 obj/sta/iot_at_cmd_utility.o
-                0x00000f90                split_string_cmd
- .text.getopt   0x00000ff0      0x160 obj/sta/iot_at_cmd_utility.o
-                0x00000ff0                getopt
+                0x00000fd8       0x60 obj/sta/iot_at_cmd_utility.o
+                0x00000fd8                split_string_cmd
+ .text.getopt   0x00001038      0x160 obj/sta/iot_at_cmd_utility.o
+                0x00001038                getopt
  .text.crc_cal_by_bit2
-                0x00001150       0x48 obj/sta/iot_xmodem.o
-                0x00001150                crc_cal_by_bit2
+                0x00001198       0x48 obj/sta/iot_xmodem.o
+                0x00001198                crc_cal_by_bit2
  .text.crc16_ccitt
-                0x00001198       0x1c obj/sta/iot_xmodem.o
-                0x00001198                crc16_ccitt
- .text.check    0x000011b4       0x54 obj/sta/iot_xmodem.o
+                0x000011e0       0x1c obj/sta/iot_xmodem.o
+                0x000011e0                crc16_ccitt
+ .text.check    0x000011fc       0x54 obj/sta/iot_xmodem.o
  .text.port_inbyte
-                0x00001208       0x54 obj/sta/iot_xmodem.o
-                0x00001208                port_inbyte
+                0x00001250       0x54 obj/sta/iot_xmodem.o
+                0x00001250                port_inbyte
  .text.port_outbyte
-                0x0000125c       0x1c obj/sta/iot_xmodem.o
-                0x0000125c                port_outbyte
+                0x000012a4       0x1c obj/sta/iot_xmodem.o
+                0x000012a4                port_outbyte
  .text.IoT_Xmodem_Update_FW
-                0x00001278      0x2f4 obj/sta/iot_xmodem.o
-                0x00001278                IoT_Xmodem_Update_FW
- .text.main     0x0000156c       0x84 obj/sta/main_pub.o
-                0x0000156c                main
+                0x000012c0      0x2f4 obj/sta/iot_xmodem.o
+                0x000012c0                IoT_Xmodem_Update_FW
+ .text.main     0x000015b4       0x84 obj/sta/main_pub.o
+                0x000015b4                main
  .text.DelayTick
-                0x000015f0        0xc obj/sta/misc_pub.o
-                0x000015f0                DelayTick
+                0x00001638        0xc obj/sta/misc_pub.o
+                0x00001638                DelayTick
  .text.usecDelay
-                0x000015fc       0x4c obj/sta/misc_pub.o
-                0x000015fc                usecDelay
+                0x00001644       0x4c obj/sta/misc_pub.o
+                0x00001644                usecDelay
  .text.msecDelay
-                0x00001648       0x54 obj/sta/misc_pub.o
-                0x00001648                msecDelay
+                0x00001690       0x54 obj/sta/misc_pub.o
+                0x00001690                msecDelay
  .text.RxFsIntFilterOut
-                0x0000169c       0x58 obj/sta/rtmp_data_pub.o
-                0x0000169c                RxFsIntFilterOut
+                0x000016e4       0x58 obj/sta/rtmp_data_pub.o
+                0x000016e4                RxFsIntFilterOut
  .text.STAHandleRxDataFrame
-                0x000016f4       0xcc obj/sta/rtmp_data_pub.o
-                0x000016f4                STAHandleRxDataFrame
+                0x0000173c       0xcc obj/sta/rtmp_data_pub.o
+                0x0000173c                STAHandleRxDataFrame
  .text.BeaconTimeoutAction
-                0x000017c0       0x1c obj/sta/rtmp_data_pub.o
-                0x000017c0                BeaconTimeoutAction
+                0x00001808       0x1c obj/sta/rtmp_data_pub.o
+                0x00001808                BeaconTimeoutAction
  .text.RestartBCNTimer
-                0x000017dc       0x34 obj/sta/rtmp_data_pub.o
-                0x000017dc                RestartBCNTimer
+                0x00001824       0x34 obj/sta/rtmp_data_pub.o
+                0x00001824                RestartBCNTimer
  .text.STAHandleRxMgmtFrame
-                0x00001810       0xf4 obj/sta/rtmp_data_pub.o
-                0x00001810                STAHandleRxMgmtFrame
+                0x00001858       0xf4 obj/sta/rtmp_data_pub.o
+                0x00001858                STAHandleRxMgmtFrame
  .text.STARxDoneInterruptHandle
-                0x00001904       0xe0 obj/sta/rtmp_data_pub.o
-                0x00001904                STARxDoneInterruptHandle
- .text.reflect  0x000019e4       0x34 obj/sta/spi-flash_pub.o
-                0x000019e4                reflect
- .text.crc32    0x00001a18       0x68 obj/sta/spi-flash_pub.o
-                0x00001a18                crc32
+                0x0000194c       0xe0 obj/sta/rtmp_data_pub.o
+                0x0000194c                STARxDoneInterruptHandle
+ .text.reflect  0x00001a2c       0x34 obj/sta/spi-flash_pub.o
+                0x00001a2c                reflect
+ .text.crc32    0x00001a60       0x68 obj/sta/spi-flash_pub.o
+                0x00001a60                crc32
  .text.spi_flash_update_fw_done
-                0x00001a80       0x24 obj/sta/spi-flash_pub.o
-                0x00001a80                spi_flash_update_fw_done
+                0x00001ac8       0x24 obj/sta/spi-flash_pub.o
+                0x00001ac8                spi_flash_update_fw_done
  .text.spi_flash_page_write
-                0x00001aa4       0x88 obj/sta/spi-flash_pub.o
+                0x00001aec       0x88 obj/sta/spi-flash_pub.o
  .text.spi_flash_write_func
-                0x00001b2c       0x94 obj/sta/spi-flash_pub.o
-                0x00001b2c                spi_flash_write_func
+                0x00001b74       0x94 obj/sta/spi-flash_pub.o
+                0x00001b74                spi_flash_write_func
  .text.spi_flash_erase_SE
-                0x00001bc0       0x6c obj/sta/spi-flash_pub.o
-                0x00001bc0                spi_flash_erase_SE
+                0x00001c08       0x6c obj/sta/spi-flash_pub.o
+                0x00001c08                spi_flash_erase_SE
  .text.spi_flash_write
-                0x00001c2c      0x198 obj/sta/spi-flash_pub.o
-                0x00001c2c                spi_flash_write
+                0x00001c74      0x198 obj/sta/spi-flash_pub.o
+                0x00001c74                spi_flash_write
  .text.spi_flash_CopyApToSta
-                0x00001dc4      0x19c obj/sta/spi-flash_pub.o
-                0x00001dc4                spi_flash_CopyApToSta
+                0x00001e0c      0x194 obj/sta/spi-flash_pub.o
+                0x00001e0c                spi_flash_CopyApToSta
  .text.spi_flash_update_fw
-                0x00001f60      0x100 obj/sta/spi-flash_pub.o
-                0x00001f60                spi_flash_update_fw
+                0x00001fa0      0x100 obj/sta/spi-flash_pub.o
+                0x00001fa0                spi_flash_update_fw
  .text.clock_time
-                0x00002060       0x24 obj/sta/tcpip/clock-arch.o
-                0x00002060                clock_time
+                0x000020a0       0x24 obj/sta/tcpip/clock-arch.o
+                0x000020a0                clock_time
  .text.dhcpc_set_state
-                0x00002084        0xc obj/sta/tcpip/dhcpc.o
-                0x00002084                dhcpc_set_state
+                0x000020c4        0xc obj/sta/tcpip/dhcpc.o
+                0x000020c4                dhcpc_set_state
  .text.handle_dhcp
-                0x00002090       0x34 obj/sta/tcpip/dhcpc.o
-                0x00002090                handle_dhcp
+                0x000020d0       0x34 obj/sta/tcpip/dhcpc.o
+                0x000020d0                handle_dhcp
  .text.iot_tcp_app_init
-                0x000020c4        0x4 obj/sta/tcpip/iot_tcp_app.o
-                0x000020c4                iot_tcp_app_init
+                0x00002104        0x4 obj/sta/tcpip/iot_tcp_app.o
+                0x00002104                iot_tcp_app_init
  .text.iot_tcp_appcall
-                0x000020c8       0x54 obj/sta/tcpip/iot_tcp_app.o
-                0x000020c8                iot_tcp_appcall
+                0x00002108       0x54 obj/sta/tcpip/iot_tcp_app.o
+                0x00002108                iot_tcp_appcall
  .text.iot_udp_appcall
-                0x0000211c       0x6c obj/sta/tcpip/iot_udp_app.o
-                0x0000211c                iot_udp_appcall
+                0x0000215c       0x6c obj/sta/tcpip/iot_udp_app.o
+                0x0000215c                iot_udp_appcall
  .text.iot_udp_app_init
-                0x00002188       0x2c obj/sta/tcpip/iot_udp_app.o
-                0x00002188                iot_udp_app_init
+                0x000021c8       0x2c obj/sta/tcpip/iot_udp_app.o
+                0x000021c8                iot_udp_app_init
  .text.mt76xx_dev_init
-                0x000021b4        0x4 obj/sta/tcpip/mt76xx_dev.o
-                0x000021b4                mt76xx_dev_init
+                0x000021f4        0x4 obj/sta/tcpip/mt76xx_dev.o
+                0x000021f4                mt76xx_dev_init
  .text.mt76xx_dev_read
-                0x000021b8       0x2c obj/sta/tcpip/mt76xx_dev.o
-                0x000021b8                mt76xx_dev_read
+                0x000021f8       0x2c obj/sta/tcpip/mt76xx_dev.o
+                0x000021f8                mt76xx_dev_read
  .text.mt76xx_dev_send
-                0x000021e4       0x60 obj/sta/tcpip/mt76xx_dev.o
-                0x000021e4                mt76xx_dev_send
+                0x00002224       0x60 obj/sta/tcpip/mt76xx_dev.o
+                0x00002224                mt76xx_dev_send
  .text.resolv_usage_init
-                0x00002244       0x30 obj/sta/tcpip/sample_resolv_usage.o
-                0x00002244                resolv_usage_init
+                0x00002284       0x30 obj/sta/tcpip/sample_resolv_usage.o
+                0x00002284                resolv_usage_init
  .text.resolv_found
-                0x00002274       0x2c obj/sta/tcpip/sample_resolv_usage.o
-                0x00002274                resolv_found
+                0x000022b4       0x2c obj/sta/tcpip/sample_resolv_usage.o
+                0x000022b4                resolv_found
  .text.dhcpc_configured
-                0x000022a0       0x70 obj/sta/tcpip/tcpip_main.o
-                0x000022a0                dhcpc_configured
+                0x000022e0       0x70 obj/sta/tcpip/tcpip_main.o
+                0x000022e0                dhcpc_configured
  .text.tcpip_periodic_timer
-                0x00002310      0x108 obj/sta/tcpip/tcpip_main.o
-                0x00002310                tcpip_periodic_timer
+                0x00002350      0x108 obj/sta/tcpip/tcpip_main.o
+                0x00002350                tcpip_periodic_timer
  .text.netif_rx
-                0x00002418       0xb0 obj/sta/tcpip/tcpip_main.o
-                0x00002418                netif_rx
+                0x00002458       0xb0 obj/sta/tcpip/tcpip_main.o
+                0x00002458                netif_rx
  .text.tcpip_init
-                0x000024c8       0x38 obj/sta/tcpip/tcpip_main.o
-                0x000024c8                tcpip_init
+                0x00002508       0x38 obj/sta/tcpip/tcpip_main.o
+                0x00002508                tcpip_init
  .text.uip_add32
-                0x00002500       0x5c obj/sta/tcpip/uip.o
-                0x00002500                uip_add32
- .text.chksum   0x0000255c       0x40 obj/sta/tcpip/uip.o
+                0x00002540       0x5c obj/sta/tcpip/uip.o
+                0x00002540                uip_add32
+ .text.chksum   0x0000259c       0x40 obj/sta/tcpip/uip.o
  .text.uip_ipchksum
-                0x0000259c       0x3c obj/sta/tcpip/uip.o
-                0x0000259c                uip_ipchksum
+                0x000025dc       0x3c obj/sta/tcpip/uip.o
+                0x000025dc                uip_ipchksum
  .text.upper_layer_chksum
-                0x000025d8       0x5c obj/sta/tcpip/uip.o
+                0x00002618       0x5c obj/sta/tcpip/uip.o
  .text.uip_tcpchksum
-                0x00002634       0x1c obj/sta/tcpip/uip.o
-                0x00002634                uip_tcpchksum
+                0x00002674       0x1c obj/sta/tcpip/uip.o
+                0x00002674                uip_tcpchksum
  .text.uip_udpchksum
-                0x00002650       0x1c obj/sta/tcpip/uip.o
-                0x00002650                uip_udpchksum
+                0x00002690       0x1c obj/sta/tcpip/uip.o
+                0x00002690                uip_udpchksum
  .text.uip_add_rcv_nxt
-                0x0000266c       0x4c obj/sta/tcpip/uip.o
- .text.htons    0x000026b8       0x14 obj/sta/tcpip/uip.o
-                0x000026b8                htons
+                0x000026ac       0x4c obj/sta/tcpip/uip.o
+ .text.htons    0x000026f8       0x14 obj/sta/tcpip/uip.o
+                0x000026f8                htons
  .text.uip_process
-                0x000026cc       0x34 obj/sta/tcpip/uip.o
-                0x000026cc                uip_process
+                0x0000270c       0x34 obj/sta/tcpip/uip.o
+                0x0000270c                uip_process
  .text.uip_arp_update
-                0x00002700      0x12c obj/sta/tcpip/uip_arp.o
+                0x00002740      0x12c obj/sta/tcpip/uip_arp.o
  .text.uip_arp_arpin
-                0x0000282c      0x10c obj/sta/tcpip/uip_arp.o
-                0x0000282c                uip_arp_arpin
+                0x0000286c      0x10c obj/sta/tcpip/uip_arp.o
+                0x0000286c                uip_arp_arpin
  .text.uip_arp_out
-                0x00002938      0x20c obj/sta/tcpip/uip_arp.o
-                0x00002938                uip_arp_out
+                0x00002978      0x20c obj/sta/tcpip/uip_arp.o
+                0x00002978                uip_arp_out
  .text.uip_arp_timer
-                0x00002b44       0x74 obj/sta/tcpip/uip_arp.o
-                0x00002b44                uip_arp_timer
+                0x00002b84       0x74 obj/sta/tcpip/uip_arp.o
+                0x00002b84                uip_arp_timer
  .text.timer_reset
-                0x00002bb8        0xc obj/sta/tcpip/uip_timer.o
-                0x00002bb8                timer_reset
+                0x00002bf8        0xc obj/sta/tcpip/uip_timer.o
+                0x00002bf8                timer_reset
  .text.timer_expired
-                0x00002bc4       0x24 obj/sta/tcpip/uip_timer.o
-                0x00002bc4                timer_expired
+                0x00002c04       0x24 obj/sta/tcpip/uip_timer.o
+                0x00002c04                timer_expired
  .text.timer_set
-                0x00002be8       0x1c obj/sta/tcpip/uip_timer.o
-                0x00002be8                timer_set
+                0x00002c28       0x1c obj/sta/tcpip/uip_timer.o
+                0x00002c28                timer_set
  .text.overlayunload
-                0x00002c04       0x7c .\libandessta.a(xip_ovly.o)
-                0x00002c04                overlayunload
+                0x00002c44       0x7c .\libandessta.a(xip_ovly.o)
+                0x00002c44                overlayunload
  .text.overlaycopy
-                0x00002c80       0x18 .\libandessta.a(xip_ovly.o)
-                0x00002c80                overlaycopy
+                0x00002cc0       0x18 .\libandessta.a(xip_ovly.o)
+                0x00002cc0                overlaycopy
  .text.overlayload
-                0x00002c98       0xc8 .\libandessta.a(xip_ovly.o)
-                0x00002c98                overlayload
+                0x00002cd8       0xc8 .\libandessta.a(xip_ovly.o)
+                0x00002cd8                overlayload
  .text.cnmTimerInitTimer
-                0x00002d60       0x10 .\libandessta.a(cnm_timer.o)
-                0x00002d60                cnmTimerInitTimer
+                0x00002da0       0x10 .\libandessta.a(cnm_timer.o)
+                0x00002da0                cnmTimerInitTimer
  .text.cnmTimerStopTimer
-                0x00002d70       0x40 .\libandessta.a(cnm_timer.o)
-                0x00002d70                cnmTimerStopTimer
+                0x00002db0       0x40 .\libandessta.a(cnm_timer.o)
+                0x00002db0                cnmTimerStopTimer
  .text.cnmTimerSetTimer
-                0x00002db0       0x3c .\libandessta.a(cnm_timer.o)
+                0x00002df0       0x3c .\libandessta.a(cnm_timer.o)
  .text.cnmTimerDoTimeOutCheck
-                0x00002dec       0xb4 .\libandessta.a(cnm_timer.o)
-                0x00002dec                cnmTimerDoTimeOutCheck
+                0x00002e2c       0xb4 .\libandessta.a(cnm_timer.o)
+                0x00002e2c                cnmTimerDoTimeOutCheck
  .text.cnmTimerStartTimer
-                0x00002ea0       0x98 .\libandessta.a(cnm_timer.o)
-                0x00002ea0                cnmTimerStartTimer
+                0x00002ee0       0x98 .\libandessta.a(cnm_timer.o)
+                0x00002ee0                cnmTimerStartTimer
  .text.IoT_gpio_output
-                0x00002f38       0xac .\libandessta.a(iot_io_cmd.o)
-                0x00002f38                IoT_gpio_output
+                0x00002f78       0xac .\libandessta.a(iot_io_cmd.o)
+                0x00002f78                IoT_gpio_output
  .text.IoT_gpio_batch_modify_output_value
-                0x00002fe4       0x3c .\libandessta.a(iot_io_cmd.o)
-                0x00002fe4                IoT_gpio_batch_modify_output_value
+                0x00003024       0x3c .\libandessta.a(iot_io_cmd.o)
+                0x00003024                IoT_gpio_batch_modify_output_value
  .text.IoT_software_pwm_handler
-                0x00003020       0xd0 .\libandessta.a(iot_io_cmd.o)
-                0x00003020                IoT_software_pwm_handler
+                0x00003060       0xd0 .\libandessta.a(iot_io_cmd.o)
+                0x00003060                IoT_software_pwm_handler
  .text.IoT_software_pwm_init
-                0x000030f0       0x28 .\libandessta.a(iot_io_cmd.o)
-                0x000030f0                IoT_software_pwm_init
+                0x00003130       0x28 .\libandessta.a(iot_io_cmd.o)
+                0x00003130                IoT_software_pwm_init
  .text.IoT_uart_output
-                0x00003118       0x18 .\libandessta.a(iot_io_cmd.o)
-                0x00003118                IoT_uart_output
+                0x00003158       0x18 .\libandessta.a(iot_io_cmd.o)
+                0x00003158                IoT_uart_output
  .text.IoT_Xmodem_Update_FW_Stop
-                0x00003130       0x4c .\libandessta.a(iot_priv.o)
-                0x00003130                IoT_Xmodem_Update_FW_Stop
+                0x00003170       0x4c .\libandessta.a(iot_priv.o)
+                0x00003170                IoT_Xmodem_Update_FW_Stop
  .text.IoT_Xmodem_Update_FW_Start
-                0x0000317c       0x48 .\libandessta.a(iot_priv.o)
-                0x0000317c                IoT_Xmodem_Update_FW_Start
+                0x000031bc       0x48 .\libandessta.a(iot_priv.o)
+                0x000031bc                IoT_Xmodem_Update_FW_Start
  .text.apiQU_Dequeue
-                0x000031c4       0x44 .\libandessta.a(queue.o)
-                0x000031c4                apiQU_Dequeue
+                0x00003204       0x44 .\libandessta.a(queue.o)
+                0x00003204                apiQU_Dequeue
  .text.apiQU_Enqueue
-                0x00003208       0x40 .\libandessta.a(queue.o)
-                0x00003208                apiQU_Enqueue
+                0x00003248       0x40 .\libandessta.a(queue.o)
+                0x00003248                apiQU_Enqueue
  .text.PeerDisassocAction
-                0x00003248       0x44 .\libandessta.a(assoc.o)
-                0x00003248                PeerDisassocAction
+                0x00003288       0x44 .\libandessta.a(assoc.o)
+                0x00003288                PeerDisassocAction
  .text.NullFrameTimeoutAction
-                0x0000328c       0x20 .\libandessta.a(assoc.o)
-                0x0000328c                NullFrameTimeoutAction
+                0x000032cc       0x20 .\libandessta.a(assoc.o)
+                0x000032cc                NullFrameTimeoutAction
  .text.PeerAssocRspAction
-                0x000032ac       0x44 .\libandessta.a(assoc.o)
-                0x000032ac                PeerAssocRspAction
+                0x000032ec       0x44 .\libandessta.a(assoc.o)
+                0x000032ec                PeerAssocRspAction
  .text.MlmeAssocProcess
-                0x000032f0       0x58 .\libandessta.a(assoc.o)
-                0x000032f0                MlmeAssocProcess
+                0x00003330       0x58 .\libandessta.a(assoc.o)
+                0x00003330                MlmeAssocProcess
  .text.MlmeAssocReqAction
-                0x00003348       0x3c .\libandessta.a(assoc.o)
-                0x00003348                MlmeAssocReqAction
+                0x00003388       0x3c .\libandessta.a(assoc.o)
+                0x00003388                MlmeAssocReqAction
  .text.MlmeAuthProcess
-                0x00003384       0x34 .\libandessta.a(auth.o)
-                0x00003384                MlmeAuthProcess
+                0x000033c4       0x34 .\libandessta.a(auth.o)
+                0x000033c4                MlmeAuthProcess
  .text.AUTH_ReqSend
-                0x000033b8       0x50 .\libandessta.a(auth.o)
-                0x000033b8                AUTH_ReqSend
+                0x000033f8       0x50 .\libandessta.a(auth.o)
+                0x000033f8                AUTH_ReqSend
  .text.AuthTimeoutAction
-                0x00003408       0x58 .\libandessta.a(auth.o)
-                0x00003408                AuthTimeoutAction
+                0x00003448       0x58 .\libandessta.a(auth.o)
+                0x00003448                AuthTimeoutAction
  .text.sysDelay1u
-                0x00003460       0x10 .\libandessta.a(chip_init.o)
+                0x000034a0       0x10 .\libandessta.a(chip_init.o)
  .text.clean_key_tb
-                0x00003470       0x50 .\libandessta.a(chip_init.o)
-                0x00003470                clean_key_tb
+                0x000034b0       0x50 .\libandessta.a(chip_init.o)
+                0x000034b0                clean_key_tb
  .text.MT7681_ReadEEPROM
-                0x000034c0       0x50 .\libandessta.a(chip_init.o)
-                0x000034c0                MT7681_ReadEEPROM
+                0x00003500       0x50 .\libandessta.a(chip_init.o)
+                0x00003500                MT7681_ReadEEPROM
  .text.rtmp_bbp_is_ready
-                0x00003510       0x58 .\libandessta.a(chip_init.o)
-                0x00003510                rtmp_bbp_is_ready
+                0x00003550       0x58 .\libandessta.a(chip_init.o)
+                0x00003550                rtmp_bbp_is_ready
  .text.WPAInstallSharedKey
-                0x00003568       0x54 .\libandessta.a(cmm_wpa.o)
-                0x00003568                WPAInstallSharedKey
+                0x000035a8       0x54 .\libandessta.a(cmm_wpa.o)
+                0x000035a8                WPAInstallSharedKey
  .text.RTMPParseEapolKeyData
-                0x000035bc       0x50 .\libandessta.a(cmm_wpa.o)
-                0x000035bc                RTMPParseEapolKeyData
+                0x000035fc       0x50 .\libandessta.a(cmm_wpa.o)
+                0x000035fc                RTMPParseEapolKeyData
  .text.CalculateMIC
-                0x0000360c       0x3c .\libandessta.a(cmm_wpa.o)
-                0x0000360c                CalculateMIC
+                0x0000364c       0x3c .\libandessta.a(cmm_wpa.o)
+                0x0000364c                CalculateMIC
  .text.ConstructEapolKeyData
-                0x00003648       0x5c .\libandessta.a(cmm_wpa.o)
-                0x00003648                ConstructEapolKeyData
+                0x00003688       0x5c .\libandessta.a(cmm_wpa.o)
+                0x00003688                ConstructEapolKeyData
  .text.ConstructEapolMsg
-                0x000036a4       0x60 .\libandessta.a(cmm_wpa.o)
-                0x000036a4                ConstructEapolMsg
- .text.PRF      0x00003704       0xb4 .\libandessta.a(cmm_wpa.o)
-                0x00003704                PRF
+                0x000036e4       0x60 .\libandessta.a(cmm_wpa.o)
+                0x000036e4                ConstructEapolMsg
+ .text.PRF      0x00003744       0xb4 .\libandessta.a(cmm_wpa.o)
+                0x00003744                PRF
  .text.GenRandom
-                0x000037b8       0x74 .\libandessta.a(cmm_wpa.o)
-                0x000037b8                GenRandom
+                0x000037f8       0x74 .\libandessta.a(cmm_wpa.o)
+                0x000037f8                GenRandom
  .text.WpaDerivePTK
-                0x0000382c       0x50 .\libandessta.a(cmm_wpa.o)
-                0x0000382c                WpaDerivePTK
+                0x0000386c       0x50 .\libandessta.a(cmm_wpa.o)
+                0x0000386c                WpaDerivePTK
  .text.PeerWpaMessageSanity
-                0x0000387c       0x44 .\libandessta.a(cmm_wpa.o)
-                0x0000387c                PeerWpaMessageSanity
+                0x000038bc       0x44 .\libandessta.a(cmm_wpa.o)
+                0x000038bc                PeerWpaMessageSanity
  .text.PeerGroupMsg1Action
-                0x000038c0       0x3c .\libandessta.a(cmm_wpa.o)
-                0x000038c0                PeerGroupMsg1Action
+                0x00003900       0x3c .\libandessta.a(cmm_wpa.o)
+                0x00003900                PeerGroupMsg1Action
  .text.PeerPairMsg3Action
-                0x000038fc       0x3c .\libandessta.a(cmm_wpa.o)
-                0x000038fc                PeerPairMsg3Action
+                0x0000393c       0x3c .\libandessta.a(cmm_wpa.o)
+                0x0000393c                PeerPairMsg3Action
  .text.PeerPairMsg1Action
-                0x00003938       0x3c .\libandessta.a(cmm_wpa.o)
-                0x00003938                PeerPairMsg1Action
+                0x00003978       0x3c .\libandessta.a(cmm_wpa.o)
+                0x00003978                PeerPairMsg1Action
  .text.WpaEAPOLKeyAction
-                0x00003974       0xd4 .\libandessta.a(cmm_wpa.o)
-                0x00003974                WpaEAPOLKeyAction
+                0x000039b4       0xd4 .\libandessta.a(cmm_wpa.o)
+                0x000039b4                WpaEAPOLKeyAction
  .text.AES_Key_Unwrap
-                0x00003a48      0x174 .\libandessta.a(crypt_aes.o)
-                0x00003a48                AES_Key_Unwrap
+                0x00003a88      0x174 .\libandessta.a(crypt_aes.o)
+                0x00003a88                AES_Key_Unwrap
  .text.RT_AES_Encrypt
-                0x00003bbc      0x3dc .\libandessta.a(crypt_aes.o)
-                0x00003bbc                RT_AES_Encrypt
+                0x00003bfc      0x3dc .\libandessta.a(crypt_aes.o)
+                0x00003bfc                RT_AES_Encrypt
  .text.RT_HMAC_MD5
-                0x00003f98      0x134 .\libandessta.a(crypt_hmac.o)
-                0x00003f98                RT_HMAC_MD5
+                0x00003fd8      0x134 .\libandessta.a(crypt_hmac.o)
+                0x00003fd8                RT_HMAC_MD5
  .text.RT_HMAC_SHA1
-                0x000040cc      0x134 .\libandessta.a(crypt_hmac.o)
-                0x000040cc                RT_HMAC_SHA1
+                0x0000410c      0x134 .\libandessta.a(crypt_hmac.o)
+                0x0000410c                RT_HMAC_SHA1
  .text.RTMPCheckRxError
-                0x00004200       0x14 .\libandessta.a(rtmp_data.o)
-                0x00004200                RTMPCheckRxError
+                0x00004240       0x14 .\libandessta.a(rtmp_data.o)
+                0x00004240                RTMPCheckRxError
  .text.UARTTRTimeUpdate
-                0x00004214       0x28 .\libandessta.a(rtmp_data.o)
-                0x00004214                UARTTRTimeUpdate
+                0x00004254       0x28 .\libandessta.a(rtmp_data.o)
+                0x00004254                UARTTRTimeUpdate
  .text.RTMPRawDataSanity
-                0x0000423c       0xd8 .\libandessta.a(rtmp_data.o)
-                0x0000423c                RTMPRawDataSanity
+                0x0000427c       0xd8 .\libandessta.a(rtmp_data.o)
+                0x0000427c                RTMPRawDataSanity
  .text.RTMPWriteTxWI_Mgmt
-                0x00004314       0xac .\libandessta.a(rtmp_data.o)
-                0x00004314                RTMPWriteTxWI_Mgmt
+                0x00004354       0xac .\libandessta.a(rtmp_data.o)
+                0x00004354                RTMPWriteTxWI_Mgmt
  .text.WriteSingleTxResource
-                0x000043c0       0x48 .\libandessta.a(rtmp_data.o)
-                0x000043c0                WriteSingleTxResource
+                0x00004400       0x48 .\libandessta.a(rtmp_data.o)
+                0x00004400                WriteSingleTxResource
  .text.RTMPZeroMemory
-                0x00004408       0x14 .\libandessta.a(rtmp_general.o)
-                0x00004408                RTMPZeroMemory
+                0x00004448       0x14 .\libandessta.a(rtmp_general.o)
+                0x00004448                RTMPZeroMemory
  .text.RTMPCompareMemory
-                0x0000441c       0x28 .\libandessta.a(rtmp_general.o)
-                0x0000441c                RTMPCompareMemory
+                0x0000445c       0x28 .\libandessta.a(rtmp_general.o)
+                0x0000445c                RTMPCompareMemory
  .text.GetTimBit
-                0x00004444       0x84 .\libandessta.a(rtmp_general.o)
-                0x00004444                GetTimBit
+                0x00004484       0x84 .\libandessta.a(rtmp_general.o)
+                0x00004484                GetTimBit
  .text.MgtMacHeaderInit
-                0x000044c8       0x78 .\libandessta.a(rtmp_general.o)
-                0x000044c8                MgtMacHeaderInit
+                0x00004508       0x78 .\libandessta.a(rtmp_general.o)
+                0x00004508                MgtMacHeaderInit
  .text.MakeOutgoingFrame
-                0x00004540       0x4c .\libandessta.a(rtmp_general.o)
-                0x00004540                MakeOutgoingFrame
+                0x00004580       0x4c .\libandessta.a(rtmp_general.o)
+                0x00004580                MakeOutgoingFrame
  .text.NextChannel
-                0x0000458c       0x20 .\libandessta.a(scan.o)
-                0x0000458c                NextChannel
+                0x000045cc       0x20 .\libandessta.a(scan.o)
+                0x000045cc                NextChannel
  .text.get_cent_ch_by_htinfo
-                0x000045ac       0x3c .\libandessta.a(scan.o)
-                0x000045ac                get_cent_ch_by_htinfo
+                0x000045ec       0x3c .\libandessta.a(scan.o)
+                0x000045ec                get_cent_ch_by_htinfo
  .text.RTMPCheckHt
-                0x000045e8       0xfc .\libandessta.a(scan.o)
-                0x000045e8                RTMPCheckHt
+                0x00004628       0xfc .\libandessta.a(scan.o)
+                0x00004628                RTMPCheckHt
  .text.PeerBeaconAtScanAction
-                0x000046e4       0x44 .\libandessta.a(scan.o)
-                0x000046e4                PeerBeaconAtScanAction
+                0x00004724       0x44 .\libandessta.a(scan.o)
+                0x00004724                PeerBeaconAtScanAction
  .text.SMTCNGetInfo
-                0x00004728       0x34 .\libandessta.a(smtcn.o)
-                0x00004728                SMTCNGetInfo
+                0x00004768       0x34 .\libandessta.a(smtcn.o)
+                0x00004768                SMTCNGetInfo
  .text.SMTCNParsingMulticast
-                0x0000475c       0x50 .\libandessta.a(smtcn.o)
-                0x0000475c                SMTCNParsingMulticast
+                0x0000479c       0x50 .\libandessta.a(smtcn.o)
+                0x0000479c                SMTCNParsingMulticast
  .text.RTMP_EnableTxRx
-                0x000047ac       0x10 .\libandessta.a(wow.o)
-                0x000047ac                RTMP_EnableTxRx
+                0x000047ec       0x10 .\libandessta.a(wow.o)
+                0x000047ec                RTMP_EnableTxRx
  .text.rtmp_eep_read16
-                0x000047bc       0x20 .\libandessta.a(ee_efuse.o)
-                0x000047bc                rtmp_eep_read16
+                0x000047fc       0x20 .\libandessta.a(ee_efuse.o)
+                0x000047fc                rtmp_eep_read16
  .text.drvFCE_RegisterIntHdlr
-                0x000047dc       0x34 .\libandessta.a(fce.o)
-                0x000047dc                drvFCE_RegisterIntHdlr
+                0x0000481c       0x34 .\libandessta.a(fce.o)
+                0x0000481c                drvFCE_RegisterIntHdlr
  .text.drvFCE_IntHdlr
-                0x00004810       0x8c .\libandessta.a(fce.o)
-                0x00004810                drvFCE_IntHdlr
+                0x00004850       0x8c .\libandessta.a(fce.o)
+                0x00004850                drvFCE_IntHdlr
  .text.PdmaVrPortIntHdlr
-                0x0000489c       0xf4 .\libandessta.a(pdma.o)
-                0x0000489c                PdmaVrPortIntHdlr
+                0x000048dc       0xf4 .\libandessta.a(pdma.o)
+                0x000048dc                PdmaVrPortIntHdlr
  .text.PdmaVtPortIntHdlr
-                0x00004990      0x100 .\libandessta.a(pdma.o)
-                0x00004990                PdmaVtPortIntHdlr
+                0x000049d0      0x100 .\libandessta.a(pdma.o)
+                0x000049d0                PdmaVtPortIntHdlr
  .text.PdmaTxTsHdlr
-                0x00004a90       0x70 .\libandessta.a(pdma.o)
-                0x00004a90                PdmaTxTsHdlr
+                0x00004ad0       0x70 .\libandessta.a(pdma.o)
+                0x00004ad0                PdmaTxTsHdlr
  .text.TxTsIntHdlr
-                0x00004b00       0x18 .\libandessta.a(pdma.o)
-                0x00004b00                TxTsIntHdlr
+                0x00004b40       0x18 .\libandessta.a(pdma.o)
+                0x00004b40                TxTsIntHdlr
  .text.PdmaRxFsHdlr
-                0x00004b18      0x108 .\libandessta.a(pdma.o)
-                0x00004b18                PdmaRxFsHdlr
+                0x00004b58      0x108 .\libandessta.a(pdma.o)
+                0x00004b58                PdmaRxFsHdlr
  .text.RxFsIntHdlr
-                0x00004c20       0x18 .\libandessta.a(pdma.o)
-                0x00004c20                RxFsIntHdlr
+                0x00004c60       0x18 .\libandessta.a(pdma.o)
+                0x00004c60                RxFsIntHdlr
  .text.SPI_REG8
-                0x00004c38       0x10 .\libandessta.a(spi-flash.o)
-                0x00004c38                SPI_REG8
+                0x00004c78       0x10 .\libandessta.a(spi-flash.o)
+                0x00004c78                SPI_REG8
  .text.SPI_READOUT
-                0x00004c48        0xc .\libandessta.a(spi-flash.o)
-                0x00004c48                SPI_READOUT
+                0x00004c88        0xc .\libandessta.a(spi-flash.o)
+                0x00004c88                SPI_READOUT
  .text.WAIT_OP_DONE_PUB
-                0x00004c54       0x10 .\libandessta.a(spi-flash.o)
-                0x00004c54                WAIT_OP_DONE_PUB
+                0x00004c94       0x10 .\libandessta.a(spi-flash.o)
+                0x00004c94                WAIT_OP_DONE_PUB
  .text.spi_flash_read
-                0x00004c64       0x28 .\libandessta.a(spi-flash.o)
-                0x00004c64                spi_flash_read
+                0x00004ca4       0x28 .\libandessta.a(spi-flash.o)
+                0x00004ca4                spi_flash_read
  .text.drvTMR_Init
-                0x00004c8c       0x14 .\libandessta.a(timer.o)
-                0x00004c8c                drvTMR_Init
+                0x00004ccc       0x14 .\libandessta.a(timer.o)
+                0x00004ccc                drvTMR_Init
  .text.kal_get_systime
-                0x00004ca0        0xc .\libandessta.a(timer.o)
-                0x00004ca0                kal_get_systime
+                0x00004ce0        0xc .\libandessta.a(timer.o)
+                0x00004ce0                kal_get_systime
  .text.kal_stop_timer
-                0x00004cac       0x84 .\libandessta.a(timer.o)
-                0x00004cac                kal_stop_timer
+                0x00004cec       0x84 .\libandessta.a(timer.o)
+                0x00004cec                kal_stop_timer
  .text.kal_start_timer
-                0x00004d30      0x104 .\libandessta.a(timer.o)
-                0x00004d30                kal_start_timer
+                0x00004d70      0x104 .\libandessta.a(timer.o)
+                0x00004d70                kal_start_timer
  .text.SwTimerHandler
-                0x00004e34       0x30 .\libandessta.a(timer.o)
-                0x00004e34                SwTimerHandler
+                0x00004e74       0x30 .\libandessta.a(timer.o)
+                0x00004e74                SwTimerHandler
  .text.hw_timer1_IntHdler
-                0x00004e64       0x3c .\libandessta.a(timer.o)
-                0x00004e64                hw_timer1_IntHdler
+                0x00004ea4       0x3c .\libandessta.a(timer.o)
+                0x00004ea4                hw_timer1_IntHdler
  .text.drvTMR_IntHdler
-                0x00004ea0       0x4c .\libandessta.a(timer.o)
-                0x00004ea0                drvTMR_IntHdler
+                0x00004ee0       0x4c .\libandessta.a(timer.o)
+                0x00004ee0                drvTMR_IntHdler
  .text.UART_PutUARTByte
-                0x00004eec       0x20 .\libandessta.a(uart.o)
-                0x00004eec                UART_PutUARTByte
+                0x00004f2c       0x20 .\libandessta.a(uart.o)
+                0x00004f2c                UART_PutUARTByte
  .text._UART_GetByte
-                0x00004f0c       0x24 .\libandessta.a(uart.o)
-                0x00004f0c                _UART_GetByte
+                0x00004f4c       0x24 .\libandessta.a(uart.o)
+                0x00004f4c                _UART_GetByte
  .text.UART_RecHandler
-                0x00004f30       0x44 .\libandessta.a(uart.o)
-                0x00004f30                UART_RecHandler
+                0x00004f70       0x44 .\libandessta.a(uart.o)
+                0x00004f70                UART_RecHandler
  .text.UART_TrxHandler
-                0x00004f74       0xc4 .\libandessta.a(uart.o)
-                0x00004f74                UART_TrxHandler
+                0x00004fb4       0xc4 .\libandessta.a(uart.o)
+                0x00004fb4                UART_TrxHandler
  .text.UART_LISR
-                0x00005038       0x54 .\libandessta.a(uart.o)
-                0x00005038                UART_LISR
+                0x00005078       0x54 .\libandessta.a(uart.o)
+                0x00005078                UART_LISR
  .text.UART_EnableTX
-                0x0000508c       0x38 .\libandessta.a(uart.o)
-                0x0000508c                UART_EnableTX
+                0x000050cc       0x38 .\libandessta.a(uart.o)
+                0x000050cc                UART_EnableTX
  .text.UART_DisableTX
-                0x000050c4       0x3c .\libandessta.a(uart.o)
-                0x000050c4                UART_DisableTX
+                0x00005104       0x3c .\libandessta.a(uart.o)
+                0x00005104                UART_DisableTX
  .text.UART_EnableRX
-                0x00005100       0x38 .\libandessta.a(uart.o)
-                0x00005100                UART_EnableRX
+                0x00005140       0x38 .\libandessta.a(uart.o)
+                0x00005140                UART_EnableRX
  .text.UART_DisableRX
-                0x00005138       0x3c .\libandessta.a(uart.o)
-                0x00005138                UART_DisableRX
+                0x00005178       0x3c .\libandessta.a(uart.o)
+                0x00005178                UART_DisableRX
  .text.UART_PutChar
-                0x00005174       0x18 .\libandessta.a(uartlite.o)
-                0x00005174                UART_PutChar
+                0x000051b4       0x18 .\libandessta.a(uartlite.o)
+                0x000051b4                UART_PutChar
  .text.UART_GetChar
-                0x0000518c       0x20 .\libandessta.a(uartlite.o)
-                0x0000518c                UART_GetChar
+                0x000051cc       0x20 .\libandessta.a(uartlite.o)
+                0x000051cc                UART_GetChar
  .text.sysXCPT_XcptHdlr
-                0x000051ac       0x18 .\libandessta.a(xcpt.o)
-                0x000051ac                sysXCPT_XcptHdlr
+                0x000051ec       0x18 .\libandessta.a(xcpt.o)
+                0x000051ec                sysXCPT_XcptHdlr
  .text.sysXCPT_ResetXcptHdlr
-                0x000051c4        0x4 .\libandessta.a(xcpt.o)
+                0x00005204        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_TlbFillXcptHdlr
-                0x000051c8        0x4 .\libandessta.a(xcpt.o)
+                0x00005208        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_PteNotPresentXcptHdlr
-                0x000051cc        0x4 .\libandessta.a(xcpt.o)
+                0x0000520c        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_TlbMiscXcptHdlr
-                0x000051d0        0x4 .\libandessta.a(xcpt.o)
+                0x00005210        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_TlbVlptMissXcptHdlr
-                0x000051d4        0x4 .\libandessta.a(xcpt.o)
+                0x00005214        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_MachineErrXcptHdlr
-                0x000051d8        0x4 .\libandessta.a(xcpt.o)
+                0x00005218        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_DebugRelatedXcptHdlr
-                0x000051dc        0x4 .\libandessta.a(xcpt.o)
+                0x0000521c        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_GeneralXcptHdlr
-                0x000051e0        0x4 .\libandessta.a(xcpt.o)
+                0x00005220        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_SysCallXcptHdlr
-                0x000051e4        0x4 .\libandessta.a(xcpt.o)
+                0x00005224        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_Hw0IntrHdlr
-                0x000051e8        0x4 .\libandessta.a(xcpt.o)
+                0x00005228        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_Hw1IntrHdlr
-                0x000051ec        0x4 .\libandessta.a(xcpt.o)
+                0x0000522c        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_Hw2IntrHdlr
-                0x000051f0        0x4 .\libandessta.a(xcpt.o)
+                0x00005230        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_Hw3IntrHdlr
-                0x000051f4        0x4 .\libandessta.a(xcpt.o)
+                0x00005234        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_Hw4IntrHdlr
-                0x000051f8        0x4 .\libandessta.a(xcpt.o)
+                0x00005238        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_Hw5IntrHdlr
-                0x000051fc        0x4 .\libandessta.a(xcpt.o)
+                0x0000523c        0x4 .\libandessta.a(xcpt.o)
  .text.sysXCPT_SwIntrHdlr
-                0x00005200        0x4 .\libandessta.a(xcpt.o)
+                0x00005240        0x4 .\libandessta.a(xcpt.o)
  .text.sysKernelStart
-                0x00005204       0x18 .\libandessta.a(initial.o)
-                0x00005204                sysKernelStart
+                0x00005244       0x18 .\libandessta.a(initial.o)
+                0x00005244                sysKernelStart
  .text.SYSirq_Disable_Interrupts_Save_Flags
-                0x0000521c       0x14 .\libandessta.a(mutex.o)
-                0x0000521c                SYSirq_Disable_Interrupts_Save_Flags
+                0x0000525c       0x14 .\libandessta.a(mutex.o)
+                0x0000525c                SYSirq_Disable_Interrupts_Save_Flags
  .text.SYSirq_Interrupts_Restore_Flags
-                0x00005230       0x18 .\libandessta.a(mutex.o)
-                0x00005230                SYSirq_Interrupts_Restore_Flags
+                0x00005270       0x18 .\libandessta.a(mutex.o)
+                0x00005270                SYSirq_Interrupts_Restore_Flags
  .text.sysTASK_LowPrioTask
-                0x00005248       0x28 .\libandessta.a(task.o)
-                0x00005248                sysTASK_LowPrioTask
+                0x00005288       0x28 .\libandessta.a(task.o)
+                0x00005288                sysTASK_LowPrioTask
  .text.sysTASK_DeassertSignal
-                0x00005270       0x44 .\libandessta.a(task.o)
-                0x00005270                sysTASK_DeassertSignal
+                0x000052b0       0x44 .\libandessta.a(task.o)
+                0x000052b0                sysTASK_DeassertSignal
  .text.sysTASK_AssertSignal
-                0x000052b4       0x40 .\libandessta.a(task.o)
-                0x000052b4                sysTASK_AssertSignal
+                0x000052f4       0x40 .\libandessta.a(task.o)
+                0x000052f4                sysTASK_AssertSignal
  .text.apiInitListEntry
-                0x000052f4        0x8 .\libandessta.a(list.o)
-                0x000052f4                apiInitListEntry
+                0x00005334        0x8 .\libandessta.a(list.o)
+                0x00005334                apiInitListEntry
  .text.apiInsertListEntry
-                0x000052fc        0xc .\libandessta.a(list.o)
-                0x000052fc                apiInsertListEntry
+                0x0000533c        0xc .\libandessta.a(list.o)
+                0x0000533c                apiInsertListEntry
  .text.apiInsertTailEntry
-                0x00005308       0x20 .\libandessta.a(list.o)
-                0x00005308                apiInsertTailEntry
+                0x00005348       0x20 .\libandessta.a(list.o)
+                0x00005348                apiInsertTailEntry
  .text.apiRemoveHeadEntry
-                0x00005328       0x1c .\libandessta.a(list.o)
-                0x00005328                apiRemoveHeadEntry
- .text.apiRand  0x00005344       0x1c .\libandessta.a(random.o)
-                0x00005344                apiRand
- .text.vprintf  0x00005360       0x24 .\libandessta.a(printf.o)
-                0x00005360                vprintf
+                0x00005368       0x1c .\libandessta.a(list.o)
+                0x00005368                apiRemoveHeadEntry
+ .text.apiRand  0x00005384       0x1c .\libandessta.a(random.o)
+                0x00005384                apiRand
+ .text.vprintf  0x000053a0       0x24 .\libandessta.a(printf.o)
+                0x000053a0                vprintf
  .text.Printf_High
-                0x00005384       0x34 .\libandessta.a(printf.o)
-                0x00005384                Printf_High
+                0x000053c4       0x34 .\libandessta.a(printf.o)
+                0x000053c4                Printf_High
  .text.vprintf_help
-                0x000053b8       0x1c .\libandessta.a(printf.o)
- .text.malloc   0x000053d4       0x14 .\libandessta.a(stdlib.o)
-                0x000053d4                malloc
- .text.free     0x000053e8       0x14 .\libandessta.a(stdlib.o)
-                0x000053e8                free
- .text.strcmp   0x000053fc       0x20 .\libandessta.a(strcmp.o)
-                0x000053fc                strcmp
- .text.strcpy   0x0000541c       0x14 .\libandessta.a(strcpy.o)
-                0x0000541c                strcpy
- .text.strlen   0x00005430       0x10 .\libandessta.a(strlen.o)
-                0x00005430                strlen
+                0x000053f8       0x1c .\libandessta.a(printf.o)
+ .text.malloc   0x00005414       0x14 .\libandessta.a(stdlib.o)
+                0x00005414                malloc
+ .text.free     0x00005428       0x14 .\libandessta.a(stdlib.o)
+                0x00005428                free
+ .text.strcmp   0x0000543c       0x20 .\libandessta.a(strcmp.o)
+                0x0000543c                strcmp
+ .text.strcpy   0x0000545c       0x14 .\libandessta.a(strcpy.o)
+                0x0000545c                strcpy
+ .text.strlen   0x00005470       0x10 .\libandessta.a(strlen.o)
+                0x00005470                strlen
  .text.__toupper
-                0x00005440       0x1c .\libandessta.a(vsprintf.o)
+                0x00005480       0x1c .\libandessta.a(vsprintf.o)
  .text.simple_strtoul
-                0x0000545c       0xe4 .\libandessta.a(vsprintf.o)
-                0x0000545c                simple_strtoul
+                0x0000549c       0xe4 .\libandessta.a(vsprintf.o)
+                0x0000549c                simple_strtoul
  .text.simple_strtol
-                0x00005540       0x2c .\libandessta.a(vsprintf.o)
-                0x00005540                simple_strtol
+                0x00005580       0x2c .\libandessta.a(vsprintf.o)
+                0x00005580                simple_strtol
  .text.drvMCUCTL_IntrHdlr
-                0x0000556c       0xc4 .\libandessta.a(mcuctl.o)
-                0x0000556c                drvMCUCTL_IntrHdlr
+                0x000055ac       0xc4 .\libandessta.a(mcuctl.o)
+                0x000055ac                drvMCUCTL_IntrHdlr
  .text.sysDelayxu
-                0x00005630       0x18 .\libandessta.a(mt7681_ChSw.o)
- .text.RF_READ  0x00005648       0xb8 .\libandessta.a(mt7681_ChSw.o)
-                0x00005648                RF_READ
+                0x00005670       0x18 .\libandessta.a(mt7681_ChSw.o)
+ .text.RF_READ  0x00005688       0xb8 .\libandessta.a(mt7681_ChSw.o)
+                0x00005688                RF_READ
  .text.RF_WRITE
-                0x00005700       0x84 .\libandessta.a(mt7681_ChSw.o)
-                0x00005700                RF_WRITE
+                0x00005740       0x84 .\libandessta.a(mt7681_ChSw.o)
+                0x00005740                RF_WRITE
  .text.RF_WRITE8
-                0x00005784       0x20 .\libandessta.a(mt7681_ChSw.o)
-                0x00005784                RF_WRITE8
+                0x000057c4       0x20 .\libandessta.a(mt7681_ChSw.o)
+                0x000057c4                RF_WRITE8
  .text.BBP_READ
-                0x000057a4       0x78 .\libandessta.a(mt7681_ChSw.o)
-                0x000057a4                BBP_READ
+                0x000057e4       0x78 .\libandessta.a(mt7681_ChSw.o)
+                0x000057e4                BBP_READ
  .text.BBP_WRITE
-                0x0000581c       0x54 .\libandessta.a(mt7681_ChSw.o)
-                0x0000581c                BBP_WRITE
+                0x0000585c       0x54 .\libandessta.a(mt7681_ChSw.o)
+                0x0000585c                BBP_WRITE
  .text.Config_ChannelInfo
-                0x00005870       0x54 .\libandessta.a(mt7681_ChSw.o)
-                0x00005870                Config_ChannelInfo
+                0x000058b0       0x54 .\libandessta.a(mt7681_ChSw.o)
+                0x000058b0                Config_ChannelInfo
  .text.CaliPeriodExec
-                0x000058c4       0x40 .\libandessta.a(mt7681_ChSw.o)
-                0x000058c4                CaliPeriodExec
- .text.T.215    0x00005904       0x58 .\libandessta.a(mt7681_ChSw.o)
+                0x00005904       0x40 .\libandessta.a(mt7681_ChSw.o)
+                0x00005904                CaliPeriodExec
+ .text.T.215    0x00005944       0x58 .\libandessta.a(mt7681_ChSw.o)
  .text.drvPBF_IntHdler
-                0x0000595c       0x18 .\libandessta.a(wifi_ps.o)
-                0x0000595c                drvPBF_IntHdler
+                0x0000599c       0x18 .\libandessta.a(wifi_ps.o)
+                0x0000599c                drvPBF_IntHdler
  .text.GetQueueInfo
-                0x00005974        0xc .\libandessta.a(wifi_task.o)
-                0x00005974                GetQueueInfo
+                0x000059b4        0xc .\libandessta.a(wifi_task.o)
+                0x000059b4                GetQueueInfo
  .text.GetFceIntStat
-                0x00005980        0xc .\libandessta.a(wifi_task.o)
-                0x00005980                GetFceIntStat
+                0x000059c0        0xc .\libandessta.a(wifi_task.o)
+                0x000059c0                GetFceIntStat
  .text.GetMsTimer
-                0x0000598c        0xc .\libandessta.a(wifi_task.o)
-                0x0000598c                GetMsTimer
+                0x000059cc        0xc .\libandessta.a(wifi_task.o)
+                0x000059cc                GetMsTimer
  .text.StorePhyMode
-                0x00005998        0xc .\libandessta.a(wifi_task.o)
-                0x00005998                StorePhyMode
+                0x000059d8        0xc .\libandessta.a(wifi_task.o)
+                0x000059d8                StorePhyMode
  .text.GetClearFrameFlag
-                0x000059a4        0xc .\libandessta.a(wifi_task.o)
-                0x000059a4                GetClearFrameFlag
+                0x000059e4        0xc .\libandessta.a(wifi_task.o)
+                0x000059e4                GetClearFrameFlag
  .text.handle_FCE_interrupt
-                0x000059b0       0x64 .\libandessta.a(wifi_task.o)
-                0x000059b0                handle_FCE_interrupt
- .text.BtoH     0x00005a14       0x34 .\libandessta.a(cmm_wep.o)
-                0x00005a14                BtoH
- .text.AtoH     0x00005a48       0x44 .\libandessta.a(cmm_wep.o)
-                0x00005a48                AtoH
+                0x000059f0       0x64 .\libandessta.a(wifi_task.o)
+                0x000059f0                handle_FCE_interrupt
+ .text.BtoH     0x00005a54       0x34 .\libandessta.a(cmm_wep.o)
+                0x00005a54                BtoH
+ .text.AtoH     0x00005a88       0x44 .\libandessta.a(cmm_wep.o)
+                0x00005a88                AtoH
  .text.drvGPIO_IntHdler
-                0x00005a8c       0x44 .\libandessta.a(led.o)
-                0x00005a8c                drvGPIO_IntHdler
- .text.T.3      0x00005ad0       0x48 .\libandessta.a(led.o)
+                0x00005acc       0x44 .\libandessta.a(led.o)
+                0x00005acc                drvGPIO_IntHdler
+ .text.T.3      0x00005b10       0x48 .\libandessta.a(led.o)
  .text.do_printf
-                0x00005b18      0x2e8 .\libandessta.a(do_printf.o)
-                0x00005b18                do_printf
- .text.fputc    0x00005e00       0x2c .\libandessta.a(fputs.o)
-                0x00005e00                fputc
- .text.putchar  0x00005e2c       0x1c .\libandessta.a(fputs.o)
-                0x00005e2c                putchar
-                0x00005e50                . = ALIGN (0x10)
-                0x00005e50                STACK_SECT_VMA = .
+                0x00005b58      0x2e8 .\libandessta.a(do_printf.o)
+                0x00005b58                do_printf
+ .text.fputc    0x00005e40       0x2c .\libandessta.a(fputs.o)
+                0x00005e40                fputc
+ .text.putchar  0x00005e6c       0x1c .\libandessta.a(fputs.o)
+                0x00005e6c                putchar
+                0x00005e90                . = ALIGN (0x10)
+                0x00005e90                STACK_SECT_VMA = .
 
-.STACK          0x00005e50      0x800
-                0x00005e50                PROVIDE (_STACK_START, .)
+.STACK          0x00005e90      0x800
+                0x00005e90                PROVIDE (_STACK_START, .)
  *(.stack)
- .stack         0x00005e50      0x800 .\libandessta.a(stack.o)
-                0x00005e50                sysStack
-                0x00006650                PROVIDE (_STACK_END, .)
-                0x00006650                . = ALIGN (0x10)
-                0x00006650                DATA_SECT_VMA = .
+ .stack         0x00005e90      0x800 .\libandessta.a(stack.o)
+                0x00005e90                sysStack
+                0x00006690                PROVIDE (_STACK_END, .)
+                0x00006690                . = ALIGN (0x10)
+                0x00006690                DATA_SECT_VMA = .
 
-.DATA           0x00006650     0x1018
+.DATA           0x00006690      0xf9c
  *(.rodata)
  *(.rodata.*)
  .rodata.str1.4
-                0x00006650       0xba obj/sta/iot_at_cmd.o
+                0x00006690       0xba obj/sta/iot_at_cmd.o
                                  0xbc (size before relaxing)
- *fill*         0x0000670a        0x2 00000000
+ *fill*         0x0000674a        0x2 00000000
  .rodata.str1.4
-                0x0000670c       0x95 obj/sta/iot_custom.o
+                0x0000674c       0x95 obj/sta/iot_custom.o
                                  0x98 (size before relaxing)
- *fill*         0x000067a1        0x3 00000000
- .rodata.cst4   0x000067a4        0x4 obj/sta/iot_uart_rb.o
+ *fill*         0x000067e1        0x3 00000000
+ .rodata.cst4   0x000067e4        0x4 obj/sta/iot_uart_rb.o
  .rodata.str1.4
-                0x000067a8      0x1da obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                                0x1dc (size before relaxing)
- *fill*         0x00006982        0x2 00000000
+                0x000067e8      0x1be obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                                0x1c0 (size before relaxing)
+ *fill*         0x000069a6        0x2 00000000
+ .rodata.C.7.2078
+                0x000069a8        0xc obj/sta/AC/src/ac_hal.o
  .rodata.str1.4
-                0x00006984       0x1c obj/sta/AC/src/ac_hal.o
- .rodata.C.1.1204
-                0x000069a0       0x24 obj/sta/AC/src/ac_hal.o
- .rodata.str1.4
-                0x000069c4       0xb3 obj/sta/ZC/src/zc/zc_common.o
+                0x000069b4       0xb3 obj/sta/ZC/src/zc/zc_common.o
                                  0xb4 (size before relaxing)
+ *fill*         0x00006a67        0x1 00000000
  .rodata.str1.4
-                0x00000000       0x14 obj/sta/ZC/src/zc/zc_configuration.o
- *fill*         0x00006a77        0x1 00000000
+                0x00006a68       0x2e obj/sta/ZC/src/zc/zc_configuration.o
+                                 0x30 (size before relaxing)
+ *fill*         0x00006a96        0x2 00000000
  .rodata.str1.4
-                0x00006a78       0x18 obj/sta/ZC/src/zc/zc_message_queue.o
+                0x00006a98       0x18 obj/sta/ZC/src/zc/zc_message_queue.o
  .rodata.str1.4
-                0x00006a90      0x248 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x00006ab0      0x259 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                                0x25c (size before relaxing)
+ *fill*         0x00006d09        0x3 00000000
  .rodata.str1.4
-                0x00006cd8       0x80 obj/sta/ZC/src/zc/zc_sec_engine.o
- .rodata.C.9.1864
-                0x00006d58        0x8 obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x00006d0c       0x80 obj/sta/ZC/src/zc/zc_sec_engine.o
+ .rodata.C.9.1870
+                0x00006d8c        0x8 obj/sta/ZC/src/zc/zc_sec_engine.o
  .rodata.str1.4
-                0x00006d60       0x39 obj/sta/ZC/src/zc/zc_timer.o
-                                 0x3c (size before relaxing)
- *fill*         0x00006d99        0x3 00000000
+                0x00006d94       0x4c obj/sta/ZC/src/zc/zc_timer.o
  .rodata.str1.4
-                0x00006d9c      0x117 obj/sta/iot_aes_pub.o
+                0x00006de0      0x117 obj/sta/iot_aes_pub.o
                                 0x118 (size before relaxing)
- *fill*         0x00006eb3        0x1 00000000
+ *fill*         0x00006ef7        0x1 00000000
  .rodata.str1.4
-                0x00006eb4        0x7 obj/sta/iot_at_cmd_utility.o
+                0x00006ef8        0x7 obj/sta/iot_at_cmd_utility.o
                                   0x8 (size before relaxing)
- *fill*         0x00006ebb        0x1 00000000
+ *fill*         0x00006eff        0x1 00000000
  .rodata.str1.4
-                0x00006ebc        0x9 obj/sta/iot_xmodem.o
+                0x00006f00        0x9 obj/sta/iot_xmodem.o
                                   0xc (size before relaxing)
- *fill*         0x00006ec5        0x3 00000000
+ *fill*         0x00006f09        0x3 00000000
  .rodata.C.25.2941
-                0x00006ec8        0x8 obj/sta/iot_xmodem.o
+                0x00006f0c        0x8 obj/sta/iot_xmodem.o
  .rodata.str1.4
-                0x00006ed0       0xa6 obj/sta/spi-flash_pub.o
+                0x00006f14       0xa6 obj/sta/spi-flash_pub.o
                                  0xac (size before relaxing)
- *fill*         0x00006f76        0x2 00000000
- .rodata.C.8.3168
-                0x00006f78        0x4 obj/sta/spi-flash_pub.o
- .rodata.xid    0x00006f7c        0x4 obj/sta/tcpip/dhcpc.o
+ *fill*         0x00006fba        0x2 00000000
+ .rodata.C.8.3169
+                0x00006fbc        0x4 obj/sta/spi-flash_pub.o
+ .rodata.xid    0x00006fc0        0x4 obj/sta/tcpip/dhcpc.o
  .rodata.magic_cookie
-                0x00006f80        0x4 obj/sta/tcpip/dhcpc.o
+                0x00006fc4        0x4 obj/sta/tcpip/dhcpc.o
  .rodata.str1.4
-                0x00006f84       0x30 obj/sta/tcpip/tcpip_main.o
+                0x00006fc8       0x30 obj/sta/tcpip/tcpip_main.o
  .rodata.broadcast_ethaddr
-                0x00006fb4        0x8 obj/sta/tcpip/uip_arp.o
+                0x00006ff8        0x8 obj/sta/tcpip/uip_arp.o
  .rodata.str1.4
-                0x00006fbc       0x2b .\libandessta.a(xip_ovly.o)
+                0x00007000       0x2b .\libandessta.a(xip_ovly.o)
                                  0x2c (size before relaxing)
- *fill*         0x00006fe7        0x1 00000000
+ *fill*         0x0000702b        0x1 00000000
  .rodata.C.2.5843
-                0x00006fe8       0x10 .\libandessta.a(app_nos_main.o)
+                0x0000702c       0x10 .\libandessta.a(app_nos_main.o)
  .rodata.str1.4
-                0x00006ff8       0x14 .\libandessta.a(assoc.o)
+                0x0000703c       0x14 .\libandessta.a(assoc.o)
  .rodata.__FUNCTION__.4345
-                0x0000700c       0x10 .\libandessta.a(assoc.o)
+                0x00007050       0x10 .\libandessta.a(assoc.o)
  .rodata.str1.4
-                0x0000701c       0x4b .\libandessta.a(chip_init.o)
+                0x00007060       0x4b .\libandessta.a(chip_init.o)
                                  0x58 (size before relaxing)
- *fill*         0x00007067        0x1 00000000
+ *fill*         0x000070ab        0x1 00000000
  .rodata.C.24.4502
-                0x00007068        0xc .\libandessta.a(cmm_wpa.o)
+                0x000070ac        0xc .\libandessta.a(cmm_wpa.o)
  .rodata.C.21.4442
-                0x00007074       0x18 .\libandessta.a(cmm_wpa.o)
- .rodata.cst4   0x0000708c        0x4 .\libandessta.a(crypt_aes.o)
+                0x000070b8       0x18 .\libandessta.a(cmm_wpa.o)
+ .rodata.cst4   0x000070d0        0x4 .\libandessta.a(crypt_aes.o)
                                   0x8 (size before relaxing)
  .rodata.aes_mul_2
-                0x00007090      0x100 .\libandessta.a(crypt_aes.o)
+                0x000070d4      0x100 .\libandessta.a(crypt_aes.o)
  .rodata.aes_mul_3
-                0x00007190      0x100 .\libandessta.a(crypt_aes.o)
+                0x000071d4      0x100 .\libandessta.a(crypt_aes.o)
  .rodata.str1.4
-                0x00007290        0xb .\libandessta.a(scan.o)
+                0x000072d4        0xb .\libandessta.a(scan.o)
                                   0xc (size before relaxing)
- *fill*         0x0000729b        0x1 00000000
+ *fill*         0x000072df        0x1 00000000
  .rodata.str1.4
-                0x0000729c        0x5 .\libandessta.a(bsp.o)
+                0x000072e0        0x5 .\libandessta.a(bsp.o)
                                   0x8 (size before relaxing)
- *fill*         0x000072a1        0x3 00000000
+ *fill*         0x000072e5        0x3 00000000
  .rodata.str1.4
-                0x000072a4       0x37 .\libandessta.a(ee_efuse.o)
+                0x000072e8       0x37 .\libandessta.a(ee_efuse.o)
                                  0x38 (size before relaxing)
- *fill*         0x000072db        0x1 00000000
+ *fill*         0x0000731f        0x1 00000000
  .rodata.MT7681_Frequency_Plan
-                0x000072dc       0x48 .\libandessta.a(mt7681_ChSw.o)
+                0x00007320       0x48 .\libandessta.a(mt7681_ChSw.o)
  .rodata.str1.4
-                0x00007324       0x48 .\libandessta.a(wifi_task.o)
-                0x00007370                . = ALIGN (0x10)
- *fill*         0x0000736c        0x4 00000000
+                0x00007368       0x48 .\libandessta.a(wifi_task.o)
+                0x000073b0                . = ALIGN (0x10)
  *(.data)
  *(.data.*)
- .data.Com_Cfg  0x00007370       0x2c obj/sta/iot_custom.o
-                0x00007370                Com_Cfg
- .data.bSpecAP  0x0000739c        0x1 obj/sta/iot_custom.o
-                0x0000739c                bSpecAP
+ .data.Com_Cfg  0x000073b0       0x2c obj/sta/iot_custom.o
+                0x000073b0                Com_Cfg
+ .data.bSpecAP  0x000073dc        0x1 obj/sta/iot_custom.o
+                0x000073dc                bSpecAP
  .data.PRINT_FLAG
-                0x0000739d        0x1 obj/sta/iot_custom.o
-                0x0000739d                PRINT_FLAG
- *fill*         0x0000739e        0x2 00000000
+                0x000073dd        0x1 obj/sta/iot_custom.o
+                0x000073dd                PRINT_FLAG
+ *fill*         0x000073de        0x2 00000000
  .data.ATCmdPrefixAT
-                0x000073a0        0x4 obj/sta/iot_uart_rb.o
-                0x000073a0                ATCmdPrefixAT
+                0x000073e0        0x4 obj/sta/iot_uart_rb.o
+                0x000073e0                ATCmdPrefixAT
  .data.ATCmdPrefixIW
-                0x000073a4        0xc obj/sta/iot_uart_rb.o
-                0x000073a4                ATCmdPrefixIW
+                0x000073e4        0xc obj/sta/iot_uart_rb.o
+                0x000073e4                ATCmdPrefixIW
  .data.AtCmdPrefixMsg
-                0x000073b0        0x4 obj/sta/iot_uart_rb.o
-                0x000073b0                AtCmdPrefixMsg
+                0x000073f0        0x4 obj/sta/iot_uart_rb.o
+                0x000073f0                AtCmdPrefixMsg
  .data.gCurrentAddress
-                0x000073b4        0x8 obj/sta/wifi_task_pub.o
-                0x000073b4                gCurrentAddress
+                0x000073f4        0x8 obj/sta/wifi_task_pub.o
+                0x000073f4                gCurrentAddress
  .data.BCAST_ADDR
-                0x000073bc        0x8 obj/sta/wifi_task_pub.o
-                0x000073bc                BCAST_ADDR
+                0x000073fc        0x8 obj/sta/wifi_task_pub.o
+                0x000073fc                BCAST_ADDR
  .data.endquery.1371
-                0x000073c4        0x8 obj/sta/tcpip/resolv.o
- .data.g_u8ModuleKey
-                0x000073cc       0x70 obj/sta/AC/src/ac_hal.o
-                0x000073cc                g_u8ModuleKey
- *fill*         0x0000743c        0x4 00000000
- .data.g_u64Domain
-                0x00007440        0x8 obj/sta/AC/src/ac_hal.o
-                0x00007440                g_u64Domain
+                0x00007404        0x8 obj/sta/tcpip/resolv.o
  .data.g_u8DefaultCloudKey
-                0x00007448       0x24 obj/sta/ZC/src/zc/zc_configuration.o
-                0x00007448                g_u8DefaultCloudKey
+                0x0000740c       0x24 obj/sta/ZC/src/zc/zc_configuration.o
+                0x0000740c                g_u8DefaultCloudKey
  .data.g_u8DefaultTokenKey
-                0x0000746c       0x10 obj/sta/ZC/src/zc/zc_configuration.o
-                0x0000746c                g_u8DefaultTokenKey
- .data.optind   0x0000747c        0x2 obj/sta/iot_at_cmd_utility.o
-                0x0000747c                optind
- .data.opterr   0x0000747e        0x1 obj/sta/iot_at_cmd_utility.o
-                0x0000747e                opterr
- *fill*         0x0000747f        0x1 00000000
+                0x00007430       0x10 obj/sta/ZC/src/zc/zc_configuration.o
+                0x00007430                g_u8DefaultTokenKey
+ .data.optind   0x00007440        0x2 obj/sta/iot_at_cmd_utility.o
+                0x00007440                optind
+ .data.opterr   0x00007442        0x1 obj/sta/iot_at_cmd_utility.o
+                0x00007442                opterr
+ *fill*         0x00007443        0x1 00000000
  .data.SNAP_802_1H
-                0x00007480        0x8 obj/sta/iot_uplink.o
-                0x00007480                SNAP_802_1H
+                0x00007444        0x8 obj/sta/iot_uplink.o
+                0x00007444                SNAP_802_1H
  .data.SNAP_BRIDGE_TUNNEL
-                0x00007488        0x8 obj/sta/iot_uplink.o
-                0x00007488                SNAP_BRIDGE_TUNNEL
- .data.EAPOL    0x00007490        0x4 obj/sta/iot_uplink.o
-                0x00007490                EAPOL
+                0x0000744c        0x8 obj/sta/iot_uplink.o
+                0x0000744c                SNAP_BRIDGE_TUNNEL
+ .data.EAPOL    0x00007454        0x4 obj/sta/iot_uplink.o
+                0x00007454                EAPOL
  .data.hostname
-                0x00007494        0x8 obj/sta/tcpip/dhcpc.o
- .data.cli_fd   0x0000749c        0x4 obj/sta/tcpip/tcpip_main.o
-                0x0000749c                cli_fd
+                0x00007458        0x8 obj/sta/tcpip/dhcpc.o
+ .data.cli_fd   0x00007460        0x4 obj/sta/tcpip/tcpip_main.o
+                0x00007460                cli_fd
  .data.uip_ethaddr
-                0x000074a0        0x8 obj/sta/tcpip/uip.o
-                0x000074a0                uip_ethaddr
+                0x00007464        0x8 obj/sta/tcpip/uip.o
+                0x00007464                uip_ethaddr
  .data.OUI_WPA_NONE_AKM
-                0x000074a8        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074a8                OUI_WPA_NONE_AKM
+                0x0000746c        0x4 .\libandessta.a(cmm_wpa.o)
+                0x0000746c                OUI_WPA_NONE_AKM
  .data.OUI_WPA_VERSION
-                0x000074ac        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074ac                OUI_WPA_VERSION
+                0x00007470        0x4 .\libandessta.a(cmm_wpa.o)
+                0x00007470                OUI_WPA_VERSION
  .data.OUI_WPA_TKIP
-                0x000074b0        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074b0                OUI_WPA_TKIP
+                0x00007474        0x4 .\libandessta.a(cmm_wpa.o)
+                0x00007474                OUI_WPA_TKIP
  .data.OUI_WPA_CCMP
-                0x000074b4        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074b4                OUI_WPA_CCMP
+                0x00007478        0x4 .\libandessta.a(cmm_wpa.o)
+                0x00007478                OUI_WPA_CCMP
  .data.OUI_WPA_8021X_AKM
-                0x000074b8        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074b8                OUI_WPA_8021X_AKM
+                0x0000747c        0x4 .\libandessta.a(cmm_wpa.o)
+                0x0000747c                OUI_WPA_8021X_AKM
  .data.OUI_WPA_PSK_AKM
-                0x000074bc        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074bc                OUI_WPA_PSK_AKM
+                0x00007480        0x4 .\libandessta.a(cmm_wpa.o)
+                0x00007480                OUI_WPA_PSK_AKM
  .data.OUI_WPA2
-                0x000074c0        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074c0                OUI_WPA2
+                0x00007484        0x4 .\libandessta.a(cmm_wpa.o)
+                0x00007484                OUI_WPA2
  .data.OUI_WPA2_TKIP
-                0x000074c4        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074c4                OUI_WPA2_TKIP
+                0x00007488        0x4 .\libandessta.a(cmm_wpa.o)
+                0x00007488                OUI_WPA2_TKIP
  .data.OUI_WPA2_CCMP
-                0x000074c8        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074c8                OUI_WPA2_CCMP
+                0x0000748c        0x4 .\libandessta.a(cmm_wpa.o)
+                0x0000748c                OUI_WPA2_CCMP
  .data.OUI_WPA2_8021X_AKM
-                0x000074cc        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074cc                OUI_WPA2_8021X_AKM
+                0x00007490        0x4 .\libandessta.a(cmm_wpa.o)
+                0x00007490                OUI_WPA2_8021X_AKM
  .data.OUI_WPA2_PSK_AKM
-                0x000074d0        0x4 .\libandessta.a(cmm_wpa.o)
-                0x000074d0                OUI_WPA2_PSK_AKM
+                0x00007494        0x4 .\libandessta.a(cmm_wpa.o)
+                0x00007494                OUI_WPA2_PSK_AKM
  .data.g_tx_pkt_id
-                0x000074d4        0x1 .\libandessta.a(rtmp_data.o)
- *fill*         0x000074d5        0x3 00000000
+                0x00007498        0x1 .\libandessta.a(rtmp_data.o)
+ *fill*         0x00007499        0x3 00000000
  .data.Full_ChannelList
-                0x000074d8       0x28 .\libandessta.a(scan.o)
-                0x000074d8                Full_ChannelList
+                0x0000749c       0x28 .\libandessta.a(scan.o)
+                0x0000749c                Full_ChannelList
  .data.Full_ChannelList_Size
-                0x00007500        0x1 .\libandessta.a(scan.o)
-                0x00007500                Full_ChannelList_Size
- .data.HtCapIe  0x00007501        0x1 .\libandessta.a(scan.o)
-                0x00007501                HtCapIe
- *fill*         0x00007502        0x2 00000000
- .data.WPA_OUI  0x00007504        0x4 .\libandessta.a(scan.o)
-                0x00007504                WPA_OUI
- .data.RSN_OUI  0x00007508        0x4 .\libandessta.a(scan.o)
-                0x00007508                RSN_OUI
- .data.WPS_OUI  0x0000750c        0x4 .\libandessta.a(scan.o)
-                0x0000750c                WPS_OUI
+                0x000074c4        0x1 .\libandessta.a(scan.o)
+                0x000074c4                Full_ChannelList_Size
+ .data.HtCapIe  0x000074c5        0x1 .\libandessta.a(scan.o)
+                0x000074c5                HtCapIe
+ *fill*         0x000074c6        0x2 00000000
+ .data.WPA_OUI  0x000074c8        0x4 .\libandessta.a(scan.o)
+                0x000074c8                WPA_OUI
+ .data.RSN_OUI  0x000074cc        0x4 .\libandessta.a(scan.o)
+                0x000074cc                RSN_OUI
+ .data.WPS_OUI  0x000074d0        0x4 .\libandessta.a(scan.o)
+                0x000074d0                WPS_OUI
  .data.sysXcptVctr
-                0x00007510       0x40 .\libandessta.a(xcpt.o)
- .data.Random   0x00007550        0x4 .\libandessta.a(random.o)
+                0x000074d4       0x40 .\libandessta.a(xcpt.o)
+ .data.Random   0x00007514        0x4 .\libandessta.a(random.o)
  .data.SupRateIe
-                0x00007554        0x1 .\libandessta.a(mt7681_ChSw.o)
-                0x00007554                SupRateIe
+                0x00007518        0x1 .\libandessta.a(mt7681_ChSw.o)
+                0x00007518                SupRateIe
  .data.ExtRateIe
-                0x00007555        0x1 .\libandessta.a(mt7681_ChSw.o)
-                0x00007555                ExtRateIe
- *fill*         0x00007556        0x2 00000000
+                0x00007519        0x1 .\libandessta.a(mt7681_ChSw.o)
+                0x00007519                ExtRateIe
+ *fill*         0x0000751a        0x2 00000000
  .data.WME_PARM_ELEM
-                0x00007558        0x8 .\libandessta.a(mt7681_ChSw.o)
-                0x00007558                WME_PARM_ELEM
+                0x0000751c        0x8 .\libandessta.a(mt7681_ChSw.o)
+                0x0000751c                WME_PARM_ELEM
  .data.SSID_TMP
-                0x00007560        0x4 .\libandessta.a(wifi_task.o)
-                0x00007560                SSID_TMP
+                0x00007524        0x4 .\libandessta.a(wifi_task.o)
+                0x00007524                SSID_TMP
  .data.RTDebugLevel
-                0x00007564        0x1 .\libandessta.a(wifi_task.o)
-                0x00007564                RTDebugLevel
- *fill*         0x00007565        0x3 00000000
- .data._ctype   0x00007568      0x100 .\libandessta.a(ctype.o)
-                0x00007568                _ctype
-                0x00007668                . = ALIGN (0x4)
+                0x00007528        0x1 .\libandessta.a(wifi_task.o)
+                0x00007528                RTDebugLevel
+ *fill*         0x00007529        0x3 00000000
+ .data._ctype   0x0000752c      0x100 .\libandessta.a(ctype.o)
+                0x0000752c                _ctype
+                0x0000762c                . = ALIGN (0x4)
 
-FW_VERSION_TAG  0x00007668        0xc
+FW_VERSION_TAG  0x0000762c        0xc
  *(FW_VERSION_TAG)
  FW_VERSION_TAG
-                0x00007668        0xc .\libandessta.a(bsp.o)
-                0x00007668                gVersionTag
-                0x00007674                __tag_end = .
+                0x0000762c        0xc .\libandessta.a(bsp.o)
+                0x0000762c                gVersionTag
+                0x00007638                __tag_end = .
 
-.ovlysec0       0x00007674      0xf94 load address 0x0053f000
- .ovlysec0      0x00007674      0xf94 obj/sta/tcpip/uip.o
-                0x00007674                _uip_process
+.ovlysec0       0x00007638      0xf94 load address 0x0053f000
+ .ovlysec0      0x00007638      0xf94 obj/sta/tcpip/uip.o
+                0x00007638                _uip_process
                 0x0053f000                PROVIDE (__load_start_ovlysec0, LOADADDR (.ovlysec0))
                 0x0053ff94                PROVIDE (__load_stop_ovlysec0, (LOADADDR (.ovlysec0) + SIZEOF (.ovlysec0)))
 
-.ovlysec1       0x00007674        0x0 load address 0x0053ff94
+.ovlysec1       0x00007638        0x0 load address 0x0053ff94
                 0x0053ff94                PROVIDE (__load_start_ovlysec1, LOADADDR (.ovlysec1))
                 0x0053ff94                PROVIDE (__load_stop_ovlysec1, (LOADADDR (.ovlysec1) + SIZEOF (.ovlysec1)))
 
-.ovlysec2       0x00007674      0x814 load address 0x0053ff94
- .ovlysec2      0x00007674      0x814 .\libandessta.a(chip_init.o)
-                0x00007674                MACRegTable
-                0x00007dd4                MT7681_RF_VGA_RegTb
-                0x0000779c                MT7681_MACRegTable
-                0x00007d20                MT7681_RF_Channel_RegTb
-                0x00007c9c                MT7681_RF_Central_RegTb
-                0x000077ec                MT7681_BBP_InitRegTb
-                0x000077cc                BBPRegTable
+.ovlysec2       0x00007638      0x814 load address 0x0053ff94
+ .ovlysec2      0x00007638      0x814 .\libandessta.a(chip_init.o)
+                0x00007638                MACRegTable
+                0x00007d98                MT7681_RF_VGA_RegTb
+                0x00007760                MT7681_MACRegTable
+                0x00007ce4                MT7681_RF_Channel_RegTb
+                0x00007c60                MT7681_RF_Central_RegTb
+                0x000077b0                MT7681_BBP_InitRegTb
+                0x00007790                BBPRegTable
                 0x0053ff94                PROVIDE (__load_start_ovlysec2, LOADADDR (.ovlysec2))
                 0x005407a8                PROVIDE (__load_stop_ovlysec2, (LOADADDR (.ovlysec2) + SIZEOF (.ovlysec2)))
 
-.ovlysec3       0x00007674      0x480 load address 0x005407a8
- .ovlysec3      0x00007674      0x480 .\libandessta.a(scan.o)
-                0x00007674                PeerBeaconAndProbeRspSanity
+.ovlysec3       0x00007638      0x480 load address 0x005407a8
+ .ovlysec3      0x00007638      0x480 .\libandessta.a(scan.o)
+                0x00007638                PeerBeaconAndProbeRspSanity
                 0x005407a8                PROVIDE (__load_start_ovlysec3, LOADADDR (.ovlysec3))
                 0x00540c28                PROVIDE (__load_stop_ovlysec3, (LOADADDR (.ovlysec3) + SIZEOF (.ovlysec3)))
 
-.ovlysec4       0x00007674      0x43c load address 0x00540c28
- .ovlysec4      0x00007674      0x43c .\libandessta.a(smtcn.o)
-                0x00007674                SMTCNRX_done
-                0x00007860                _SMTCNParsingMulticast
-                0x000076fc                _SMTCNGetInfo
+.ovlysec4       0x00007638      0x43c load address 0x00540c28
+ .ovlysec4      0x00007638      0x43c .\libandessta.a(smtcn.o)
+                0x00007638                SMTCNRX_done
+                0x00007824                _SMTCNParsingMulticast
+                0x000076c0                _SMTCNGetInfo
                 0x00540c28                PROVIDE (__load_start_ovlysec4, LOADADDR (.ovlysec4))
                 0x00541064                PROVIDE (__load_stop_ovlysec4, (LOADADDR (.ovlysec4) + SIZEOF (.ovlysec4)))
 
-.ovlysec5       0x00007674      0x594 load address 0x00541064
- .ovlysec5      0x00007674      0x594 .\libandessta.a(assoc.o)
-                0x0000799c                _MlmeAssocReqAction
-                0x0000789c                _PeerAssocRspAction
-                0x00007674                PeerAssocRspSanity
-                0x00007840                _PeerDisassocAction
+.ovlysec5       0x00007638      0x594 load address 0x00541064
+ .ovlysec5      0x00007638      0x594 .\libandessta.a(assoc.o)
+                0x00007960                _MlmeAssocReqAction
+                0x00007860                _PeerAssocRspAction
+                0x00007638                PeerAssocRspSanity
+                0x00007804                _PeerDisassocAction
                 0x00541064                PROVIDE (__load_start_ovlysec5, LOADADDR (.ovlysec5))
                 0x005415f8                PROVIDE (__load_stop_ovlysec5, (LOADADDR (.ovlysec5) + SIZEOF (.ovlysec5)))
 
-.ovlysec6       0x00007674      0x1b4 load address 0x005415f8
- .ovlysec6      0x00007674      0x1b4 .\libandessta.a(auth.o)
-                0x00007724                _AUTH_ReqSend
-                0x00007674                _MlmeAuthProcess
+.ovlysec6       0x00007638      0x1b4 load address 0x005415f8
+ .ovlysec6      0x00007638      0x1b4 .\libandessta.a(auth.o)
+                0x000076e8                _AUTH_ReqSend
+                0x00007638                _MlmeAuthProcess
                 0x005415f8                PROVIDE (__load_start_ovlysec6, LOADADDR (.ovlysec6))
                 0x005417ac                PROVIDE (__load_stop_ovlysec6, (LOADADDR (.ovlysec6) + SIZEOF (.ovlysec6)))
 
-.ovlysec7       0x00007674      0xe68 load address 0x005417ac
- .ovlysec7      0x00007674      0xe68 .\libandessta.a(cmm_wpa.o)
-                0x00007890                _CalculateMIC
-                0x00007a30                _ConstructEapolMsg
-                0x00007c8c                _WpaDeriveGTK
-                0x00007d78                _WpaDerivePTK
-                0x0000825c                _PeerPairMsg3Action
-                0x00007f08                _PeerWpaMessageSanity
-                0x00008160                _PeerGroupMsg1Action
-                0x00007674                _WPAInstallSharedKey
-                0x00007740                _RTMPParseEapolKeyData
-                0x0000838c                _PeerPairMsg1Action
-                0x00007964                _ConstructEapolKeyData
+.ovlysec7       0x00007638      0xe68 load address 0x005417ac
+ .ovlysec7      0x00007638      0xe68 .\libandessta.a(cmm_wpa.o)
+                0x00007854                _CalculateMIC
+                0x000079f4                _ConstructEapolMsg
+                0x00007c50                _WpaDeriveGTK
+                0x00007d3c                _WpaDerivePTK
+                0x00008220                _PeerPairMsg3Action
+                0x00007ecc                _PeerWpaMessageSanity
+                0x00008124                _PeerGroupMsg1Action
+                0x00007638                _WPAInstallSharedKey
+                0x00007704                _RTMPParseEapolKeyData
+                0x00008350                _PeerPairMsg1Action
+                0x00007928                _ConstructEapolKeyData
                 0x005417ac                PROVIDE (__load_start_ovlysec7, LOADADDR (.ovlysec7))
                 0x00542614                PROVIDE (__load_stop_ovlysec7, (LOADADDR (.ovlysec7) + SIZEOF (.ovlysec7)))
 
-.ovlysec8       0x00008608      0x438 load address 0x00542614
- .ovlysec8      0x00008608      0x438 .\libandessta.a(scan.o)
-                0x00008608                _PeerBeaconAtScanAction
+.ovlysec8       0x000085cc      0x438 load address 0x00542614
+ .ovlysec8      0x000085cc      0x438 .\libandessta.a(scan.o)
+                0x000085cc                _PeerBeaconAtScanAction
                 0x00542614                PROVIDE (__load_start_ovlysec8, LOADADDR (.ovlysec8))
                 0x00542a4c                PROVIDE (__load_stop_ovlysec8, (LOADADDR (.ovlysec8) + SIZEOF (.ovlysec8)))
 
-.ovlysec9       0x00008608      0x1f4 load address 0x00542a4c
- .ovlysec9      0x00008608      0x1f4 obj/sta/tcpip/tcpip_main.o
-                0x00008608                _tcpip_init
+.ovlysec9       0x000085cc      0x1f4 load address 0x00542a4c
+ .ovlysec9      0x000085cc      0x1f4 obj/sta/tcpip/tcpip_main.o
+                0x000085cc                _tcpip_init
                 0x00542a4c                PROVIDE (__load_start_ovlysec9, LOADADDR (.ovlysec9))
                 0x00542c40                PROVIDE (__load_stop_ovlysec9, (LOADADDR (.ovlysec9) + SIZEOF (.ovlysec9)))
 
-.ovlysec10      0x00008608      0x150 load address 0x00542c40
- .ovlysec10     0x00008608      0x150 obj/sta/tcpip/dhcpc.o
-                0x00008608                _handle_dhcp
+.ovlysec10      0x000085cc      0x150 load address 0x00542c40
+ .ovlysec10     0x000085cc      0x150 obj/sta/tcpip/dhcpc.o
+                0x000085cc                _handle_dhcp
                 0x00542c40                PROVIDE (__load_start_ovlysec10, LOADADDR (.ovlysec10))
                 0x00542d90                PROVIDE (__load_stop_ovlysec10, (LOADADDR (.ovlysec10) + SIZEOF (.ovlysec10)))
 
-.ovlysec11      0x00008608      0x178 load address 0x00542d90
- .ovlysec11     0x00008608      0x178 .\libandessta.a(chip_init.o)
-                0x00008654                wait_bbp_rf_wakeup
-                0x00008690                NICInitMT7681BbpRegisters
-                0x000086f4                NICInitMT7681RFRegisters
-                0x00008608                NICInitMT7681MacRegisters
+.ovlysec11      0x000085cc      0x178 load address 0x00542d90
+ .ovlysec11     0x000085cc      0x178 .\libandessta.a(chip_init.o)
+                0x00008618                wait_bbp_rf_wakeup
+                0x00008654                NICInitMT7681BbpRegisters
+                0x000086b8                NICInitMT7681RFRegisters
+                0x000085cc                NICInitMT7681MacRegisters
                 0x00542d90                PROVIDE (__load_start_ovlysec11, LOADADDR (.ovlysec11))
                 0x00542f08                PROVIDE (__load_stop_ovlysec11, (LOADADDR (.ovlysec11) + SIZEOF (.ovlysec11)))
-                0x00008a40                . = ALIGN (0x4)
+                0x00008a04                . = ALIGN (0x4)
 
 .nds32.ovly.tbl
-                0x00008a40       0xe4
-                0x00008a40                _ovly_table = .
-                0x00008a40        0x4 LONG 0x7674 ABSOLUTE (ADDR (.ovlysec0))
-                0x00008a44        0x4 LONG 0xf94 SIZEOF (.ovlysec0)
-                0x00008a48        0x4 LONG 0x53f000 ABSOLUTE (LOADADDR (.ovlysec0))
-                0x00008a4c        0x4 LONG 0x0
-                0x00008a50        0x4 LONG 0x7674 ABSOLUTE (ADDR (.ovlysec1))
-                0x00008a54        0x4 LONG 0x0 SIZEOF (.ovlysec1)
-                0x00008a58        0x4 LONG 0x53ff94 ABSOLUTE (LOADADDR (.ovlysec1))
-                0x00008a5c        0x4 LONG 0x0
-                0x00008a60        0x4 LONG 0x7674 ABSOLUTE (ADDR (.ovlysec2))
-                0x00008a64        0x4 LONG 0x814 SIZEOF (.ovlysec2)
-                0x00008a68        0x4 LONG 0x53ff94 ABSOLUTE (LOADADDR (.ovlysec2))
-                0x00008a6c        0x4 LONG 0x0
-                0x00008a70        0x4 LONG 0x7674 ABSOLUTE (ADDR (.ovlysec3))
-                0x00008a74        0x4 LONG 0x480 SIZEOF (.ovlysec3)
-                0x00008a78        0x4 LONG 0x5407a8 ABSOLUTE (LOADADDR (.ovlysec3))
-                0x00008a7c        0x4 LONG 0x0
-                0x00008a80        0x4 LONG 0x7674 ABSOLUTE (ADDR (.ovlysec4))
-                0x00008a84        0x4 LONG 0x43c SIZEOF (.ovlysec4)
-                0x00008a88        0x4 LONG 0x540c28 ABSOLUTE (LOADADDR (.ovlysec4))
-                0x00008a8c        0x4 LONG 0x0
-                0x00008a90        0x4 LONG 0x7674 ABSOLUTE (ADDR (.ovlysec5))
-                0x00008a94        0x4 LONG 0x594 SIZEOF (.ovlysec5)
-                0x00008a98        0x4 LONG 0x541064 ABSOLUTE (LOADADDR (.ovlysec5))
-                0x00008a9c        0x4 LONG 0x0
-                0x00008aa0        0x4 LONG 0x7674 ABSOLUTE (ADDR (.ovlysec6))
-                0x00008aa4        0x4 LONG 0x1b4 SIZEOF (.ovlysec6)
-                0x00008aa8        0x4 LONG 0x5415f8 ABSOLUTE (LOADADDR (.ovlysec6))
-                0x00008aac        0x4 LONG 0x0
-                0x00008ab0        0x4 LONG 0x7674 ABSOLUTE (ADDR (.ovlysec7))
-                0x00008ab4        0x4 LONG 0xe68 SIZEOF (.ovlysec7)
-                0x00008ab8        0x4 LONG 0x5417ac ABSOLUTE (LOADADDR (.ovlysec7))
-                0x00008abc        0x4 LONG 0x0
-                0x00008ac0        0x4 LONG 0x8608 ABSOLUTE (ADDR (.ovlysec8))
-                0x00008ac4        0x4 LONG 0x438 SIZEOF (.ovlysec8)
-                0x00008ac8        0x4 LONG 0x542614 ABSOLUTE (LOADADDR (.ovlysec8))
-                0x00008acc        0x4 LONG 0x1
-                0x00008ad0        0x4 LONG 0x8608 ABSOLUTE (ADDR (.ovlysec9))
-                0x00008ad4        0x4 LONG 0x1f4 SIZEOF (.ovlysec9)
-                0x00008ad8        0x4 LONG 0x542a4c ABSOLUTE (LOADADDR (.ovlysec9))
-                0x00008adc        0x4 LONG 0x1
-                0x00008ae0        0x4 LONG 0x8608 ABSOLUTE (ADDR (.ovlysec10))
-                0x00008ae4        0x4 LONG 0x150 SIZEOF (.ovlysec10)
-                0x00008ae8        0x4 LONG 0x542c40 ABSOLUTE (LOADADDR (.ovlysec10))
-                0x00008aec        0x4 LONG 0x1
-                0x00008af0        0x4 LONG 0x8608 ABSOLUTE (ADDR (.ovlysec11))
-                0x00008af4        0x4 LONG 0x178 SIZEOF (.ovlysec11)
-                0x00008af8        0x4 LONG 0x542d90 ABSOLUTE (LOADADDR (.ovlysec11))
-                0x00008afc        0x4 LONG 0x1
-                0x00008b00                _novlys = .
-                0x00008b00        0x4 LONG 0xc ((_novlys - _ovly_table) / 0x10)
-                0x00008b08                . = ALIGN (0x8)
- *fill*         0x00008b04        0x4 00
-                0x00008b08                _ovly_ram_table = .
-                0x00008b08        0x4 LONG 0x0
-                0x00008b0c        0x4 LONG 0xffffffff
-                0x00008b10        0x4 LONG 0x0
-                0x00008b14        0x4 LONG 0x1
-                0x00008b18        0x4 LONG 0xffffffff
-                0x00008b1c        0x4 LONG 0x0
-                0x00008b20                _novlyr = .
-                0x00008b20        0x4 LONG 0x2 ((_novlyr - _ovly_ram_table) / 0xc)
-                0x00008b30                . = ALIGN (0x10)
-                0x00008b30                BSS_SECT_VMA = .
+                0x00008a04       0xe0
+                0x00008a04                _ovly_table = .
+                0x00008a04        0x4 LONG 0x7638 ABSOLUTE (ADDR (.ovlysec0))
+                0x00008a08        0x4 LONG 0xf94 SIZEOF (.ovlysec0)
+                0x00008a0c        0x4 LONG 0x53f000 ABSOLUTE (LOADADDR (.ovlysec0))
+                0x00008a10        0x4 LONG 0x0
+                0x00008a14        0x4 LONG 0x7638 ABSOLUTE (ADDR (.ovlysec1))
+                0x00008a18        0x4 LONG 0x0 SIZEOF (.ovlysec1)
+                0x00008a1c        0x4 LONG 0x53ff94 ABSOLUTE (LOADADDR (.ovlysec1))
+                0x00008a20        0x4 LONG 0x0
+                0x00008a24        0x4 LONG 0x7638 ABSOLUTE (ADDR (.ovlysec2))
+                0x00008a28        0x4 LONG 0x814 SIZEOF (.ovlysec2)
+                0x00008a2c        0x4 LONG 0x53ff94 ABSOLUTE (LOADADDR (.ovlysec2))
+                0x00008a30        0x4 LONG 0x0
+                0x00008a34        0x4 LONG 0x7638 ABSOLUTE (ADDR (.ovlysec3))
+                0x00008a38        0x4 LONG 0x480 SIZEOF (.ovlysec3)
+                0x00008a3c        0x4 LONG 0x5407a8 ABSOLUTE (LOADADDR (.ovlysec3))
+                0x00008a40        0x4 LONG 0x0
+                0x00008a44        0x4 LONG 0x7638 ABSOLUTE (ADDR (.ovlysec4))
+                0x00008a48        0x4 LONG 0x43c SIZEOF (.ovlysec4)
+                0x00008a4c        0x4 LONG 0x540c28 ABSOLUTE (LOADADDR (.ovlysec4))
+                0x00008a50        0x4 LONG 0x0
+                0x00008a54        0x4 LONG 0x7638 ABSOLUTE (ADDR (.ovlysec5))
+                0x00008a58        0x4 LONG 0x594 SIZEOF (.ovlysec5)
+                0x00008a5c        0x4 LONG 0x541064 ABSOLUTE (LOADADDR (.ovlysec5))
+                0x00008a60        0x4 LONG 0x0
+                0x00008a64        0x4 LONG 0x7638 ABSOLUTE (ADDR (.ovlysec6))
+                0x00008a68        0x4 LONG 0x1b4 SIZEOF (.ovlysec6)
+                0x00008a6c        0x4 LONG 0x5415f8 ABSOLUTE (LOADADDR (.ovlysec6))
+                0x00008a70        0x4 LONG 0x0
+                0x00008a74        0x4 LONG 0x7638 ABSOLUTE (ADDR (.ovlysec7))
+                0x00008a78        0x4 LONG 0xe68 SIZEOF (.ovlysec7)
+                0x00008a7c        0x4 LONG 0x5417ac ABSOLUTE (LOADADDR (.ovlysec7))
+                0x00008a80        0x4 LONG 0x0
+                0x00008a84        0x4 LONG 0x85cc ABSOLUTE (ADDR (.ovlysec8))
+                0x00008a88        0x4 LONG 0x438 SIZEOF (.ovlysec8)
+                0x00008a8c        0x4 LONG 0x542614 ABSOLUTE (LOADADDR (.ovlysec8))
+                0x00008a90        0x4 LONG 0x1
+                0x00008a94        0x4 LONG 0x85cc ABSOLUTE (ADDR (.ovlysec9))
+                0x00008a98        0x4 LONG 0x1f4 SIZEOF (.ovlysec9)
+                0x00008a9c        0x4 LONG 0x542a4c ABSOLUTE (LOADADDR (.ovlysec9))
+                0x00008aa0        0x4 LONG 0x1
+                0x00008aa4        0x4 LONG 0x85cc ABSOLUTE (ADDR (.ovlysec10))
+                0x00008aa8        0x4 LONG 0x150 SIZEOF (.ovlysec10)
+                0x00008aac        0x4 LONG 0x542c40 ABSOLUTE (LOADADDR (.ovlysec10))
+                0x00008ab0        0x4 LONG 0x1
+                0x00008ab4        0x4 LONG 0x85cc ABSOLUTE (ADDR (.ovlysec11))
+                0x00008ab8        0x4 LONG 0x178 SIZEOF (.ovlysec11)
+                0x00008abc        0x4 LONG 0x542d90 ABSOLUTE (LOADADDR (.ovlysec11))
+                0x00008ac0        0x4 LONG 0x1
+                0x00008ac4                _novlys = .
+                0x00008ac4        0x4 LONG 0xc ((_novlys - _ovly_table) / 0x10)
+                0x00008ac8                . = ALIGN (0x8)
+                0x00008ac8                _ovly_ram_table = .
+                0x00008ac8        0x4 LONG 0x0
+                0x00008acc        0x4 LONG 0xffffffff
+                0x00008ad0        0x4 LONG 0x0
+                0x00008ad4        0x4 LONG 0x1
+                0x00008ad8        0x4 LONG 0xffffffff
+                0x00008adc        0x4 LONG 0x0
+                0x00008ae0                _novlyr = .
+                0x00008ae0        0x4 LONG 0x2 ((_novlyr - _ovly_ram_table) / 0xc)
+                0x00008af0                . = ALIGN (0x10)
+                0x00008af0                BSS_SECT_VMA = .
 
-.BSS            0x00008b30     0x6868
-                0x00008b30                PROVIDE (_BSS_START, .)
+.BSS            0x00008af0     0x674c
+                0x00008af0                PROVIDE (_BSS_START, .)
  *(.sbss)
  *(.sbss.*)
  *(.scommon)
  *(.scommon.*)
  *(.sbss_w)
- .sbss_w        0x00008b30        0x8 obj/sta/wifi_task_pub.o
-                0x00008b30                pIoTMlme
-                0x00008b34                pIoTStaCfg
- .sbss_w        0x00008b38        0x4 obj/sta/ZC/src/zc/zc_bc.o
-                0x00008b38                g_u32GloablIp
- .sbss_w        0x00008b3c       0x10 obj/sta/tcpip/uip.o
-                0x00008b48                uip_sappdata
-                0x00008b3c                uip_udp_conn
-                0x00008b40                uip_appdata
-                0x00008b44                uip_conn
- .sbss_w        0x00008b4c        0x4 .\libandessta.a(bsp.o)
-                0x00008b4c                __OS_Heap_Start
+ .sbss_w        0x00008af0        0x8 obj/sta/wifi_task_pub.o
+                0x00008af0                pIoTMlme
+                0x00008af4                pIoTStaCfg
+ .sbss_w        0x00008af8        0x4 obj/sta/ZC/src/zc/zc_bc.o
+                0x00008af8                g_u32GloablIp
+ .sbss_w        0x00008afc       0x10 obj/sta/tcpip/uip.o
+                0x00008b08                uip_sappdata
+                0x00008afc                uip_udp_conn
+                0x00008b00                uip_appdata
+                0x00008b04                uip_conn
+ .sbss_w        0x00008b0c        0x4 .\libandessta.a(bsp.o)
+                0x00008b0c                __OS_Heap_Start
  *(.sbss_w.*)
  *(.sbss_h)
- .sbss_h        0x00008b50        0x6 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00008b50                g_u16TcpMss
-                0x00008b54                g_u16LocalListenPort
-                0x00008b52                g_u16LocalPort
- .sbss_h        0x00008b56        0x6 obj/sta/tcpip/uip.o
-                0x00008b56                uip_len
-                0x00008b5a                ipid
-                0x00008b58                uip_slen
+ .sbss_h        0x00008b10        0x6 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00008b10                g_u16TcpMss
+                0x00008b14                g_u16LocalListenPort
+                0x00008b12                g_u16LocalPort
+ .sbss_h        0x00008b16        0x6 obj/sta/tcpip/uip.o
+                0x00008b16                uip_len
+                0x00008b1a                ipid
+                0x00008b18                uip_slen
  *(.sbss_h.*)
  *(.sbss_b)
- .sbss_b        0x00008b5c        0x1 obj/sta/tcpip/uip.o
-                0x00008b5c                uip_flags
- .sbss_b        0x00008b5d        0x1 .\libandessta.a(iot_priv.o)
-                0x00008b5d                bXmodelStart
+ .sbss_b        0x00008b1c        0x1 obj/sta/tcpip/uip.o
+                0x00008b1c                uip_flags
+ .sbss_b        0x00008b1d        0x1 .\libandessta.a(iot_priv.o)
+                0x00008b1d                bXmodelStart
  *(.sbss_b.*)
-                0x00008b60                . = ALIGN (0x10)
- *fill*         0x00008b5e        0x2 00000000
+                0x00008b20                . = ALIGN (0x10)
+ *fill*         0x00008b1e        0x2 00000000
  *(.bss)
  *(.bss.*)
- .bss.Usr_Cfg   0x00008b60      0x128 obj/sta/iot_custom.o
-                0x00008b60                Usr_Cfg
+ .bss.Usr_Cfg   0x00008b20      0x164 obj/sta/iot_custom.o
+                0x00008b20                Usr_Cfg
  .bss.gCaliFrEfuse
-                0x00008c88        0x1 obj/sta/iot_custom.o
-                0x00008c88                gCaliFrEfuse
+                0x00008c84        0x1 obj/sta/iot_custom.o
+                0x00008c84                gCaliFrEfuse
  .bss.UART_TX_POLL_ENABLE
-                0x00008c89        0x1 obj/sta/iot_custom.o
-                0x00008c89                UART_TX_POLL_ENABLE
- .bss.MsgLen.3044
-                0x00008c8a        0x2 obj/sta/iot_uart_rb.o
- .bss.LastCh.3043
+                0x00008c85        0x1 obj/sta/iot_custom.o
+                0x00008c85                UART_TX_POLL_ENABLE
+ .bss.HeaderLen
+                0x00008c86        0x1 obj/sta/iot_uart_rb.o
+                0x00008c86                HeaderLen
+ *fill*         0x00008c87        0x1 00000000
+ .bss.MsgLen.3049
+                0x00008c88        0x2 obj/sta/iot_uart_rb.o
+ .bss.LastCh.3048
+                0x00008c8a        0x1 obj/sta/iot_uart_rb.o
+ .bss.MsgMatchNum.3047
+                0x00008c8b        0x1 obj/sta/iot_uart_rb.o
+ .bss.IWMatchNum.3046
                 0x00008c8c        0x1 obj/sta/iot_uart_rb.o
- .bss.MsgMatchNum.3042
+ .bss.ATMatchNum.3045
                 0x00008c8d        0x1 obj/sta/iot_uart_rb.o
- .bss.IWMatchNum.3041
-                0x00008c8e        0x1 obj/sta/iot_uart_rb.o
- .bss.ATMatchNum.3040
-                0x00008c8f        0x1 obj/sta/iot_uart_rb.o
- .bss.gSmnted   0x00008c90        0x1 obj/sta/wifi_task_pub.o
-                0x00008c90                gSmnted
- *fill*         0x00008c91        0x3 00000000
+ .bss.gSmnted   0x00008c8e        0x1 obj/sta/wifi_task_pub.o
+                0x00008c8e                gSmnted
+ *fill*         0x00008c8f        0x1 00000000
  .bss.PreTime.2590
-                0x00008c94        0x4 obj/sta/wifi_task_pub.o
- .bss.i.1547    0x00008c98        0x1 obj/sta/tcpip/resolv.o
- *fill*         0x00008c99        0x3 00000000
+                0x00008c90        0x4 obj/sta/wifi_task_pub.o
+ .bss.i.1547    0x00008c94        0x1 obj/sta/tcpip/resolv.o
+ *fill*         0x00008c95        0x3 00000000
  .bss.resolv_conn
-                0x00008c9c        0x4 obj/sta/tcpip/resolv.o
- .bss.i.1512    0x00008ca0        0x1 obj/sta/tcpip/resolv.o
+                0x00008c98        0x4 obj/sta/tcpip/resolv.o
+ .bss.i.1512    0x00008c9c        0x1 obj/sta/tcpip/resolv.o
  .bss.lseqi.1483
-                0x00008ca1        0x1 obj/sta/tcpip/resolv.o
+                0x00008c9d        0x1 obj/sta/tcpip/resolv.o
  .bss.lseq.1482
-                0x00008ca2        0x1 obj/sta/tcpip/resolv.o
- .bss.i.1481    0x00008ca3        0x1 obj/sta/tcpip/resolv.o
- .bss.i.1420    0x00008ca4        0x2 obj/sta/tcpip/resolv.o
+                0x00008c9e        0x1 obj/sta/tcpip/resolv.o
+ .bss.i.1481    0x00008c9f        0x1 obj/sta/tcpip/resolv.o
+ .bss.i.1420    0x00008ca0        0x2 obj/sta/tcpip/resolv.o
  .bss.nanswers.1419
-                0x00008ca6        0x2 obj/sta/tcpip/resolv.o
+                0x00008ca2        0x2 obj/sta/tcpip/resolv.o
  .bss.nquestions.1418
-                0x00008ca8        0x2 obj/sta/tcpip/resolv.o
- .bss.n.1363    0x00008caa        0x1 obj/sta/tcpip/resolv.o
- .bss.i.1362    0x00008cab        0x1 obj/sta/tcpip/resolv.o
- .bss.names     0x00008cac       0x2c obj/sta/tcpip/resolv.o
- .bss.seqno     0x00008cd8        0x1 obj/sta/tcpip/resolv.o
+                0x00008ca4        0x2 obj/sta/tcpip/resolv.o
+ .bss.n.1363    0x00008ca6        0x1 obj/sta/tcpip/resolv.o
+ .bss.i.1362    0x00008ca7        0x1 obj/sta/tcpip/resolv.o
+ .bss.names     0x00008ca8       0x2c obj/sta/tcpip/resolv.o
+ .bss.seqno     0x00008cd4        0x1 obj/sta/tcpip/resolv.o
  .bss.g_u8ClientSendLen
-                0x00008cd9        0x1 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00008cd9                g_u8ClientSendLen
- *fill*         0x00008cda        0x2 00000000
+                0x00008cd5        0x1 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00008cd5                g_u8ClientSendLen
+ *fill*         0x00008cd6        0x2 00000000
  .bss.g_u32BcSleepCount
-                0x00008cdc        0x4 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00008cdc                g_u32BcSleepCount
- .bss.g_u32CloudStatus
-                0x00008ce0        0x4 obj/sta/AC/src/ac_hal.o
-                0x00008ce0                g_u32CloudStatus
- .bss.g_u32WifiPowerStatus
-                0x00008ce4        0x4 obj/sta/AC/src/ac_hal.o
-                0x00008ce4                g_u32WifiPowerStatus
- .bss.g_u8EqVersion
-                0x00008ce8        0x4 obj/sta/AC/src/ac_hal.o
-                0x00008ce8                g_u8EqVersion
- .bss.g_Bcfd    0x00008cec        0x4 obj/sta/ZC/src/zc/zc_bc.o
-                0x00008cec                g_Bcfd
+                0x00008cd8        0x4 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00008cd8                g_u32BcSleepCount
+ .bss.g_Bcfd    0x00008cdc        0x4 obj/sta/ZC/src/zc/zc_bc.o
+                0x00008cdc                g_Bcfd
  .bss.g_pu8RemoteAddr
-                0x00008cf0        0x4 obj/sta/ZC/src/zc/zc_bc.o
-                0x00008cf0                g_pu8RemoteAddr
- .bss.sleepcount.1760
-                0x00008cf4        0x4 obj/sta/ZC/src/zc/zc_bc.o
- .bss.optarg    0x00008cf8        0x4 obj/sta/iot_at_cmd_utility.o
-                0x00008cf8                optarg
+                0x00008ce0        0x4 obj/sta/ZC/src/zc/zc_bc.o
+                0x00008ce0                g_pu8RemoteAddr
+ .bss.sleepcount.1766
+                0x00008ce4        0x4 obj/sta/ZC/src/zc/zc_bc.o
+ .bss.optarg    0x00008ce8        0x4 obj/sta/iot_at_cmd_utility.o
+                0x00008ce8                optarg
  .bss.pIndexPosition.1213
-                0x00008cfc        0x4 obj/sta/iot_at_cmd_utility.o
+                0x00008cec        0x4 obj/sta/iot_at_cmd_utility.o
  .bss.last_error
-                0x00008d00        0x4 obj/sta/iot_xmodem.o
+                0x00008cf0        0x4 obj/sta/iot_xmodem.o
  .bss.gCPULowClok
-                0x00008d04        0x4 obj/sta/misc_pub.o
-                0x00008d04                gCPULowClok
- .bss.s         0x00008d08       0x34 obj/sta/tcpip/dhcpc.o
- .bss.ss        0x00008d3c        0x4 obj/sta/tcpip/sample_resolv_usage.o
- .bss.iss       0x00008d40        0x4 obj/sta/tcpip/uip.o
- .bss.lastport  0x00008d44        0x2 obj/sta/tcpip/uip.o
- .bss.c         0x00008d46        0x1 obj/sta/tcpip/uip.o
- .bss.opt       0x00008d47        0x1 obj/sta/tcpip/uip.o
- .bss.tmp16     0x00008d48        0x2 obj/sta/tcpip/uip.o
- *fill*         0x00008d4a        0x2 00000000
+                0x00008cf4        0x4 obj/sta/misc_pub.o
+                0x00008cf4                gCPULowClok
+ .bss.s         0x00008cf8       0x34 obj/sta/tcpip/dhcpc.o
+ .bss.ss        0x00008d2c        0x4 obj/sta/tcpip/sample_resolv_usage.o
+ .bss.iss       0x00008d30        0x4 obj/sta/tcpip/uip.o
+ .bss.lastport  0x00008d34        0x2 obj/sta/tcpip/uip.o
+ .bss.c         0x00008d36        0x1 obj/sta/tcpip/uip.o
+ .bss.opt       0x00008d37        0x1 obj/sta/tcpip/uip.o
+ .bss.tmp16     0x00008d38        0x2 obj/sta/tcpip/uip.o
+ *fill*         0x00008d3a        0x2 00000000
  .bss.arp_table
-                0x00008d4c       0x60 obj/sta/tcpip/uip_arp.o
- .bss.ipaddr    0x00008dac        0x4 obj/sta/tcpip/uip_arp.o
- .bss.i         0x00008db0        0x1 obj/sta/tcpip/uip_arp.o
- .bss.c         0x00008db1        0x1 obj/sta/tcpip/uip_arp.o
- .bss.arptime   0x00008db2        0x1 obj/sta/tcpip/uip_arp.o
- .bss.tmpage    0x00008db3        0x1 obj/sta/tcpip/uip_arp.o
- .bss.BufMem1   0x00008db4     0x18d8 .\libandessta.a(queue.o)
- .bss.BufDesc1  0x0000a68c       0x90 .\libandessta.a(queue.o)
- .bss.eepcfg    0x0000a71c       0x44 .\libandessta.a(chip_init.o)
-                0x0000a71c                eepcfg
+                0x00008d3c       0x60 obj/sta/tcpip/uip_arp.o
+ .bss.ipaddr    0x00008d9c        0x4 obj/sta/tcpip/uip_arp.o
+ .bss.i         0x00008da0        0x1 obj/sta/tcpip/uip_arp.o
+ .bss.c         0x00008da1        0x1 obj/sta/tcpip/uip_arp.o
+ .bss.arptime   0x00008da2        0x1 obj/sta/tcpip/uip_arp.o
+ .bss.tmpage    0x00008da3        0x1 obj/sta/tcpip/uip_arp.o
+ .bss.BufMem1   0x00008da4     0x18d8 .\libandessta.a(queue.o)
+ .bss.BufDesc1  0x0000a67c       0x90 .\libandessta.a(queue.o)
+ .bss.eepcfg    0x0000a70c       0x44 .\libandessta.a(chip_init.o)
+                0x0000a70c                eepcfg
  .bss.gSequence
-                0x0000a760        0x2 .\libandessta.a(rtmp_data.o)
-                0x0000a760                gSequence
- *fill*         0x0000a762        0x2 00000000
- .bss.pfsm      0x0000a764      0x128 .\libandessta.a(smtcn.o)
+                0x0000a750        0x2 .\libandessta.a(rtmp_data.o)
+                0x0000a750                gSequence
+ *fill*         0x0000a752        0x2 00000000
+ .bss.pfsm      0x0000a754      0x128 .\libandessta.a(smtcn.o)
  .bss.FceIntHdlr
-                0x0000a88c       0x80 .\libandessta.a(fce.o)
- .bss.jiffies   0x0000a90c        0x4 .\libandessta.a(timer.o)
-                0x0000a90c                jiffies
+                0x0000a87c       0x80 .\libandessta.a(fce.o)
+ .bss.jiffies   0x0000a8fc        0x4 .\libandessta.a(timer.o)
+                0x0000a8fc                jiffies
  .bss.Timers_List
-                0x0000a910        0x4 .\libandessta.a(timer.o)
-                0x0000a910                Timers_List
+                0x0000a900        0x4 .\libandessta.a(timer.o)
+                0x0000a900                Timers_List
  .bss.Timer_Start
-                0x0000a914        0x4 .\libandessta.a(timer.o)
-                0x0000a914                Timer_Start
+                0x0000a904        0x4 .\libandessta.a(timer.o)
+                0x0000a904                Timer_Start
  .bss.last_start_time
-                0x0000a918        0x4 .\libandessta.a(timer.o)
-                0x0000a918                last_start_time
+                0x0000a908        0x4 .\libandessta.a(timer.o)
+                0x0000a908                last_start_time
  .bss.McuCtlIntHdlr
-                0x0000a91c       0x80 .\libandessta.a(mcuctl.o)
- .bss.SsidIe    0x0000a99c        0x1 .\libandessta.a(mt7681_ChSw.o)
-                0x0000a99c                SsidIe
- *fill*         0x0000a99d        0x3 00000000
+                0x0000a90c       0x80 .\libandessta.a(mcuctl.o)
+ .bss.SsidIe    0x0000a98c        0x1 .\libandessta.a(mt7681_ChSw.o)
+                0x0000a98c                SsidIe
+ *fill*         0x0000a98d        0x3 00000000
  .bss.PreTime.5759
-                0x0000a9a0        0x4 .\libandessta.a(mt7681_ChSw.o)
+                0x0000a990        0x4 .\libandessta.a(mt7681_ChSw.o)
  .bss.PreBW.5623
-                0x0000a9a4        0x1 .\libandessta.a(mt7681_ChSw.o)
+                0x0000a994        0x1 .\libandessta.a(mt7681_ChSw.o)
  .bss.RF_ABB_R6_R7_IN_BW20
-                0x0000a9a5        0x1 .\libandessta.a(mt7681_ChSw.o)
+                0x0000a995        0x1 .\libandessta.a(mt7681_ChSw.o)
  .bss.RF_ABB_R58_R59_IN_BW20
-                0x0000a9a6        0x1 .\libandessta.a(mt7681_ChSw.o)
+                0x0000a996        0x1 .\libandessta.a(mt7681_ChSw.o)
  .bss.RF_ABB_R6_R7_IN_BW40
-                0x0000a9a7        0x1 .\libandessta.a(mt7681_ChSw.o)
+                0x0000a997        0x1 .\libandessta.a(mt7681_ChSw.o)
  .bss.RF_ABB_R58_R59_IN_BW40
-                0x0000a9a8        0x1 .\libandessta.a(mt7681_ChSw.o)
- *fill*         0x0000a9a9        0x3 00000000
+                0x0000a998        0x1 .\libandessta.a(mt7681_ChSw.o)
+ *fill*         0x0000a999        0x3 00000000
  .bss.PARAM_Info
-                0x0000a9ac        0x4 .\libandessta.a(mt7681_ChSw.o)
- .bss.TxPWR     0x0000a9b0        0x4 .\libandessta.a(mt7681_ChSw.o)
- .bss.LNAGain   0x0000a9b4        0x4 .\libandessta.a(mt7681_ChSw.o)
+                0x0000a99c        0x4 .\libandessta.a(mt7681_ChSw.o)
+ .bss.TxPWR     0x0000a9a0        0x4 .\libandessta.a(mt7681_ChSw.o)
+ .bss.LNAGain   0x0000a9a4        0x4 .\libandessta.a(mt7681_ChSw.o)
  .bss.wakeup_from_grant
-                0x0000a9b8        0x1 .\libandessta.a(wifi_ps.o)
-                0x0000a9b8                wakeup_from_grant
- .bss.gPmuINT   0x0000a9b9        0x1 .\libandessta.a(wifi_ps.o)
-                0x0000a9b9                gPmuINT
+                0x0000a9a8        0x1 .\libandessta.a(wifi_ps.o)
+                0x0000a9a8                wakeup_from_grant
+ .bss.gPmuINT   0x0000a9a9        0x1 .\libandessta.a(wifi_ps.o)
+                0x0000a9a9                gPmuINT
  .bss.gPmuAbort
-                0x0000a9ba        0x1 .\libandessta.a(wifi_ps.o)
-                0x0000a9ba                gPmuAbort
+                0x0000a9aa        0x1 .\libandessta.a(wifi_ps.o)
+                0x0000a9aa                gPmuAbort
  *(COMMON)
- *fill*         0x0000a9bb        0x1 00000000
- COMMON         0x0000a9bc      0x28d obj/sta/iot_custom.o
-                0x0000a9bc                IoTCustOp
-                0x0000a9d8                IoTCustTimer
-                0x0000a9f4                IoTpAd
- *fill*         0x0000ac49        0x3 00000000
- COMMON         0x0000ac4c      0x448 obj/sta/iot_uart_rb.o
-                0x0000ac4c                uart_rb_info
-                0x0000ac58                UARTPort
-                0x0000ad70                UARTTxBuf
-                0x0000adb0                uart_rb_addr
-                0x0000ae94                UARTRxBuf
- COMMON         0x0000b094     0x1178 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x0000b094                g_struClientBuffer
-                0x0000b2f4                g_struMtTimer
-                0x0000b344                g_struRecvBuffer
-                0x0000b5a4                g_struMt7681Adapter
-                0x0000b5e4                g_u8MsgBuildBuffer
-                0x0000b83c                g_struSendQueue
-                0x0000b864                g_struRecvQueue
-                0x0000b88c                g_struRetxBuffer
-                0x0000baec                g_struSendBuffer
- COMMON         0x0000c20c      0x12c obj/sta/AC/src/ac_api.o
-                0x0000c20c                g_u8DevMsgBuildBuffer
- COMMON         0x0000c338     0x1868 obj/sta/ZC/src/tropicssl/bignum.o
-                0x0000c338                O_T1
-                0x0000c390                Y
-                0x0000c3e8                O_RR
-                0x0000c440                O_T
-                0x0000c498                O_W
-                0x0000da98                O_T2
-                0x0000daf0                Z
-                0x0000db48                X
- COMMON         0x0000dba0      0x148 obj/sta/ZC/src/tropicssl/rsa.o
-                0x0000dba0                T2
-                0x0000dbf8                T
-                0x0000dc50                T1
-                0x0000dca8                buf
- COMMON         0x0000dce8       0x28 obj/sta/ZC/src/zc/zc_client_manager.o
-                0x0000dce8                g_struClientInfo
- COMMON         0x0000dd10      0x1bc obj/sta/ZC/src/zc/zc_configuration.o
-                0x0000dd10                g_struRegisterInfo
-                0x0000dd9c                g_struZcConfigDb
- COMMON         0x0000decc       0x8c obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0000decc                g_struProtocolController
- COMMON         0x0000df58       0x50 obj/sta/ZC/src/zc/zc_timer.o
-                0x0000df58                g_struTimer
- COMMON         0x0000dfa8       0x18 obj/sta/tcpip/tcpip_main.o
-                0x0000dfa8                arp_timer
-                0x0000dfb0                periodic_timer
-                0x0000dfb8                cli_timer
- COMMON         0x0000dfc0      0xcf4 obj/sta/tcpip/uip.o
-                0x0000dfc0                uip_acc32
-                0x0000dfc4                uip_conns
-                0x0000e9d4                uip_listenports
-                0x0000e9dc                uip_draddr
-                0x0000e9e0                uip_netmask
-                0x0000e9e4                uip_hostaddr
-                0x0000e9e8                uip_buf
-                0x0000ec44                uip_udp_conns
- COMMON         0x0000ecb4        0x6 obj/sta/tcpip/uip_arp.o
-                0x0000ecb4                uip_sourceAddr
- *fill*         0x0000ecba        0x2 00000000
- COMMON         0x0000ecbc       0x14 .\libandessta.a(cnm_timer.o)
-                0x0000ecbc                rRootTimer
- COMMON         0x0000ecd0       0x5a .\libandessta.a(iot_io_cmd.o)
-                0x0000ecd0                mt7681_PWMInfo
- *fill*         0x0000ed2a        0x2 00000000
- COMMON         0x0000ed2c       0x10 .\libandessta.a(queue.o)
-                0x0000ed2c                gFreeQueue1
- COMMON         0x0000ed3c      0x5f0 .\libandessta.a(app_nos_main.o)
-                0x0000ed3c                pAd
- COMMON         0x0000f32c       0x24 .\libandessta.a(timer.o)
-                0x0000f32c                System_Timer_Pool
-                0x0000f340                Free_Timer_List
- COMMON         0x0000f350       0x34 .\libandessta.a(task.o)
-                0x0000f350                sysTaskingCtl
- COMMON         0x0000f384       0x14 .\libandessta.a(wifi_ps.o)
-                0x0000f384                AdvPSMode
-                0x0000f398                . = ALIGN (0x4)
-                0x0000f398                PROVIDE (_BSS_END, .)
-                0x0000f398                __ilm_end = .
-                0x0000f3a0                . = ALIGN (0x20)
-                0x0000f3a0                _end = .
-                0x0000f3a0                PROVIDE (_MEMORY_TOP, .)
+ *fill*         0x0000a9ab        0x1 00000000
+ COMMON         0x0000a9ac      0x2c9 obj/sta/iot_custom.o
+                0x0000a9ac                IoTCustOp
+                0x0000a9c8                IoTCustTimer
+                0x0000a9e4                IoTpAd
+ *fill*         0x0000ac75        0x3 00000000
+ COMMON         0x0000ac78      0x448 obj/sta/iot_uart_rb.o
+                0x0000ac78                uart_rb_info
+                0x0000ac84                UARTPort
+                0x0000ad9c                UARTTxBuf
+                0x0000addc                uart_rb_addr
+                0x0000aec0                UARTRxBuf
+ COMMON         0x0000b0c0      0xf1c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x0000b0c0                g_struClientBuffer
+                0x0000b320                g_struMtTimer
+                0x0000b370                g_struRecvBuffer
+                0x0000b5d0                g_struMt7681Adapter
+                0x0000b614                g_u8MsgBuildBuffer
+                0x0000b86c                g_struSendQueue
+                0x0000b894                g_struRecvQueue
+                0x0000b8bc                g_struSendBuffer
+ COMMON         0x0000bfdc      0x200 obj/sta/AC/src/ac_hal.o
+                0x0000bfdc                g_u8DevMsgBuildBuffer
+ COMMON         0x0000c1dc     0x1868 obj/sta/ZC/src/tropicssl/bignum.o
+                0x0000c1dc                O_T1
+                0x0000c234                Y
+                0x0000c28c                O_RR
+                0x0000c2e4                O_T
+                0x0000c33c                O_W
+                0x0000d93c                O_T2
+                0x0000d994                Z
+                0x0000d9ec                X
+ COMMON         0x0000da44      0x148 obj/sta/ZC/src/tropicssl/rsa.o
+                0x0000da44                T2
+                0x0000da9c                T
+                0x0000daf4                T1
+                0x0000db4c                buf
+ COMMON         0x0000db8c       0x28 obj/sta/ZC/src/zc/zc_client_manager.o
+                0x0000db8c                g_struClientInfo
+ COMMON         0x0000dbb4      0x1c0 obj/sta/ZC/src/zc/zc_configuration.o
+                0x0000dbb4                g_struRegisterInfo
+                0x0000dc40                g_struZcConfigDb
+ COMMON         0x0000dd74       0x88 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0000dd74                g_struProtocolController
+ COMMON         0x0000ddfc       0x50 obj/sta/ZC/src/zc/zc_timer.o
+                0x0000ddfc                g_struTimer
+ COMMON         0x0000de4c       0x18 obj/sta/tcpip/tcpip_main.o
+                0x0000de4c                arp_timer
+                0x0000de54                periodic_timer
+                0x0000de5c                cli_timer
+ COMMON         0x0000de64      0xcf4 obj/sta/tcpip/uip.o
+                0x0000de64                uip_acc32
+                0x0000de68                uip_conns
+                0x0000e878                uip_listenports
+                0x0000e880                uip_draddr
+                0x0000e884                uip_netmask
+                0x0000e888                uip_hostaddr
+                0x0000e88c                uip_buf
+                0x0000eae8                uip_udp_conns
+ COMMON         0x0000eb58        0x6 obj/sta/tcpip/uip_arp.o
+                0x0000eb58                uip_sourceAddr
+ *fill*         0x0000eb5e        0x2 00000000
+ COMMON         0x0000eb60       0x14 .\libandessta.a(cnm_timer.o)
+                0x0000eb60                rRootTimer
+ COMMON         0x0000eb74       0x5a .\libandessta.a(iot_io_cmd.o)
+                0x0000eb74                mt7681_PWMInfo
+ *fill*         0x0000ebce        0x2 00000000
+ COMMON         0x0000ebd0       0x10 .\libandessta.a(queue.o)
+                0x0000ebd0                gFreeQueue1
+ COMMON         0x0000ebe0      0x5f0 .\libandessta.a(app_nos_main.o)
+                0x0000ebe0                pAd
+ COMMON         0x0000f1d0       0x24 .\libandessta.a(timer.o)
+                0x0000f1d0                System_Timer_Pool
+                0x0000f1e4                Free_Timer_List
+ COMMON         0x0000f1f4       0x34 .\libandessta.a(task.o)
+                0x0000f1f4                sysTaskingCtl
+ COMMON         0x0000f228       0x14 .\libandessta.a(wifi_ps.o)
+                0x0000f228                AdvPSMode
+                0x0000f23c                . = ALIGN (0x4)
+                0x0000f23c                PROVIDE (_BSS_END, .)
+                0x0000f23c                __ilm_end = .
+                0x0000f240                . = ALIGN (0x20)
+                0x0000f240                _end = .
+                0x0000f240                PROVIDE (_MEMORY_TOP, .)
 
 .stab
  *(.stab)
@@ -2757,7 +2764,7 @@ FW_VERSION_TAG  0x00007668        0xc
  .xipsec0       0x0053472c       0x3c .\libandessta.a(led.o)
                 0x0053472c                GPIOInitialize
 
-.xipsec1        0x00534768     0x21b0
+.xipsec1        0x00534768     0x23f4
  obj/sta/iot_at_cmd.o(.xipsec0)
  .xipsec0       0x00534768      0x2b4 obj/sta/iot_at_cmd.o
                 0x005348ac                IoT_parse_ATcommand
@@ -2836,446 +2843,464 @@ FW_VERSION_TAG  0x00007668        0xc
  .text.MT_BroadcastAppCall
                 0x005354f8       0x50 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
                 0x005354f8                MT_BroadcastAppCall
- .text.MT_Init  0x00535548       0xec obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+ .text.MT_Init  0x00535548       0xf8 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
                 0x00535548                MT_Init
  .text.MT_ListenClient
-                0x00535634       0xa0 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00535634                MT_ListenClient
+                0x00535640       0xa0 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00535640                MT_ListenClient
  .text.MT_GetMac
-                0x005356d4       0x3c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x005356d4                MT_GetMac
+                0x005356e0       0x3c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x005356e0                MT_GetMac
  .text.MT_SendData
-                0x00535710       0x80 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00535710                MT_SendData
+                0x0053571c       0x90 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x0053571c                MT_SendData
+ .text.MT_Rest  0x005357ac       0x2c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x005357ac                MT_Rest
  .text.MT_FirmwareUpdate
-                0x00535790      0x124 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00535790                MT_FirmwareUpdate
+                0x005357d8      0x124 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x005357d8                MT_FirmwareUpdate
  .text.MT_FirmwareUpdateFinish
-                0x005358b4       0x1c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x005358b4                MT_FirmwareUpdateFinish
+                0x005358fc       0x1c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x005358fc                MT_FirmwareUpdateFinish
+ .text.AC_UartSend
+                0x00535918       0x18 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00535918                AC_UartSend
  .text.MT_SendDataToMoudle
-                0x005358d0       0x1c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x005358d0                MT_SendDataToMoudle
+                0x00535930       0x1c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00535930                MT_SendDataToMoudle
  .text.MT_SetTimer
-                0x005358ec       0x6c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x005358ec                MT_SetTimer
+                0x0053594c       0x6c obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x0053594c                MT_SetTimer
  .text.MT_TimerExpired
-                0x00535958       0xcc obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00535958                MT_TimerExpired
+                0x005359b8       0xcc obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x005359b8                MT_TimerExpired
+ .text.MT_ReadDataFromFlash
+                0x00535a84       0x34 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00535a84                MT_ReadDataFromFlash
  .text.MT_WriteDataToFlash
-                0x00535a24       0x48 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00535a24                MT_WriteDataToFlash
- .text.MT_Rest  0x00535a6c       0x44 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00535a6c                MT_Rest
- .text.rand     0x00535ab0       0x18 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00535ab0                rand
+                0x00535ab8       0x44 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00535ab8                MT_WriteDataToFlash
+ .text.rand     0x00535afc       0x18 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00535afc                rand
  .text.MT_CloudAppCall
-                0x00535ac8      0x158 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00535ac8                MT_CloudAppCall
+                0x00535b14      0x158 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00535b14                MT_CloudAppCall
  .text.MT_ConnectToCloud
-                0x00535c20      0x124 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
-                0x00535c20                MT_ConnectToCloud
+                0x00535c6c      0x124 obj/sta/ZC_Adpter/zc_mt7681_adapter.o
+                0x00535c6c                MT_ConnectToCloud
  obj/sta/AC/src/ac_api.o()
  .mdebug.abi_nds32
-                0x00535d44        0x0 obj/sta/AC/src/ac_api.o
+                0x00535d90        0x0 obj/sta/AC/src/ac_api.o
  .text.AC_ParseOption
-                0x00535d44       0x6c obj/sta/AC/src/ac_api.o
-                0x00535d44                AC_ParseOption
+                0x00535d90       0x6c obj/sta/AC/src/ac_api.o
+                0x00535d90                AC_ParseOption
+ .text.AC_CalcSum
+                0x00535dfc       0x1c obj/sta/AC/src/ac_api.o
+                0x00535dfc                AC_CalcSum
+ .text.AC_CheckSum
+                0x00535e18       0x40 obj/sta/AC/src/ac_api.o
+                0x00535e18                AC_CheckSum
  .text.AC_RecvMessage
-                0x00535db0       0x64 obj/sta/AC/src/ac_api.o
-                0x00535db0                AC_RecvMessage
+                0x00535e58       0x5c obj/sta/AC/src/ac_api.o
+                0x00535e58                AC_RecvMessage
+ .text.AC_BuildEasyMessage
+                0x00535eb4       0xb4 obj/sta/AC/src/ac_api.o
+                0x00535eb4                AC_BuildEasyMessage
  .text.AC_BuildOption
-                0x00535e14       0x7c obj/sta/AC/src/ac_api.o
-                0x00535e14                AC_BuildOption
+                0x00535f68       0x7c obj/sta/AC/src/ac_api.o
+                0x00535f68                AC_BuildOption
  .text.AC_SendMessage
-                0x00535e90       0x1c obj/sta/AC/src/ac_api.o
-                0x00535e90                AC_SendMessage
+                0x00535fe4       0x1c obj/sta/AC/src/ac_api.o
+                0x00535fe4                AC_SendMessage
  .text.AC_BuildMessage
-                0x00535eac       0x84 obj/sta/AC/src/ac_api.o
-                0x00535eac                AC_BuildMessage
+                0x00536000       0x84 obj/sta/AC/src/ac_api.o
+                0x00536000                AC_BuildMessage
  .text.AC_SendDeviceRegsiterWithMac
-                0x00535f30       0x88 obj/sta/AC/src/ac_api.o
-                0x00535f30                AC_SendDeviceRegsiterWithMac
+                0x00536084       0x84 obj/sta/AC/src/ac_api.o
+                0x00536084                AC_SendDeviceRegsiterWithMac
+ .text.AC_SendUbindMsg
+                0x00536108       0x48 obj/sta/AC/src/ac_api.o
+                0x00536108                AC_SendUbindMsg
+ .text.AC_SendRestMsg
+                0x00536150       0x3c obj/sta/AC/src/ac_api.o
+                0x00536150                AC_SendRestMsg
  obj/sta/AC/src/ac_hal.o()
  .mdebug.abi_nds32
-                0x00535fb8        0x0 obj/sta/AC/src/ac_hal.o
- .text.AC_StoreStatus
-                0x00535fb8       0x20 obj/sta/AC/src/ac_hal.o
-                0x00535fb8                AC_StoreStatus
- .text.AC_DealLed
-                0x00535fd8       0x64 obj/sta/AC/src/ac_hal.o
-                0x00535fd8                AC_DealLed
+                0x0053618c        0x0 obj/sta/AC/src/ac_hal.o
  .text.AC_DealEvent
-                0x0053603c       0x20 obj/sta/AC/src/ac_hal.o
-                0x0053603c                AC_DealEvent
- .text.AC_ConfigWifi
-                0x0053605c       0xd0 obj/sta/AC/src/ac_hal.o
-                0x0053605c                AC_ConfigWifi
+                0x0053618c       0x68 obj/sta/AC/src/ac_hal.o
+                0x0053618c                AC_DealEvent
  .text.AC_DealNotifyMessage
-                0x0053612c       0x74 obj/sta/AC/src/ac_hal.o
-                0x0053612c                AC_DealNotifyMessage
- .xipsec1       0x005361a0      0x3e4 obj/sta/tcpip/dhcpc.o
-                0x005361b4                ws_got_ip_fail
-                0x005361dc                ws_got_ip
-                0x00536224                dhcpc_init
- .xipsec1       0x00536584      0x394 obj/sta/tcpip/uip.o
-                0x005366c4                uip_unlisten
-                0x0053682c                uip_udp_new
-                0x005366fc                uip_listen
-                0x00536584                uip_connect
-                0x00536784                uip_init
-                0x0053672c                uip_send
+                0x005361f4       0x94 obj/sta/AC/src/ac_hal.o
+                0x005361f4                AC_DealNotifyMessage
+ .text.AC_UartProcess
+                0x00536288      0x100 obj/sta/AC/src/ac_hal.o
+                0x00536288                AC_UartProcess
+ .xipsec1       0x00536388      0x440 obj/sta/tcpip/dhcpc.o
+                0x0053639c                ws_got_ip_fail
+                0x005363c4                ws_got_ip
+                0x00536468                dhcpc_init
+ .xipsec1       0x005367c8      0x394 obj/sta/tcpip/uip.o
+                0x00536908                uip_unlisten
+                0x00536a70                uip_udp_new
+                0x00536940                uip_listen
+                0x005367c8                uip_connect
+                0x005369c8                uip_init
+                0x00536970                uip_send
 
-.xipsec2        0x00536918     0x5444
+.xipsec2        0x00536b5c     0x5524
  obj/sta/ZC/src/tropicssl/*.o(.text.*)
- .text.mpi_msb  0x00536918       0x3c obj/sta/ZC/src/tropicssl/bignum.o
-                0x00536918                mpi_msb
+ .text.mpi_msb  0x00536b5c       0x3c obj/sta/ZC/src/tropicssl/bignum.o
+                0x00536b5c                mpi_msb
  .text.mpi_size
-                0x00536954       0x1c obj/sta/ZC/src/tropicssl/bignum.o
-                0x00536954                mpi_size
+                0x00536b98       0x1c obj/sta/ZC/src/tropicssl/bignum.o
+                0x00536b98                mpi_size
  .text.mpi_shift_r
-                0x00536970       0x78 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00536970                mpi_shift_r
+                0x00536bb4       0x78 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00536bb4                mpi_shift_r
  .text.mpi_cmp_abs
-                0x005369e8       0x74 obj/sta/ZC/src/tropicssl/bignum.o
-                0x005369e8                mpi_cmp_abs
+                0x00536c2c       0x74 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00536c2c                mpi_cmp_abs
  .text.mpi_cmp_mpi
-                0x00536a5c       0x9c obj/sta/ZC/src/tropicssl/bignum.o
-                0x00536a5c                mpi_cmp_mpi
+                0x00536ca0       0x9c obj/sta/ZC/src/tropicssl/bignum.o
+                0x00536ca0                mpi_cmp_mpi
  .text.mpi_cmp_int
-                0x00536af8       0x34 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00536af8                mpi_cmp_int
+                0x00536d3c       0x34 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00536d3c                mpi_cmp_int
  .text.mpi_sub_hlp
-                0x00536b2c       0x3c obj/sta/ZC/src/tropicssl/bignum.o
+                0x00536d70       0x3c obj/sta/ZC/src/tropicssl/bignum.o
  .text.mpi_mul_hlp
-                0x00536b68      0xbe4 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00536dac      0xbe4 obj/sta/ZC/src/tropicssl/bignum.o
  .text.mpi_write_binary
-                0x0053774c       0x60 obj/sta/ZC/src/tropicssl/bignum.o
-                0x0053774c                mpi_write_binary
+                0x00537990       0x60 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537990                mpi_write_binary
  .text.mpi_grow
-                0x005377ac       0x40 obj/sta/ZC/src/tropicssl/bignum.o
-                0x005377ac                mpi_grow
+                0x005379f0       0x40 obj/sta/ZC/src/tropicssl/bignum.o
+                0x005379f0                mpi_grow
  .text.mpi_shift_l
-                0x005377ec       0xb0 obj/sta/ZC/src/tropicssl/bignum.o
-                0x005377ec                mpi_shift_l
+                0x00537a30       0xb0 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537a30                mpi_shift_l
  .text.mpi_lset
-                0x0053789c       0x50 obj/sta/ZC/src/tropicssl/bignum.o
-                0x0053789c                mpi_lset
+                0x00537ae0       0x50 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537ae0                mpi_lset
  .text.mpi_read_binary
-                0x005378ec       0x7c obj/sta/ZC/src/tropicssl/bignum.o
-                0x005378ec                mpi_read_binary
+                0x00537b30       0x7c obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537b30                mpi_read_binary
  .text.mpi_free
-                0x00537968       0x28 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537968                mpi_free
+                0x00537bac       0x28 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537bac                mpi_free
  .text.mpi_init
-                0x00537990       0x28 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537990                mpi_init
+                0x00537bd4       0x28 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537bd4                mpi_init
  .text.mpi_montmul
-                0x005379b8      0x108 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537bfc      0x108 obj/sta/ZC/src/tropicssl/bignum.o
  .text.mpi_copy
-                0x00537ac0       0x74 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537ac0                mpi_copy
+                0x00537d04       0x74 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537d04                mpi_copy
  .text.mpi_mul_mpi
-                0x00537b34      0x130 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537b34                mpi_mul_mpi
+                0x00537d78      0x130 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537d78                mpi_mul_mpi
  .text.mpi_mul_int
-                0x00537c64       0x24 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537c64                mpi_mul_int
+                0x00537ea8       0x24 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537ea8                mpi_mul_int
  .text.mpi_sub_abs
-                0x00537c88       0xa0 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537c88                mpi_sub_abs
+                0x00537ecc       0xa0 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537ecc                mpi_sub_abs
  .text.mpi_add_abs
-                0x00537d28       0xb4 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537d28                mpi_add_abs
+                0x00537f6c       0xb4 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00537f6c                mpi_add_abs
  .text.mpi_sub_mpi
-                0x00537ddc       0x68 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537ddc                mpi_sub_mpi
+                0x00538020       0x68 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00538020                mpi_sub_mpi
  .text.mpi_add_mpi
-                0x00537e44       0x68 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537e44                mpi_add_mpi
+                0x00538088       0x68 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00538088                mpi_add_mpi
  .text.mpi_div_mpi
-                0x00537eac      0x580 obj/sta/ZC/src/tropicssl/bignum.o
-                0x00537eac                mpi_div_mpi
+                0x005380f0      0x580 obj/sta/ZC/src/tropicssl/bignum.o
+                0x005380f0                mpi_div_mpi
  .text.mpi_mod_mpi
-                0x0053842c       0x80 obj/sta/ZC/src/tropicssl/bignum.o
-                0x0053842c                mpi_mod_mpi
- .text.T.175    0x005384ac       0x30 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00538670       0x80 obj/sta/ZC/src/tropicssl/bignum.o
+                0x00538670                mpi_mod_mpi
+ .text.T.175    0x005386f0       0x30 obj/sta/ZC/src/tropicssl/bignum.o
  .text.mpi_exp_mod
-                0x005384dc      0x4dc obj/sta/ZC/src/tropicssl/bignum.o
-                0x005384dc                mpi_exp_mod
+                0x00538720      0x4dc obj/sta/ZC/src/tropicssl/bignum.o
+                0x00538720                mpi_exp_mod
  .text.rsa_free
-                0x005389b8       0x5c obj/sta/ZC/src/tropicssl/rsa.o
-                0x005389b8                rsa_free
+                0x00538bfc       0x5c obj/sta/ZC/src/tropicssl/rsa.o
+                0x00538bfc                rsa_free
  .text.rsa_private
-                0x00538a14      0x1e0 obj/sta/ZC/src/tropicssl/rsa.o
-                0x00538a14                rsa_private
+                0x00538c58      0x1e0 obj/sta/ZC/src/tropicssl/rsa.o
+                0x00538c58                rsa_private
  .text.rsa_public
-                0x00538bf4       0xcc obj/sta/ZC/src/tropicssl/rsa.o
-                0x00538bf4                rsa_public
+                0x00538e38       0xcc obj/sta/ZC/src/tropicssl/rsa.o
+                0x00538e38                rsa_public
  .text.rsa_pkcs1_decrypt
-                0x00538cc0       0xc0 obj/sta/ZC/src/tropicssl/rsa.o
-                0x00538cc0                rsa_pkcs1_decrypt
+                0x00538f04       0xc0 obj/sta/ZC/src/tropicssl/rsa.o
+                0x00538f04                rsa_pkcs1_decrypt
  .text.rsa_pkcs1_encrypt
-                0x00538d80       0xa4 obj/sta/ZC/src/tropicssl/rsa.o
-                0x00538d80                rsa_pkcs1_encrypt
+                0x00538fc4       0xa4 obj/sta/ZC/src/tropicssl/rsa.o
+                0x00538fc4                rsa_pkcs1_encrypt
  .text.rsa_init
-                0x00538e24       0x34 obj/sta/ZC/src/tropicssl/rsa.o
-                0x00538e24                rsa_init
+                0x00539068       0x34 obj/sta/ZC/src/tropicssl/rsa.o
+                0x00539068                rsa_init
  obj/sta/ZC/src/tropicssl/*.o(.text)
  obj/sta/ZC/src/zc/*.o(.text.*)
  .text.ZC_SendClientQueryReq
-                0x00538e58       0xe0 obj/sta/ZC/src/zc/zc_bc.o
-                0x00538e58                ZC_SendClientQueryReq
+                0x0053909c       0xf0 obj/sta/ZC/src/zc/zc_bc.o
+                0x0053909c                ZC_SendClientQueryReq
  .text.ZC_SendBc
-                0x00538f38       0x9c obj/sta/ZC/src/zc/zc_bc.o
-                0x00538f38                ZC_SendBc
+                0x0053918c       0xb0 obj/sta/ZC/src/zc/zc_bc.o
+                0x0053918c                ZC_SendBc
  .text.ZC_ClientDisconnect
-                0x00538fd4       0x4c obj/sta/ZC/src/zc/zc_client_manager.o
-                0x00538fd4                ZC_ClientDisconnect
+                0x0053923c       0x4c obj/sta/ZC/src/zc/zc_client_manager.o
+                0x0053923c                ZC_ClientDisconnect
  .text.ZC_ClientConnect
-                0x00539020       0x44 obj/sta/ZC/src/zc/zc_client_manager.o
-                0x00539020                ZC_ClientConnect
+                0x00539288       0x44 obj/sta/ZC/src/zc/zc_client_manager.o
+                0x00539288                ZC_ClientConnect
  .text.ZC_ClientInit
-                0x00539064       0x18 obj/sta/ZC/src/zc/zc_client_manager.o
-                0x00539064                ZC_ClientInit
+                0x005392cc       0x18 obj/sta/ZC/src/zc/zc_client_manager.o
+                0x005392cc                ZC_ClientInit
  .text.ZC_CheckClientIdle
-                0x0053907c       0x24 obj/sta/ZC/src/zc/zc_client_manager.o
-                0x0053907c                ZC_CheckClientIdle
+                0x005392e4       0x24 obj/sta/ZC/src/zc/zc_client_manager.o
+                0x005392e4                ZC_CheckClientIdle
  .text.ZC_StartClientListen
-                0x005390a0       0x30 obj/sta/ZC/src/zc/zc_client_manager.o
-                0x005390a0                ZC_StartClientListen
+                0x00539308       0x30 obj/sta/ZC/src/zc/zc_client_manager.o
+                0x00539308                ZC_StartClientListen
  .text.ZC_ClientWakeUp
-                0x005390d0        0xc obj/sta/ZC/src/zc/zc_client_manager.o
-                0x005390d0                ZC_ClientWakeUp
+                0x00539338        0xc obj/sta/ZC/src/zc/zc_client_manager.o
+                0x00539338                ZC_ClientWakeUp
  .text.ZC_ClientSleep
-                0x005390dc       0x18 obj/sta/ZC/src/zc/zc_client_manager.o
-                0x005390dc                ZC_ClientSleep
+                0x00539344       0x18 obj/sta/ZC/src/zc/zc_client_manager.o
+                0x00539344                ZC_ClientSleep
  .text.ZC_RecvDataFromClient
-                0x005390f4      0x2f8 obj/sta/ZC/src/zc/zc_client_manager.o
-                0x005390f4                ZC_RecvDataFromClient
+                0x0053935c      0x324 obj/sta/ZC/src/zc/zc_client_manager.o
+                0x0053935c                ZC_RecvDataFromClient
  .text.EVENT_ParseOption
-                0x005393ec       0x6c obj/sta/ZC/src/zc/zc_cloud_event.o
-                0x005393ec                EVENT_ParseOption
+                0x00539680       0x6c obj/sta/ZC/src/zc/zc_cloud_event.o
+                0x00539680                EVENT_ParseOption
  .text.EVENT_BuildOption
-                0x00539458       0x7c obj/sta/ZC/src/zc/zc_cloud_event.o
-                0x00539458                EVENT_BuildOption
+                0x005396ec       0x7c obj/sta/ZC/src/zc/zc_cloud_event.o
+                0x005396ec                EVENT_BuildOption
  .text.EVENT_BuildBcMsg
-                0x005394d4       0x9c obj/sta/ZC/src/zc/zc_cloud_event.o
-                0x005394d4                EVENT_BuildBcMsg
+                0x00539768       0x9c obj/sta/ZC/src/zc/zc_cloud_event.o
+                0x00539768                EVENT_BuildBcMsg
  .text.EVENT_BuildMsg
-                0x00539570       0x60 obj/sta/ZC/src/zc/zc_cloud_event.o
-                0x00539570                EVENT_BuildMsg
+                0x00539804       0x60 obj/sta/ZC/src/zc/zc_cloud_event.o
+                0x00539804                EVENT_BuildMsg
  .text.EVENT_BuildHeartMsg
-                0x005395d0       0x44 obj/sta/ZC/src/zc/zc_cloud_event.o
-                0x005395d0                EVENT_BuildHeartMsg
+                0x00539864       0x44 obj/sta/ZC/src/zc/zc_cloud_event.o
+                0x00539864                EVENT_BuildHeartMsg
  .text.EVENT_BuildEmptyMsg
-                0x00539614       0x44 obj/sta/ZC/src/zc/zc_cloud_event.o
-                0x00539614                EVENT_BuildEmptyMsg
+                0x005398a8       0x44 obj/sta/ZC/src/zc/zc_cloud_event.o
+                0x005398a8                EVENT_BuildEmptyMsg
  .text.ZC_TraceData
-                0x00539658       0xbc obj/sta/ZC/src/zc/zc_common.o
-                0x00539658                ZC_TraceData
+                0x005398ec       0xbc obj/sta/ZC/src/zc/zc_common.o
+                0x005398ec                ZC_TraceData
  .text.ZC_HexToString
-                0x00539714       0x58 obj/sta/ZC/src/zc/zc_common.o
-                0x00539714                ZC_HexToString
- .text.ZC_Rand  0x0053976c       0x64 obj/sta/ZC/src/zc/zc_common.o
-                0x0053976c                ZC_Rand
+                0x005399a8       0x58 obj/sta/ZC/src/zc/zc_common.o
+                0x005399a8                ZC_HexToString
+ .text.ZC_Rand  0x00539a00       0x64 obj/sta/ZC/src/zc/zc_common.o
+                0x00539a00                ZC_Rand
  .text.ZC_GetStoreInfor
-                0x005397d0       0x54 obj/sta/ZC/src/zc/zc_configuration.o
-                0x005397d0                ZC_GetStoreInfor
+                0x00539a64       0x54 obj/sta/ZC/src/zc/zc_configuration.o
+                0x00539a64                ZC_GetStoreInfor
+ .text.ZC_ConfigReset
+                0x00539ab8       0x54 obj/sta/ZC/src/zc/zc_configuration.o
+                0x00539ab8                ZC_ConfigReset
  .text.ZC_ConfigUnBind
-                0x00539824       0x30 obj/sta/ZC/src/zc/zc_configuration.o
-                0x00539824                ZC_ConfigUnBind
+                0x00539b0c       0x3c obj/sta/ZC/src/zc/zc_configuration.o
+                0x00539b0c                ZC_ConfigUnBind
  .text.ZC_StoreAccessInfo
-                0x00539854       0x58 obj/sta/ZC/src/zc/zc_configuration.o
-                0x00539854                ZC_StoreAccessInfo
+                0x00539b48       0x6c obj/sta/ZC/src/zc/zc_configuration.o
+                0x00539b48                ZC_StoreAccessInfo
  .text.ZC_StoreTokenKey
-                0x005398ac       0x40 obj/sta/ZC/src/zc/zc_configuration.o
-                0x005398ac                ZC_StoreTokenKey
+                0x00539bb4       0x58 obj/sta/ZC/src/zc/zc_configuration.o
+                0x00539bb4                ZC_StoreTokenKey
  .text.ZC_ConfigPara
-                0x005398ec      0x150 obj/sta/ZC/src/zc/zc_configuration.o
-                0x005398ec                ZC_ConfigPara
+                0x00539c0c      0x164 obj/sta/ZC/src/zc/zc_configuration.o
+                0x00539c0c                ZC_ConfigPara
  .text.ZC_ConfigInitPara
-                0x00539a3c       0x88 obj/sta/ZC/src/zc/zc_configuration.o
-                0x00539a3c                ZC_ConfigInitPara
+                0x00539d70       0xbc obj/sta/ZC/src/zc/zc_configuration.o
+                0x00539d70                ZC_ConfigInitPara
  .text.ZC_StoreRegisterInfo
-                0x00539ac4       0xac obj/sta/ZC/src/zc/zc_configuration.o
-                0x00539ac4                ZC_StoreRegisterInfo
+                0x00539e2c       0xac obj/sta/ZC/src/zc/zc_configuration.o
+                0x00539e2c                ZC_StoreRegisterInfo
  .text.MSG_InitQueue
-                0x00539b70       0x2c obj/sta/ZC/src/zc/zc_message_queue.o
-                0x00539b70                MSG_InitQueue
+                0x00539ed8       0x2c obj/sta/ZC/src/zc/zc_message_queue.o
+                0x00539ed8                MSG_InitQueue
  .text.MSG_Init
-                0x00539b9c       0x68 obj/sta/ZC/src/zc/zc_message_queue.o
-                0x00539b9c                MSG_Init
+                0x00539f04       0x68 obj/sta/ZC/src/zc/zc_message_queue.o
+                0x00539f04                MSG_Init
  .text.MSG_PushMsg
-                0x00539c04       0x1c obj/sta/ZC/src/zc/zc_message_queue.o
-                0x00539c04                MSG_PushMsg
+                0x00539f6c       0x1c obj/sta/ZC/src/zc/zc_message_queue.o
+                0x00539f6c                MSG_PushMsg
  .text.MSG_PopMsg
-                0x00539c20       0x1c obj/sta/ZC/src/zc/zc_message_queue.o
-                0x00539c20                MSG_PopMsg
+                0x00539f88       0x1c obj/sta/ZC/src/zc/zc_message_queue.o
+                0x00539f88                MSG_PopMsg
  .text.MSG_SendDataToCloud
-                0x00539c3c       0x64 obj/sta/ZC/src/zc/zc_message_queue.o
-                0x00539c3c                MSG_SendDataToCloud
+                0x00539fa4       0x64 obj/sta/ZC/src/zc/zc_message_queue.o
+                0x00539fa4                MSG_SendDataToCloud
  .text.MSG_RecvData
-                0x00539ca0      0x150 obj/sta/ZC/src/zc/zc_message_queue.o
-                0x00539ca0                MSG_RecvData
+                0x0053a008      0x150 obj/sta/ZC/src/zc/zc_message_queue.o
+                0x0053a008                MSG_RecvData
  .text.MSG_RecvDataFromCloud
-                0x00539df0       0x8c obj/sta/ZC/src/zc/zc_message_queue.o
-                0x00539df0                MSG_RecvDataFromCloud
+                0x0053a158       0x8c obj/sta/ZC/src/zc/zc_message_queue.o
+                0x0053a158                MSG_RecvDataFromCloud
  .text.ZC_DealExtCode
-                0x00539e7c       0x7c obj/sta/ZC/src/zc/zc_moudle_manager.o
-                0x00539e7c                ZC_DealExtCode
+                0x0053a1e4       0x7c obj/sta/ZC/src/zc/zc_moudle_manager.o
+                0x0053a1e4                ZC_DealExtCode
  .text.ZC_DealSessionOpt
-                0x00539ef8      0x194 obj/sta/ZC/src/zc/zc_moudle_manager.o
-                0x00539ef8                ZC_DealSessionOpt
+                0x0053a260      0x194 obj/sta/ZC/src/zc/zc_moudle_manager.o
+                0x0053a260                ZC_DealSessionOpt
  .text.ZC_RecvDataFromMoudle
-                0x0053a08c      0x224 obj/sta/ZC/src/zc/zc_moudle_manager.o
-                0x0053a08c                ZC_RecvDataFromMoudle
+                0x0053a3f4      0x224 obj/sta/ZC/src/zc/zc_moudle_manager.o
+                0x0053a3f4                ZC_RecvDataFromMoudle
  .text.PCT_ConnectCloud
-                0x0053a2b0       0x28 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a2b0                PCT_ConnectCloud
+                0x0053a618       0x28 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053a618                PCT_ConnectCloud
  .text.PCT_SendMsgToCloud
-                0x0053a2d8      0x118 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a2d8                PCT_SendMsgToCloud
+                0x0053a640      0x118 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053a640                PCT_SendMsgToCloud
  .text.PCT_HandleMoudleMsg
-                0x0053a3f0       0x84 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a3f0                PCT_HandleMoudleMsg
+                0x0053a758       0x68 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053a758                PCT_HandleMoudleMsg
  .text.PCT_ReconnectCloud
-                0x0053a474       0xa4 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a474                PCT_ReconnectCloud
+                0x0053a7c0       0xa4 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053a7c0                PCT_ReconnectCloud
  .text.PCT_CheckCrc
-                0x0053a518       0x48 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a518                PCT_CheckCrc
+                0x0053a864       0x48 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053a864                PCT_CheckCrc
  .text.PCT_SendAckToCloud
-                0x0053a560       0x5c obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a560                PCT_SendAckToCloud
+                0x0053a8ac       0x5c obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053a8ac                PCT_SendAckToCloud
  .text.PCT_HandleOtaFileEndMsg
-                0x0053a5bc       0x30 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a5bc                PCT_HandleOtaFileEndMsg
+                0x0053a908       0x30 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053a908                PCT_HandleOtaFileEndMsg
  .text.PCT_HandleOtaFileBeginMsg
-                0x0053a5ec       0x7c obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a5ec                PCT_HandleOtaFileBeginMsg
+                0x0053a938       0x7c obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053a938                PCT_HandleOtaFileBeginMsg
  .text.PCT_SendErrorMsg
-                0x0053a668       0x5c obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a668                PCT_SendErrorMsg
+                0x0053a9b4       0x5c obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053a9b4                PCT_SendErrorMsg
  .text.PCT_HandleOtaFileChunkMsg
-                0x0053a6c4      0x110 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a6c4                PCT_HandleOtaFileChunkMsg
+                0x0053aa10      0x110 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053aa10                PCT_HandleOtaFileChunkMsg
  .text.PCT_SendNotifyMsg
-                0x0053a7d4       0x44 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a7d4                PCT_SendNotifyMsg
+                0x0053ab20       0x44 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053ab20                PCT_SendNotifyMsg
  .text.PCT_Sleep
-                0x0053a818       0x7c obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a818                PCT_Sleep
+                0x0053ab64       0x7c obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053ab64                PCT_Sleep
  .text.PCT_WakeUp
-                0x0053a894       0x48 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a894                PCT_WakeUp
+                0x0053abe0       0x48 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053abe0                PCT_WakeUp
  .text.PCT_HandleOtaEndMsg
-                0x0053a8dc       0x78 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a8dc                PCT_HandleOtaEndMsg
+                0x0053ac28       0x8c obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053ac28                PCT_HandleOtaEndMsg
  .text.PCT_ModuleOtaFileEndMsg
-                0x0053a954       0x44 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a954                PCT_ModuleOtaFileEndMsg
+                0x0053acb4       0x44 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053acb4                PCT_ModuleOtaFileEndMsg
  .text.PCT_ModuleOtaFileChunkMsg
-                0x0053a998      0x130 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053a998                PCT_ModuleOtaFileChunkMsg
+                0x0053acf8      0x130 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053acf8                PCT_ModuleOtaFileChunkMsg
  .text.PCT_ModuleOtaFileBeginMsg
-                0x0053aac8       0x74 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053aac8                PCT_ModuleOtaFileBeginMsg
+                0x0053ae28       0x74 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053ae28                PCT_ModuleOtaFileBeginMsg
  .text.PCT_HandleOtaBeginMsg
-                0x0053ab3c       0x40 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053ab3c                PCT_HandleOtaBeginMsg
+                0x0053ae9c       0x40 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053ae9c                PCT_HandleOtaBeginMsg
  .text.PCT_DisConnectCloud
-                0x0053ab7c       0x2c obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053ab7c                PCT_DisConnectCloud
+                0x0053aedc       0x2c obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053aedc                PCT_DisConnectCloud
  .text.PCT_SendUnbindMsg
-                0x0053aba8       0x98 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053aba8                PCT_SendUnbindMsg
+                0x0053af08       0x98 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053af08                PCT_SendUnbindMsg
  .text.PCT_HandleUnbindMsg
-                0x0053ac40       0x8c obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053ac40                PCT_HandleUnbindMsg
+                0x0053afa0       0x8c obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053afa0                PCT_HandleUnbindMsg
  .text.PCT_RecvAccessMsg4
-                0x0053accc       0xfc obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053accc                PCT_RecvAccessMsg4
+                0x0053b02c       0xfc obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b02c                PCT_RecvAccessMsg4
  .text.PCT_SendCloudAccessMsg3
-                0x0053adc8       0xc8 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053adc8                PCT_SendCloudAccessMsg3
+                0x0053b128       0xc8 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b128                PCT_SendCloudAccessMsg3
  .text.PCT_RecvAccessMsg2
-                0x0053ae90      0x190 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053ae90                PCT_RecvAccessMsg2
+                0x0053b1f0      0x190 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b1f0                PCT_RecvAccessMsg2
  .text.PCT_SendCloudAccessMsg1
-                0x0053b020      0x130 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b020                PCT_SendCloudAccessMsg1
+                0x0053b380      0x130 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b380                PCT_SendCloudAccessMsg1
  .text.PCT_SendEmptyMsg
-                0x0053b150       0x50 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b150                PCT_SendEmptyMsg
+                0x0053b4b0       0x50 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b4b0                PCT_SendEmptyMsg
  .text.PCT_ResetNetWork
-                0x0053b1a0       0x44 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b1a0                PCT_ResetNetWork
+                0x0053b500       0x44 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b500                PCT_ResetNetWork
  .text.PCT_SetTokenKey
-                0x0053b1e4       0x38 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b1e4                PCT_SetTokenKey
+                0x0053b544       0x38 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b544                PCT_SetTokenKey
  .text.PCT_HandleEvent
-                0x0053b21c      0x1c0 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b21c                PCT_HandleEvent
- .text.PCT_Run  0x0053b3dc       0x80 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b3dc                PCT_Run
+                0x0053b57c      0x1c0 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b57c                PCT_HandleEvent
+ .text.PCT_Run  0x0053b73c       0x80 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b73c                PCT_Run
  .text.PCT_HandleMoudleEvent
-                0x0053b45c       0x80 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b45c                PCT_HandleMoudleEvent
+                0x0053b7bc       0x74 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b7bc                PCT_HandleMoudleEvent
  .text.PCT_SendMoudleTimeout
-                0x0053b4dc       0x90 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b4dc                PCT_SendMoudleTimeout
+                0x0053b830       0x4c obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b830                PCT_SendMoudleTimeout
  .text.PCT_Init
-                0x0053b56c       0x80 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b56c                PCT_Init
+                0x0053b87c       0x84 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b87c                PCT_Init
  .text.PCT_SendHeartMsg
-                0x0053b5ec       0x68 obj/sta/ZC/src/zc/zc_protocol_controller.o
-                0x0053b5ec                PCT_SendHeartMsg
+                0x0053b900       0x68 obj/sta/ZC/src/zc/zc_protocol_controller.o
+                0x0053b900                PCT_SendHeartMsg
  .text.SEC_PaddingCheck
-                0x0053b654       0x48 obj/sta/ZC/src/zc/zc_sec_engine.o
-                0x0053b654                SEC_PaddingCheck
+                0x0053b968       0x48 obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x0053b968                SEC_PaddingCheck
  .text.SEC_AesDecrypt
-                0x0053b69c       0x54 obj/sta/ZC/src/zc/zc_sec_engine.o
-                0x0053b69c                SEC_AesDecrypt
+                0x0053b9b0       0x54 obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x0053b9b0                SEC_AesDecrypt
  .text.SEC_AesEncrypt
-                0x0053b6f0       0x5c obj/sta/ZC/src/zc/zc_sec_engine.o
-                0x0053b6f0                SEC_AesEncrypt
+                0x0053ba04       0x5c obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x0053ba04                SEC_AesEncrypt
  .text.SEC_InitRsaContextWithPrivateKey
-                0x0053b74c       0xbc obj/sta/ZC/src/zc/zc_sec_engine.o
-                0x0053b74c                SEC_InitRsaContextWithPrivateKey
+                0x0053ba60       0xbc obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x0053ba60                SEC_InitRsaContextWithPrivateKey
  .text.SEC_InitRsaContextWithPublicKey
-                0x0053b808       0x48 obj/sta/ZC/src/zc/zc_sec_engine.o
-                0x0053b808                SEC_InitRsaContextWithPublicKey
+                0x0053bb1c       0x48 obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x0053bb1c                SEC_InitRsaContextWithPublicKey
  .text.SEC_DecryptTextByRsa
-                0x0053b850      0x13c obj/sta/ZC/src/zc/zc_sec_engine.o
-                0x0053b850                SEC_DecryptTextByRsa
+                0x0053bb64      0x13c obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x0053bb64                SEC_DecryptTextByRsa
  .text.SEC_Decrypt
-                0x0053b98c       0xb0 obj/sta/ZC/src/zc/zc_sec_engine.o
-                0x0053b98c                SEC_Decrypt
+                0x0053bca0       0xb0 obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x0053bca0                SEC_Decrypt
  .text.SEC_EncryptTextByRsa
-                0x0053ba3c      0x100 obj/sta/ZC/src/zc/zc_sec_engine.o
-                0x0053ba3c                SEC_EncryptTextByRsa
+                0x0053bd50      0x100 obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x0053bd50                SEC_EncryptTextByRsa
  .text.SEC_Encrypt
-                0x0053bb3c       0x98 obj/sta/ZC/src/zc/zc_sec_engine.o
-                0x0053bb3c                SEC_Encrypt
+                0x0053be50       0x98 obj/sta/ZC/src/zc/zc_sec_engine.o
+                0x0053be50                SEC_Encrypt
  .text.TIMER_Init
-                0x0053bbd4       0x1c obj/sta/ZC/src/zc/zc_timer.o
-                0x0053bbd4                TIMER_Init
+                0x0053bee8       0x1c obj/sta/ZC/src/zc/zc_timer.o
+                0x0053bee8                TIMER_Init
  .text.TIMER_FindIdleTimer
-                0x0053bbf0       0x24 obj/sta/ZC/src/zc/zc_timer.o
-                0x0053bbf0                TIMER_FindIdleTimer
+                0x0053bf04       0x24 obj/sta/ZC/src/zc/zc_timer.o
+                0x0053bf04                TIMER_FindIdleTimer
  .text.TIMER_AllocateTimer
-                0x0053bc14       0x1c obj/sta/ZC/src/zc/zc_timer.o
-                0x0053bc14                TIMER_AllocateTimer
+                0x0053bf28       0x1c obj/sta/ZC/src/zc/zc_timer.o
+                0x0053bf28                TIMER_AllocateTimer
  .text.TIMER_GetTimerStatus
-                0x0053bc30       0x14 obj/sta/ZC/src/zc/zc_timer.o
-                0x0053bc30                TIMER_GetTimerStatus
+                0x0053bf44       0x14 obj/sta/ZC/src/zc/zc_timer.o
+                0x0053bf44                TIMER_GetTimerStatus
  .text.TIMER_StopTimer
-                0x0053bc44       0x2c obj/sta/ZC/src/zc/zc_timer.o
-                0x0053bc44                TIMER_StopTimer
+                0x0053bf58       0x2c obj/sta/ZC/src/zc/zc_timer.o
+                0x0053bf58                TIMER_StopTimer
  .text.TIMER_TimeoutAction
-                0x0053bc70       0xec obj/sta/ZC/src/zc/zc_timer.o
-                0x0053bc70                TIMER_TimeoutAction
+                0x0053bf84       0xfc obj/sta/ZC/src/zc/zc_timer.o
+                0x0053bf84                TIMER_TimeoutAction
  obj/sta/ZC/src/zc/*.o(.text)
 START GROUP
 LOAD obj/sta/AC/src/ac_api.o
@@ -3329,7 +3354,7 @@ LOAD .\libandessta.a
 END GROUP
 OUTPUT(out/sta/MT7681_sta.elf elf32-nds32)
 
-.rela.dyn       0x0000f398        0x0 load address 0x0053bd5c
+.rela.dyn       0x0000f23c        0x0 load address 0x0053c080
  .rela.xipsec0  0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.IoT_exec_AT_cmd_TestSwitch
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
@@ -3421,9 +3446,13 @@ OUTPUT(out/sta/MT7681_sta.elf elf32-nds32)
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.MT_SendData
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
+ .rela.text.MT_Rest
+                0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.MT_FirmwareUpdate
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.MT_FirmwareUpdateFinish
+                0x00000000        0x0 obj/sta/iot_at_cmd.o
+ .rela.text.AC_UartSend
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.MT_SendDataToMoudle
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
@@ -3435,8 +3464,6 @@ OUTPUT(out/sta/MT7681_sta.elf elf32-nds32)
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.MT_WriteDataToFlash
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
- .rela.text.MT_Rest
-                0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.rand
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.MT_CloudAppCall
@@ -3444,6 +3471,8 @@ OUTPUT(out/sta/MT7681_sta.elf elf32-nds32)
  .rela.text.MT_ConnectToCloud
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.AC_RecvMessage
+                0x00000000        0x0 obj/sta/iot_at_cmd.o
+ .rela.text.AC_BuildEasyMessage
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.AC_BuildOption
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
@@ -3453,15 +3482,19 @@ OUTPUT(out/sta/MT7681_sta.elf elf32-nds32)
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.AC_SendDeviceRegsiterWithMac
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
- .rela.text.AC_SendRestMsg
-                0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.AC_SendDeviceStart
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.AC_DealLed
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.AC_SendLedStatus2Server
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
+ .rela.text.AC_DealEvent
+                0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.AC_ConfigWifi
+                0x00000000        0x0 obj/sta/iot_at_cmd.o
+ .rela.text.AC_UartProcess
+                0x00000000        0x0 obj/sta/iot_at_cmd.o
+ .rela.text.AC_UartRecv
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.mpi_write_binary
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
@@ -3530,6 +3563,8 @@ OUTPUT(out/sta/MT7681_sta.elf elf32-nds32)
  .rela.text.ZC_TraceData
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.ZC_GetStoreInfor
+                0x00000000        0x0 obj/sta/iot_at_cmd.o
+ .rela.text.ZC_ConfigReset
                 0x00000000        0x0 obj/sta/iot_at_cmd.o
  .rela.text.ZC_ConfigUnBind
                 0x00000000        0x0 obj/sta/iot_at_cmd.o

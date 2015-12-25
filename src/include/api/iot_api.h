@@ -336,7 +336,7 @@ typedef struct GNU_PACKED _IOT_COMMON_CFG_{
 
 
 typedef struct GNU_PACKED _IOT_USER_CFG_{
-	UCHAR ConfigInfor[296];
+	UCHAR ConfigInfor[356];
 }IOT_USR_CFG;
 
 

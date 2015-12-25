@@ -164,7 +164,18 @@ kal_uint16 UART_GetByte(volatile kal_uint8 *Byte)
 
 char ATCmdPrefixAT[] = AT_CMD_PREFIX;
 char ATCmdPrefixIW[] = AT_CMD_PREFIX2;
+#if (ZC_EASY_UART == 1)
+char AtCmdPrefixMsg[1] = {0x5A};
+#define    ZC_PAYLOADLENOFFSET 3
+extern void AC_UartProcess(u8* inBuf, u32 datalen); 
+u8 HeaderLen= 0;
+
+#else
 char AtCmdPrefixMsg[4] = {0x02,0x03,0x04,0x05};
+u8 HeaderLen= sizeof(ZC_MessageHead));
+#define    ZC_PAYLOADLENOFFSET 6
+#endif
+
 
 /*
  * ISR context
@@ -271,6 +282,11 @@ void UART_Rx_Cb(void)
                     else if (MsgMatchNum == sizeof(AtCmdPrefixMsg))
                     {
                         rx_desc->cur_type = PKT_MSGCMD;
+                        #if (ZC_EASY_UART == 1)
+                        Buf_Push(rx_ring,AtCmdPrefixMsg[0]);
+                        roomleft--;
+                        infor->pkt_len++;
+                        #endif
                     }
                     
     				ATMatchNum = 0;
@@ -288,11 +304,11 @@ void UART_Rx_Cb(void)
                 roomleft--;
                 infor->pkt_len++;
 
-                if (infor->pkt_len == 6)
+                if (infor->pkt_len == ZC_PAYLOADLENOFFSET)
                 {
                     MsgLen = (LastCh << 8) + ch;
                 }
-                else if (infor->pkt_len == (MsgLen + sizeof(ZC_MessageHead)))
+                else if (infor->pkt_len == (MsgLen + HeaderLen))
                 {
                     //if task has consumed some packets
                     if (rx_desc->cur_num != rx_desc->pkt_num)
@@ -463,7 +479,11 @@ void UART_Rx_Packet_Dispatch(void)
                 IoT_parse_IWCmd(pCmdBuf, rxpkt_len);
                 break;
             case PKT_MSGCMD:
+                #if (ZC_EASY_UART == 1)
+                AC_UartProcess(pCmdBuf, rxpkt_len);
+                #else
                 ZC_RecvDataFromMoudle(pCmdBuf, rxpkt_len);
+                #endif
                 break;
              default:
                 break;

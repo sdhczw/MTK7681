@@ -43,6 +43,8 @@ extern BOOLEAN gSmnted;
 
 extern IOT_CUST_OP IoTCustOp;
 extern MLME_STRUCT *pIoTMlme;
+extern unsigned int g_u32GloablIp;
+
 /*---------------------------------------------------------------------------*/
 
 static struct dhcpc_state s;
@@ -449,6 +451,10 @@ VOID ws_got_ip(VOID)
 	
 	if (IoTCustOp.IoTCustWifiSMConnect != NULL)
 		IoTCustOp.IoTCustWifiSMConnect();
+    g_u32GloablIp = ((unsigned char)uip_ipaddr1(s.ipaddr)) << 24 | 
+                    ((unsigned char)uip_ipaddr2(s.ipaddr)) << 16 | 
+                    ((unsigned char)uip_ipaddr3(s.ipaddr)) << 8  | 
+                    ((unsigned char)uip_ipaddr4(s.ipaddr)) ;
     MT_WakeUp();
 #endif
 }

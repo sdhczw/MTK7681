@@ -1,3 +1,6 @@
 [submodule "cust/ZC"]
 	path = cust/ZC
 	url = git@github.com:sdhczw/ZC.git
+[submodule "cust/AC"]
+	path = cust/AC
+	url = git@github.com:sdhczw/AC.git
