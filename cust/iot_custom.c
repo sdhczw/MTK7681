@@ -297,7 +297,7 @@ VOID IoT_Cust_Init(VOID)
 #endif
     
     MT_Init();
-    //MT_ReadDataFromFlash();
+    AC_Init();
 }
 
 
